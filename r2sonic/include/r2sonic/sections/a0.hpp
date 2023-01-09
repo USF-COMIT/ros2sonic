@@ -1,7 +1,7 @@
 #pragma once
-#include <types/types_defs.hpp>
+#include <sections/sections_defs.hpp>
 
-TYPES_NS_HEAD
+SECTIONS_NS_HEAD
 
 /// \todo implement
 struct A0
@@ -9,5 +9,5 @@ struct A0
 
 }__attribute__((packed));
 
-TYPES_NS_FOOT
+SECTIONS_NS_FOOT
 

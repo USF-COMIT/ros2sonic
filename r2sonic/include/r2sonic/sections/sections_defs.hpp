@@ -5,14 +5,14 @@
 ///  Namespace stuff
 ///
 
-#define TYPES_NS_HEAD  \
-  NS_HEAD namespace types {
+#define SECTIONS_NS_HEAD  \
+  NS_HEAD namespace sections {
 
-#define TYPES_NS_FOOT  \
+#define SECTIONS_NS_FOOT  \
   NS_FOOT }
 
 
-TYPES_NS_HEAD
+SECTIONS_NS_HEAD
 
 typedef unsigned char  u8;
 typedef unsigned short u16;
@@ -42,4 +42,4 @@ T revPrimative(const T u)
     return dest.u;
 }
 
-TYPES_NS_FOOT
+SECTIONS_NS_FOOT

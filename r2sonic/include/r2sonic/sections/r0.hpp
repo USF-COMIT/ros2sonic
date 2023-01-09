@@ -1,8 +1,8 @@
 #pragma once
-#include <types/types_defs.hpp>
-#include <types/section.hpp>
+#include <sections/sections_defs.hpp>
+#include <sections/section.hpp>
 
-TYPES_NS_HEAD
+SECTIONS_NS_HEAD
 
 
 /*!
@@ -23,5 +23,5 @@ class R0: public Section
   }
 }__attribute__((packed));
 
-TYPES_NS_FOOT
+SECTIONS_NS_FOOT
 

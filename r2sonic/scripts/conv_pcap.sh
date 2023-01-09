@@ -1,4 +1,4 @@
-tcprewrite --infile='/media/psf/Dropbox/Work/USF/r2sonic_driver/docs/R2_EthernetDataSamples/SampleEthernetData/R2_bathy.pcap'   --outfile=r2sample_bathy.pcap --dstipmap=10.0.1.102:10.0.1.102 --enet-dmac=00:1c:42:47:cd:f0 --srcipmap=10.0.0.86:10.0.1.102 --enet-smac=00:1c:42:47:cd:f0 --fixcsum
+tcprewrite --infile='/home/k2/Downloads/SampleEthernetData/R2_bathy.pcap'   --outfile=r2sample_bathy.pcap --dstipmap=10.0.1.102:131.247.136.111 --enet-dmac=b0:7b:25:a0:53:71 --srcipmap=10.0.0.86:131.247.136.111 --enet-smac=b0:7b:25:a0:53:71 --fixcsum
 
 sudo udpreplay -i enp0s5 r2sample_bathy.pcap 
 

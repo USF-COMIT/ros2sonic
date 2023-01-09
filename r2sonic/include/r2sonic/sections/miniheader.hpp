@@ -1,9 +1,9 @@
 #ifndef MINIHEADER_H
 #define MINIHEADER_H
 
-#include <types/types_defs.hpp>
+#include <sections/sections_defs.hpp>
 
-TYPES_NS_HEAD
+SECTIONS_NS_HEAD
 
 struct MiniHeader
 {
@@ -19,6 +19,6 @@ struct MiniHeader
   }
 }__attribute__((packed));
 
-TYPES_NS_FOOT
+SECTIONS_NS_FOOT
 
 #endif // MINIHEADER_H

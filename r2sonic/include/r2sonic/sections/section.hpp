@@ -1,8 +1,8 @@
 #pragma once
 
-#include "types_defs.hpp"
+#include "sections_defs.hpp"
 
-TYPES_NS_HEAD
+SECTIONS_NS_HEAD
 
 struct SectionInfo{
   char name[2];
@@ -48,4 +48,4 @@ protected:
   char * start_bit_; //!< a pointer to the first bit in the message
 };
 
-TYPES_NS_FOOT
+SECTIONS_NS_FOOT
