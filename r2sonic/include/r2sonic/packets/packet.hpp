@@ -1,8 +1,8 @@
 #pragma once
-#include <data_formats/data_format_defs.hpp>
+#include <packets/packets_defs.hpp>
 #include <sections/miniheader.hpp>
 
-DATA_FORMATS_NS_HEAD
+PACKETS_NS_HEAD
 
 /*!
  * \brief The DataFormat class is a common base class for the R2Sonic
@@ -11,20 +11,20 @@ DATA_FORMATS_NS_HEAD
  * accessors without the get prefix will return a reference to the raw data
  * which will be in big-endian order as per the r2sonic spec
  */
-class DataFormat{
+class Packet{
 public:
 
   /*!
    * \brief Constructor
    * \param the start bit of the datagram you want to read
    */
-  DataFormat(char* start_bit){start_bit_= start_bit;}
+  Packet(char* start_bit){start_bit_= start_bit;}
   /*!
    * \brief Makes a copy of the mini header and byteswaps it for direct reading
    * \return a machine-endian version of the mini header
    */
   sections::MiniHeader getMiniHeader(){
-    auto m_hdr = reinterpret_cast<const sections::MiniHeader*>(&recv_buffer_);
+    auto m_hdr = reinterpret_cast<const sections::MiniHeader*>(start_bit_);
     std::cout << m_hdr->DataStreamID << std::endl;
     return m_hdr->swapEndian();
   }
@@ -39,8 +39,8 @@ public:
    * \brief gets the size of the entire DataFormat Packet reported by the MiniHeader
    * \return the size of the DataFormat Packet
    */
-  sections::u16 getSize(){
-    return getMiniHeader().PacketSize();
+  u16 getSize(){
+    return getMiniHeader().PacketSize;
   }
   /*!
    * \brief end returns a pointer to one bit beyond the current DataFormat Packet (the first bit of the next Packet)
@@ -61,4 +61,4 @@ private:
   char * start_bit_; //!< a pointer to the first bit in the message
 };
 
-DATA_FORMATS_NS_FOOT
+PACKETS_NS_FOOT

@@ -6,8 +6,8 @@
 ///  Namespace stuff
 ///
 
-#define DATA_FORMATS_NS_HEAD  \
-  NS_HEAD namespace data_formats {
+#define PACKETS_NS_HEAD  \
+  NS_HEAD namespace packets {
 
-#define DATA_FORMATS_NS_FOOT  \
+#define PACKETS_NS_FOOT  \
   NS_FOOT }

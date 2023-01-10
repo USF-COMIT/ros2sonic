@@ -2,9 +2,7 @@
 #define DATATYPERECEIVER_HPP
 
 #include "udp_receiver.hpp"
-#include "sections/miniheader.hpp"
-#include "sections/r0.hpp"
-#include "sections/h0.hpp"
+#include <packets/bth0.hpp>
 
 NS_HEAD
 

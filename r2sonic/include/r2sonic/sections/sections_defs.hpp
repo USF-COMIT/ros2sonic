@@ -12,7 +12,6 @@
   NS_FOOT }
 
 
-SECTIONS_NS_HEAD
 
 typedef unsigned char  u8;
 typedef unsigned short u16;
@@ -42,4 +41,25 @@ T revPrimative(const T u)
     return dest.u;
 }
 
-SECTIONS_NS_FOOT
+template <typename PrimT>
+struct BigEndianPrimative{
+  PrimT raw;
+  /*!
+   * \brief returns the machine-endian version of the variable
+   * \return a machine endian version fo the variable
+   */
+  PrimT get(){
+    return revPrimative(raw);
+  }
+};
+
+typedef BigEndianPrimative<u8>      BE_u8;
+typedef BigEndianPrimative<u16>     BE_u16;
+typedef BigEndianPrimative<u32>     BE_u32;
+typedef BigEndianPrimative<s8>      BE_s8;
+typedef BigEndianPrimative<s16>     BE_s16;
+typedef BigEndianPrimative<s32>     BE_s32;
+typedef BigEndianPrimative<f32>     BE_f32;
+typedef BigEndianPrimative<f64>     BE_f64;
+
+

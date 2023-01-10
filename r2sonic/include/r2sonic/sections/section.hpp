@@ -23,10 +23,27 @@ public:
    */
   Section(char* start_bit){start_bit_= start_bit;}
   /*!
+   * \brief Return true if your type matches the header
+   * \return true if your type matches the header
+   */
+  virtual bool typeMatches() = 0;
+  /*!
+   * \brief states weather that section exists where expected
+   * \return true if the requested section exists
+   */
+  bool exists(){
+    return typeMatches();
+  }
+  /*!
    * \brief getSize returns the size of the message in system-endian order
-   * \return the size of the section in system endian order
+   * \note this function will return 0 if your type doesn't match SectionInfo.name
+   * \return the size of the section in system endian order.  Returns 0 if
+   * your type doesn't match indicating a seciton doesn't exist.
    */
   u16 getSize(){
+    if( !typeMatches() ){
+      return 0;
+    }
     return revPrimative<u16>(info()->size);
   }
   /*!
@@ -45,6 +62,9 @@ public:
   }
 
 protected:
+  bool isType(char * type){
+    return strncmp(info()->name,type,2) == 0;
+  };
   char * start_bit_; //!< a pointer to the first bit in the message
 };
 
