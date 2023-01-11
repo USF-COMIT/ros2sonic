@@ -13,8 +13,8 @@ struct G1Gate{
 class G1 : public Section{
 public:
   using Section::Section;  // default to parent constructor
-  bool typeMatches(){
-    return isType("G1");
+  char * nominalType(){
+    return "G1";
   }
   BE_f32 * ScalingFactor(){
     existanceErrorCheck();

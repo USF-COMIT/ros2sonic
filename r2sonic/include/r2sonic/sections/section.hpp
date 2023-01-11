@@ -24,16 +24,24 @@ public:
    */
   Section(char* start_bit){start_bit_= start_bit;}
   /*!
+   * \brief returns a chararacter array of length 2 saying the nominal type
+   * of the section class
+   * \return
+   */
+  virtual char * nominalType() = 0;
+  /*!
    * \brief Return true if your type matches the header
    * \return true if your type matches the header
    */
-  virtual bool typeMatches() = 0;
+  bool isType(){
+    return strncmp(info()->name,nominalType(),2) == 0;
+  }
   /*!
    * \brief states weather that section exists where expected
    * \return true if the requested section exists
    */
   bool exists(){
-    return typeMatches();
+    return isType();
   }
   /*!
    * \brief getSize returns the size of the message in system-endian order
@@ -42,7 +50,7 @@ public:
    * your type doesn't match indicating a seciton doesn't exist.
    */
   u16 getSize(){
-    if( !typeMatches() ){
+    if( !exists() ){
       return 0;
     }
     return revPrimative<u16>(info()->size);
@@ -63,9 +71,6 @@ public:
   }
 
 protected:
-  bool isType(char * type){
-    return strncmp(info()->name,type,2) == 0;
-  }
   void existanceErrorCheck(){
     if(!exists()){
       throw std::out_of_range ("requested optional section was not in this packet");

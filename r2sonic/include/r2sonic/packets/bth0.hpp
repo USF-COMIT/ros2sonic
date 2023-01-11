@@ -16,28 +16,41 @@ class BTH0 : public Packet{
 public:
   using Packet::Packet; // default to parent constructor
   sections::H0 h0(){
+    typeErrorCheck();
     return sections::H0( SectionsStartBit() );
   }
   sections::R0 r0(){
+    typeErrorCheck();
     return sections::R0( h0().end() );
   }
   sections::A0 a0(){
+    typeErrorCheck();
     return sections::A0( r0().end() );
   }
   sections::A2 a2(){
+    typeErrorCheck();
     return sections::A2( a0().end() );
   }
   sections::I1 i1(){
+    typeErrorCheck();
     return sections::I1( a2().end() );
   }
   sections::G0 g0(){
+    typeErrorCheck();
     return sections::G0( i1().end() );
   }
   sections::G1 g1(){
+    typeErrorCheck();
     return sections::G1( g0().end() );
   }
   sections::Q0 q0(){
+    typeErrorCheck();
     return sections::Q0( g1().end() );
+  }
+
+protected:
+  char * nominalType(){
+    return "BTH0";
   }
 };
 

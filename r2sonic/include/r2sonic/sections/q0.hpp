@@ -7,8 +7,8 @@ SECTIONS_NS_HEAD
 class Q0 : public Section{
 public:
   using Section::Section;  // default to parent constructor
-  bool typeMatches(){
-    return isType("Q0");
+  char * nominalType(){
+    return "Q0";
   }
 
 }__attribute__((packed));

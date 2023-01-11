@@ -15,8 +15,8 @@ struct A0Body{
 class A0 : public Section{
 public:
   using Section::Section;  // default to parent constructor
-  bool typeMatches(){
-    return isType("A0");
+  char * nominalType(){
+    return "A0";
   }
   A0Body * body(){
     existanceErrorCheck();

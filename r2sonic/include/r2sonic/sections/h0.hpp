@@ -37,8 +37,8 @@ BE_u16  Points;
 class H0 : public Section{
 public:
   using Section::Section;  // default to parent constructor
-  bool typeMatches(){
-    return isType("H0");
+  char * nominalType(){
+    return "H0";
   }
   H0Body * body(){
     return reinterpret_cast<H0Body*>(start_bit_+sizeof(SectionInfo));

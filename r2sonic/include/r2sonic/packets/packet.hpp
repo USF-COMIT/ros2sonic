@@ -1,6 +1,7 @@
 #pragma once
 #include <packets/packets_defs.hpp>
 #include <sections/miniheader.hpp>
+#include <string>
 
 PACKETS_NS_HEAD
 
@@ -52,6 +53,26 @@ public:
    */
   char * SectionsStartBit(){
     return startBit() + sizeof(sections::MiniHeader);
+  }
+  /*!
+   * \brief Determines if the packet can be instantiated given the current
+   * data in the buffer.
+   * \return
+   */
+  bool isType(){
+    return strncmp(miniHeader()->PacketName,nominalType(),4) == 0;
+  }
+
+
+protected:
+  virtual char * nominalType() = 0;
+  void typeErrorCheck(){
+    if(!isType()){
+      std::string rec = miniHeader()->PacketName;
+      std::string nom = nominalType();
+      std::string msg = "Attempted to interpret a "+rec+" as a "+nom+" message.";
+      throw std::out_of_range (msg);
+    }
   }
 
 private:

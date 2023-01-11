@@ -9,8 +9,8 @@ SECTIONS_NS_HEAD
 struct I1 : public Section
 {
   using Section::Section;  // default to parent constructor
-  bool typeMatches(){
-    return isType("I2");
+  char * nominalType(){
+    return "I2";
   }
   BE_f32 * ScalingFactor(){
     existanceErrorCheck();

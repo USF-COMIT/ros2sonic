@@ -12,8 +12,8 @@ class R0: public Section
 {
 public:
   using Section::Section;  // default to parent constructor
-  bool typeMatches(){
-    return isType("R0");
+  char * nominalType(){
+    return "R0";
   }
   BE_f32 * scaliningFactor(){
     return reinterpret_cast<BE_f32*>(start_bit_+sizeof(SectionInfo));
