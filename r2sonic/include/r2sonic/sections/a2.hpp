@@ -19,10 +19,12 @@ struct A2 : public Section
     return isType("A2");
   }
   A2Body * body(){
+    existanceErrorCheck();
     return reinterpret_cast<A2Body*>(start_bit_+sizeof(SectionInfo));
   }
-  u16 * AngleStep(u16 beam_no){
-    return & reinterpret_cast<u16*>(start_bit_+sizeof(SectionInfo)+sizeof(f32))[beam_no];
+  BE_u16 * AngleStep(u16 beam_no){
+    existanceErrorCheck();
+    return & reinterpret_cast<BE_u16*>(start_bit_+sizeof(SectionInfo)+sizeof(f32))[beam_no];
   }
 
 }__attribute__((packed));

@@ -13,20 +13,17 @@ PACKETS_NS_HEAD
  */
 class Packet{
 public:
-
   /*!
    * \brief Constructor
    * \param the start bit of the datagram you want to read
    */
   Packet(char* start_bit){start_bit_= start_bit;}
   /*!
-   * \brief Makes a copy of the mini header and byteswaps it for direct reading
-   * \return a machine-endian version of the mini header
+   * \brief returns a pointer to the miniHeader
+   * \return a pointer to the miniHeader
    */
-  sections::MiniHeader getMiniHeader(){
-    auto m_hdr = reinterpret_cast<const sections::MiniHeader*>(start_bit_);
-    std::cout << m_hdr->DataStreamID << std::endl;
-    return m_hdr->swapEndian();
+  const sections::MiniHeader * miniHeader(){
+    return reinterpret_cast<const sections::MiniHeader*>(start_bit_);
   }
   /*!
    * \brief returns a pointer to the start bit used to define the packet
@@ -40,7 +37,7 @@ public:
    * \return the size of the DataFormat Packet
    */
   u16 getSize(){
-    return getMiniHeader().PacketSize;
+    return miniHeader()->PacketSize.get();
   }
   /*!
    * \brief end returns a pointer to one bit beyond the current DataFormat Packet (the first bit of the next Packet)

@@ -48,7 +48,7 @@ struct BigEndianPrimative{
    * \brief returns the machine-endian version of the variable
    * \return a machine endian version fo the variable
    */
-  PrimT get(){
+  PrimT get() const{
     return revPrimative(raw);
   }
 };

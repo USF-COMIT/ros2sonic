@@ -18,6 +18,9 @@ void DatatypeReceiver::receiveImpl(const boost::system::error_code &error, size_
   auto a2 = bth0.a2();
   auto a2_exists = bth0.a2().exists();
   auto range0 = r0.getScaledRange(0);
+  auto g0_exists = bth0.g0().exists();
+  auto g1_exists = bth0.g1().exists();
+  auto q0_exists = bth0.q0().exists();
 //  auto m_hdr = reinterpret_cast<const sections::MiniHeader*>(&recv_buffer_);
 //  std::cout << m_hdr->DataStreamID << std::endl;
 //  //auto hdr = m_hdr->swapEndian();

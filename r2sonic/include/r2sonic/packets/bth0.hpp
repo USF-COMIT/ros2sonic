@@ -4,6 +4,10 @@
 #include <sections/r0.hpp>
 #include <sections/a0.hpp>
 #include <sections/a2.hpp>
+#include <sections/i1.hpp>
+#include <sections/g0.hpp>
+#include <sections/g1.hpp>
+#include <sections/q0.hpp>
 
 PACKETS_NS_HEAD
 
@@ -22,6 +26,18 @@ public:
   }
   sections::A2 a2(){
     return sections::A2( a0().end() );
+  }
+  sections::I1 i1(){
+    return sections::I1( a2().end() );
+  }
+  sections::G0 g0(){
+    return sections::G0( i1().end() );
+  }
+  sections::G1 g1(){
+    return sections::G1( g0().end() );
+  }
+  sections::Q0 q0(){
+    return sections::Q0( g1().end() );
   }
 };
 

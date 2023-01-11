@@ -1,6 +1,7 @@
 #pragma once
 
 #include "sections_defs.hpp"
+#include <stdexcept>
 
 SECTIONS_NS_HEAD
 
@@ -64,7 +65,12 @@ public:
 protected:
   bool isType(char * type){
     return strncmp(info()->name,type,2) == 0;
-  };
+  }
+  void existanceErrorCheck(){
+    if(!exists()){
+      throw std::out_of_range ("requested optional section was not in this packet");
+    }
+  }
   char * start_bit_; //!< a pointer to the first bit in the message
 };
 

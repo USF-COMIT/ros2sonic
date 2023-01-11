@@ -19,6 +19,7 @@ public:
     return isType("A0");
   }
   A0Body * body(){
+    existanceErrorCheck();
     return reinterpret_cast<A0Body*>(start_bit_+sizeof(SectionInfo));
   }
 }__attribute__((packed));
