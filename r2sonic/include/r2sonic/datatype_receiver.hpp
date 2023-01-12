@@ -3,6 +3,9 @@
 
 #include "udp_receiver.hpp"
 #include <packets/bth0.hpp>
+#include "acoustic_msgs/msg/sonar_detections.hpp"
+#include <conversions.hpp>
+
 
 NS_HEAD
 

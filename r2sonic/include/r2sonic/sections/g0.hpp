@@ -14,7 +14,7 @@ struct G0Body{
 class G0 : public Section{
 public:
   using Section::Section;  // default to parent constructor
-  char * nominalType(){
+  char * nominalType() const{
     return "G0";
   }
   G0Body * body(){

@@ -7,7 +7,7 @@ SECTIONS_NS_HEAD
 class Q0 : public Section{
 public:
   using Section::Section;  // default to parent constructor
-  char * nominalType(){
+  char * nominalType() const {
     return "Q0";
   }
 

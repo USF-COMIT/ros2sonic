@@ -2,6 +2,7 @@
 
 #include "sections_defs.hpp"
 #include <stdexcept>
+#include "primatives.hpp"
 
 SECTIONS_NS_HEAD
 
@@ -28,19 +29,19 @@ public:
    * of the section class
    * \return
    */
-  virtual char * nominalType() = 0;
+  virtual char * nominalType() const = 0;
   /*!
    * \brief Return true if your type matches the header
    * \return true if your type matches the header
    */
-  bool isType(){
+  bool isType() const{
     return strncmp(info()->name,nominalType(),2) == 0;
   }
   /*!
    * \brief states weather that section exists where expected
    * \return true if the requested section exists
    */
-  bool exists(){
+  bool exists() const{
     return isType();
   }
   /*!
@@ -49,7 +50,7 @@ public:
    * \return the size of the section in system endian order.  Returns 0 if
    * your type doesn't match indicating a seciton doesn't exist.
    */
-  u16 getSize(){
+  u16 getSize() const{
     if( !exists() ){
       return 0;
     }
@@ -59,19 +60,19 @@ public:
    * \brief info gets the reference to the common section info
    * \return a reference to the common section info
    */
-  SectionInfo * info(){
+  SectionInfo * info() const{
     return reinterpret_cast<SectionInfo*>(start_bit_);
   }
   /*!
    * \brief end returns a pointer to one bit beyond the current section (the first bit of the next seciton)
    * \return the pointer to the next section
    */
-  char * end(){
+  char * end() const{
     return start_bit_+getSize();
   }
 
 protected:
-  void existanceErrorCheck(){
+  void existanceErrorCheck() const{
     if(!exists()){
       throw std::out_of_range ("requested optional section was not in this packet");
     }

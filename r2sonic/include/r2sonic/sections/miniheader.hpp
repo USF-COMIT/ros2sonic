@@ -2,6 +2,7 @@
 #define MINIHEADER_H
 
 #include <sections/sections_defs.hpp>
+#include "primatives.hpp"
 
 SECTIONS_NS_HEAD
 

@@ -13,10 +13,10 @@ struct G1Gate{
 class G1 : public Section{
 public:
   using Section::Section;  // default to parent constructor
-  char * nominalType(){
+  char * nominalType() const{
     return "G1";
   }
-  BE_f32 * ScalingFactor(){
+  BE_f32 * ScalingFactor() const{
     existanceErrorCheck();
     return reinterpret_cast<BE_f32*>(start_bit_+sizeof(SectionInfo));
   }

@@ -7,6 +7,7 @@ cmake_minimum_required(VERSION 3.8)
 set(ROS_DEPENDS
     rclcpp
     std_msgs
+    acoustic_msgs
   )
 
 set(EXTERNAL_DEPENDS
@@ -69,6 +70,7 @@ include_directories(
 set(EXECUTABLES "")  # for installing later
 
 message("buliding ${PROJECT_NAME} node: ")
+
 foreach(NODE_FILE ${NODES})
   get_filename_component(NODE_NAME ${NODE_FILE} NAME_WE)
   message("  - " ${NODE_NAME})

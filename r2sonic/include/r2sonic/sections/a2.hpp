@@ -15,14 +15,14 @@ struct A2Body{
 struct A2 : public Section
 {
   using Section::Section;  // default to parent constructor
-  char * nominalType(){
+  char * nominalType() const{
     return "A2";
   }
-  A2Body * body(){
+  A2Body * body() const{
     existanceErrorCheck();
     return reinterpret_cast<A2Body*>(start_bit_+sizeof(SectionInfo));
   }
-  BE_u16 * AngleStep(u16 beam_no){
+  BE_u16 * AngleStep(u16 beam_no) const{
     existanceErrorCheck();
     return & reinterpret_cast<BE_u16*>(start_bit_+sizeof(SectionInfo)+sizeof(f32))[beam_no];
   }

@@ -23,35 +23,35 @@ public:
    * \brief returns a pointer to the miniHeader
    * \return a pointer to the miniHeader
    */
-  const sections::MiniHeader * miniHeader(){
+  const sections::MiniHeader * miniHeader() const{
     return reinterpret_cast<const sections::MiniHeader*>(start_bit_);
   }
   /*!
    * \brief returns a pointer to the start bit used to define the packet
    * \return a pointer to the start bit of the packet
    */
-  char * startBit(){
+  char * startBit() const{
     return start_bit_;
   }
   /*!
    * \brief gets the size of the entire DataFormat Packet reported by the MiniHeader
    * \return the size of the DataFormat Packet
    */
-  u16 getSize(){
+  u16 getSize() const{
     return miniHeader()->PacketSize.get();
   }
   /*!
    * \brief end returns a pointer to one bit beyond the current DataFormat Packet (the first bit of the next Packet)
    * \return the pointer to the next packet
    */
-  char * end(){
+  char * end() const{
     return startBit() + getSize();
   }
   /*!
    * \brief Returns the starting bit of the data sections of the packet (just after the mini header)
    * \return a pointer to the first section of the packet after the mini header
    */
-  char * SectionsStartBit(){
+  char * SectionsStartBit() const{
     return startBit() + sizeof(sections::MiniHeader);
   }
   /*!
@@ -59,14 +59,14 @@ public:
    * data in the buffer.
    * \return
    */
-  bool isType(){
+  bool isType() const{
     return strncmp(miniHeader()->PacketName,nominalType(),4) == 0;
   }
 
 
 protected:
-  virtual char * nominalType() = 0;
-  void typeErrorCheck(){
+  virtual char * nominalType() const = 0;
+  void typeErrorCheck() const{
     if(!isType()){
       std::string rec = miniHeader()->PacketName;
       std::string nom = nominalType();

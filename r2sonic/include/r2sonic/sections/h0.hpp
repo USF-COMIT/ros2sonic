@@ -37,10 +37,10 @@ BE_u16  Points;
 class H0 : public Section{
 public:
   using Section::Section;  // default to parent constructor
-  char * nominalType(){
+  char * nominalType() const {
     return "H0";
   }
-  H0Body * body(){
+  const H0Body * body() const{
     return reinterpret_cast<H0Body*>(start_bit_+sizeof(SectionInfo));
   }
 };

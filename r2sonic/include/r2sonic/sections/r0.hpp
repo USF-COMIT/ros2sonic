@@ -12,16 +12,16 @@ class R0: public Section
 {
 public:
   using Section::Section;  // default to parent constructor
-  char * nominalType(){
+  char * nominalType() const{
     return "R0";
   }
-  BE_f32 * scaliningFactor(){
+  BE_f32 * scaliningFactor() const{
     return reinterpret_cast<BE_f32*>(start_bit_+sizeof(SectionInfo));
   }
-  f32 getScalingFactor(){
+  f32 getScalingFactor() const{
     return scaliningFactor()->get();
   }
-  BE_u16 * range(u16 beam_no){
+  BE_u16 * range(u16 beam_no) const{
     return & reinterpret_cast<BE_u16*>(start_bit_+sizeof(SectionInfo)+sizeof(f32))[beam_no];
   }
   /*!
@@ -29,7 +29,7 @@ public:
    * \param beam_no the beam you want the range for
    * \return the raw (unscaled) range value
    */
-  u16 getRange(u16 beam_no){
+  u16 getRange(u16 beam_no) const{
     return range(beam_no)->get();
   }
   /*!
@@ -37,7 +37,7 @@ public:
    * \param beam_no the beam you want the range for
    * \return the scaled range (seconds two-way) as a machine endian float32
    */
-  f32 getScaledRange(u16 beam_no){
+  f32 getScaledRange(u16 beam_no) const{
     return float( getRange(beam_no) ) * getScalingFactor();
   }
 }__attribute__((packed));
