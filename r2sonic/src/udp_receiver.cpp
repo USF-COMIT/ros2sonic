@@ -32,12 +32,16 @@ void UdpReceiver::receive(const std::string& host,
 
 }
 
+void UdpReceiver::receive(const std::string &host, const int &port){
+  receive(host, std::to_string(port));
+}
+
 void UdpReceiver::receiveHandler(const boost::system::error_code &error, size_t bytes_transferred){
   if (error) {
     std::cout << "Receive failed: " << error.message() << "\n";
     return;
   }
-  std::cout << "Received: '" << std::string(recv_buffer_.begin(), recv_buffer_.begin()+bytes_transferred) << "' (" << error.message() << ")\n";
+//  std::cout << "Received: '" << std::string(recv_buffer_.begin(), recv_buffer_.begin()+bytes_transferred) << "' (" << error.message() << ")\n";
 
   receiveImpl(error, bytes_transferred);
 

@@ -1,7 +1,17 @@
 #include <r2sonic/datatype_receiver.hpp>
+#include <r2sonic/r2sonic_node.hpp>
 
 int main(int argc, char *argv[])
 {
-  r2sonic::DatatypeReceiver rec;
-  rec.receive("131.247.136.111","65500");
+  rclcpp::init(argc, argv);
+
+  auto node = std::make_shared<r2sonic::R2SonicNode>();
+
+  r2sonic::DatatypeReceiver<r2sonic::packets::BTH0> bth0_rec(node.get());
+  std::thread th([&] { bth0_rec.receive(node->getParams().sonar_ip,node->getParams().ports.bathy); });
+
+  rclcpp::spin(node);
+  rclcpp::shutdown();
+
+  th.join();
 }

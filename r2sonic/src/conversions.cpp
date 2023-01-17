@@ -1,7 +1,11 @@
 #include "conversions.hpp"
 NS_HEAD
 namespace conversions{
-  void i02PingInfo(acoustic_msgs::msg::PingInfo * ping_info_msg,
+  void h02Header(std_msgs::msg::Header *header, const sections::H0 &h0_msg){
+    header->stamp.sec = h0_msg.body()->TimeSeconds;
+    header->stamp.nanosec = h0_msg.body()->TimeNanoseconds;
+  }
+  void h02PingInfo(acoustic_msgs::msg::PingInfo * ping_info_msg,
                    const sections::H0 & h0_msg){
     ping_info_msg->frequency=h0_msg.body()->Frequency.get();
     ping_info_msg->sound_speed = h0_msg.body()->SoundSpeed.get();
@@ -10,14 +14,16 @@ namespace conversions{
     ping_info_msg->tx_beamwidths.resize(num_beams);
     ping_info_msg->rx_beamwidths.resize(num_beams);
     for(size_t i = 0; i<num_beams ; i++){
-      ping_info_msg->tx_beamwidths[i] =  h0_msg.body()->TxBeamwidthVert.get();
-      ping_info_msg->rx_beamwidths[i] =  h0_msg.body()->TxBeamwidthHoriz.get();
+      ping_info_msg->tx_beamwidths[i] =  h0_msg.body()->TxBeamwidthVert;
+      ping_info_msg->rx_beamwidths[i] =  h0_msg.body()->TxBeamwidthHoriz;
     }
   }
   void bth02SonarDetections(acoustic_msgs::msg::SonarDetections * detections_msg,
                             const packets::BTH0 & bth0_msg){
     auto num_beams = bth0_msg.h0().body()->Points.get();
-    i02PingInfo(&detections_msg->ping_info, bth0_msg.h0());
+
+    h02PingInfo(&detections_msg->ping_info, bth0_msg.h0());
+    h02Header(&detections_msg->header, bth0_msg.h0());
 
     detections_msg->two_way_travel_times.resize(num_beams);
     detections_msg->tx_delays.resize(num_beams);
@@ -27,7 +33,7 @@ namespace conversions{
 
     u32 angle_sum = 0;
     if(bth0_msg.a2().exists()){
-      angle_sum = bth0_msg.a2().body()->AngleFirst.get();
+      angle_sum = bth0_msg.a2().body()->AngleFirst;
     }
     for(size_t i = 0; i<num_beams ; i++){
       detections_msg->two_way_travel_times[i] = bth0_msg.r0().getScaledRange(i);
@@ -37,7 +43,7 @@ namespace conversions{
       }else{
         detections_msg->intensities[i]= 0;
       }
-      detections_msg->tx_angles[i] = bth0_msg.h0().body()->TxSteeringVert.get();
+      detections_msg->tx_angles[i] = bth0_msg.h0().body()->TxSteeringVert;
       if(bth0_msg.a0().exists()){
         auto first = bth0_msg.a0().body()->AngleFirst.get();
         auto last  = bth0_msg.a0().body()->AngleLast.get();

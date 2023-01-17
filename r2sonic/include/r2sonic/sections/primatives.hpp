@@ -33,16 +33,33 @@ T revPrimative(const T u)
     return dest.u;
 }
 
+/*!
+ * \brief The BigEndianPrimative struct represents a big endian version
+ * of various primitives.  Also includes overloaded casting operators
+ * so it can be assigned to standard primatives with minimal extra syntax.
+ */
 template <typename PrimT>
 struct BigEndianPrimative{
   PrimT raw;
   /*!
-   * \brief returns the machine-endian version of the variable
+   * \brief returns the machine-endian version of the variable in
+   * the specified (PrimT) type.
    * \return a machine endian version fo the variable
    */
   PrimT get() const{
     return revPrimative(raw);
   }
+
+  operator int8_t() const { return get(); }
+  operator int16_t() const { return get(); }
+  operator int32_t() const { return get(); }
+
+  operator uint8_t() const { return get(); }
+  operator uint16_t() const { return get(); }
+  operator uint32_t() const { return get(); }
+
+  operator float() const {return get(); }
+  operator double() const {return get(); }
 };
 
 typedef BigEndianPrimative<u8>      BE_u8;
