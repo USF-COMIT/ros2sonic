@@ -8,6 +8,7 @@ set(ROS_DEPENDS
     rclcpp
     std_msgs
     acoustic_msgs
+    r2sonic_interfaces
   )
 
 set(EXTERNAL_DEPENDS
