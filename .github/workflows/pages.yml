@@ -19,7 +19,7 @@ jobs:
         uses: mattnotmitt/doxygen-action@edge
         with:
             working-directory: './'
-            doxyfile-path: 'docs/Doxygen'
+            doxyfile-path: 'docs/Doxyfile'
       - name: Publish generated content to GitHub Pages
         uses: tsunematsu21/actions-publish-gh-pages@v1.0.2
         with:
