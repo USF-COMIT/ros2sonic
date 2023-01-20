@@ -1,9 +1,11 @@
 #ifndef PRIMATIVES_HPP
 #define PRIMATIVES_HPP
-
+#include "sections_defs.hpp"
 #include <stddef.h>
 #include <string.h>
 #include <stdexcept>
+
+NS_HEAD
 
 typedef unsigned char  u8;
 typedef unsigned short u16;
@@ -72,6 +74,6 @@ typedef BigEndianPrimative<f32>     BE_f32;
 typedef BigEndianPrimative<f64>     BE_f64;
 
 
-
+NS_FOOT
 
 #endif // PRIMATIVES_HPP

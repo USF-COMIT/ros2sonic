@@ -1,6 +1,6 @@
 #ifndef CONVERSIONS_HPP
 #define CONVERSIONS_HPP
-
+#include "package_defs.hpp"
 #include "packets/bth0.hpp"
 #include "acoustic_msgs/msg/sonar_detections.hpp"
 #include "r2sonic_interfaces/msg/raw_packet.hpp"
@@ -26,6 +26,11 @@ namespace conversions{
   void bth02SonarDetections(acoustic_msgs::msg::SonarDetections * detections_msg,
                             const packets::BTH0 & bth0_pkt);
 
+  /*!
+   * \brief Populates a r2sonic_interfaces::msg::RawPacket with relavent data from packets::Packet
+   * \param raw_packet_msg [output]
+   * \param pkt [input]
+   */
   void packet2RawPacket(r2sonic_interfaces::msg::RawPacket * raw_packet_msg,
                         const packets::Packet *pkt);
 }

@@ -1,9 +1,11 @@
 #pragma once
-#include <sections/sections_defs.hpp>
+#include "sections_defs.hpp"
+#include <sections/section.hpp>
 
 SECTIONS_NS_HEAD
-
-/// \todo implement
+/*!
+ * \brief section Q0: 4-bit quality flags
+ */
 class Q0 : public Section{
 public:
   using Section::Section;  // default to parent constructor

@@ -1,5 +1,5 @@
 #pragma once
-
+#include "../package_defs.hpp"
 #include <sections/sections_defs.hpp>
 ///
 ///  Namespace stuff

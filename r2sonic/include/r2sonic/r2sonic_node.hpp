@@ -1,5 +1,5 @@
 #pragma once
-
+#include "package_defs.hpp"
 #include <rclcpp/rclcpp.hpp>
 #include <r2sonic/packets/all.hpp>
 #include <package_defs.hpp>
@@ -9,6 +9,9 @@
 
 NS_HEAD
 
+/*!
+ * \brief The rclcpp::Node representing the connection between ROS and the R2Sonic Unit
+ */
 class R2SonicNode : public rclcpp::Node
 {
 public:
@@ -26,11 +29,11 @@ public:
    * by the R2SonicNode class.
    */
   struct Parameters{
-    struct{
+    struct Topics{
       std::string detections;
       std::string bth0;
     } topics;
-    struct{
+    struct Ports{
       int bathy;
     } ports;
     std::string sonar_ip;
@@ -59,7 +62,7 @@ protected:
     void lock(){mtx.lock();}
     void unlock(){mtx.unlock();}
   };
-  struct{
+  struct MsgBuffer{
     msg_mtx<acoustic_msgs::msg::SonarDetections> dectections;
     msg_mtx<r2sonic_interfaces::msg::RawPacket> bth0;
   } msg_buffer_;

@@ -1,11 +1,14 @@
 #ifndef MINIHEADER_H
 #define MINIHEADER_H
 
-#include <sections/sections_defs.hpp>
+#include "sections_defs.hpp"
 #include "primatives.hpp"
 
 SECTIONS_NS_HEAD
 
+/*!
+ * \brief A datatype representing the MiniHeader common to all Packets
+ */
 struct MiniHeader
 {
   char  PacketName[4];

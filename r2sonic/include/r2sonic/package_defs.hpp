@@ -2,8 +2,11 @@
 ///
 ///  Namespace stuff
 ///
+//#define NS_HEAD  \
+//  namespace CMAKE_PACKAGE_NAME {
+
 #define NS_HEAD  \
-  namespace CMAKE_PACKAGE_NAME {
+  namespace r2sonic {
 
 #define NS_FOOT  \
   }

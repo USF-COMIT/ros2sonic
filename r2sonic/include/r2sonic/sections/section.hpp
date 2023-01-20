@@ -6,10 +6,13 @@
 
 SECTIONS_NS_HEAD
 
+/*!
+ * \brief A structure representing the info common to all sections
+ */
 struct SectionInfo{
   char name[2];
   u16  size;
-};
+}__attribute__((packed));
 
 /*!
  * \brief a common base class for all r2 sonic message section definitions
