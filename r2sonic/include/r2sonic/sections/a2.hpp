@@ -1,5 +1,6 @@
 #pragma once
 #include "sections_defs.hpp"
+#include <sections/section.hpp>
 
 SECTIONS_NS_HEAD
 /*!
@@ -7,8 +8,8 @@ SECTIONS_NS_HEAD
  * 16-bit bathy point angles, arbitrarily-spaced
  * (present only during "equi-distant" spacing mode)
  */
-struct A2 : public Section
-{
+class A2 : public Section{
+public:
   /*!
    * \brief A datatype represnting the fixed length portion of the A2 message
    */

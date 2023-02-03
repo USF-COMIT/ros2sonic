@@ -18,7 +18,7 @@ void R2SonicNode::Parameters::init(rclcpp::Node *node){
   setupParam(&topics.detections,node,"topics/detections","~/detections");
   setupParam(&topics.bth0,node,"topics/bth0","~/raw/bth0");
   setupParam(&ports.bathy,node,"ports/bathy",65500);
-  setupParam(&sonar_ip,node,"sonar_ip","131.247.136.111");
+  setupParam(&sonar_ip,node,"sonar_ip","10.226.208.220");
   setupParam(&tx_frame_id,node,"tx_frame_id","r2sonic_tx");
   setupParam(&rx_frame_id,node,"rx_frame_id","r2sonic_rx");
 }
@@ -61,7 +61,7 @@ void R2SonicNode::publish(packets::BTH0 r2_packet){
 }
 
 bool R2SonicNode::shouldAdvertise(std::string topic){
-  topic != "";
+  return topic != "";
 }
 
 bool R2SonicNode::shouldPublish(rclcpp::PublisherBase::SharedPtr pub){

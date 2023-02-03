@@ -1,2 +1,3 @@
-# r2sonic_ros
-A ROS2 driver for R2Sonic Multibeam Echo Sounders
+# ROS2Sonic
+
+![Alt text](ros2sonic_logo.png)

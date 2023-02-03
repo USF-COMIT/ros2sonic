@@ -1,27 +1,27 @@
 html {
     /* primary theme color. This will affect the entire websites color scheme: links, arrows, labels, ... */
-    --primary-color: #80B0A6;
-    --primary-dark-color: #006747;
+    --primary-color: #62967D;
+    --primary-dark-color: #62967D;
     --primary-light-color: #80B0A6;
-    --primary-lighter-color: #9CD6CA;
-    --primary-lightest-color: #9CD6CA;
+    --primary-lighter-color: #9FC27E;
+    --primary-lightest-color: #DBE442;
 
     /* page base colors */
     --page-background-color: white;
-    --page-foreground-color: #2c3e50;
-    --page-secondary-foreground-color: #A2A8AF;
+    --page-foreground-color: #072031;
+    --page-secondary-foreground-color: #9FC27E;
 
 
-    --border-radius-large: 9px;
-    --border-radius-small: 3px;
-    --border-radius-medium: 6px;
+    --border-radius-large: 6px;
+    --border-radius-small: 2px;
+    --border-radius-medium: 4px;
     --spacing-small: 2px;
-    --spacing-medium: 14px;
-    --spacing-large: 19px;
+    --spacing-medium: 5px;
+    --spacing-large: 10px;
 
     --top-height: 125px;
 
-    --side-nav-background: #466069;
+    --side-nav-background: #072031;
     --side-nav-foreground: #F1FDFF;
     --header-foreground: var(--side-nav-foreground);
     --searchbar-background: var(--side-nav-foreground);
@@ -31,6 +31,27 @@ html {
 
     --toc-background: #466069;
     --toc-foreground: var(--page-foreground-color);
+
+    --box-shadow: 0 2px 8px 0 rgba(0,0,0,0.15);
+
+    --fragment-background: #F8F9FA;
+    --separator-color: var(--fragment-background);
+}
+
+#nav-tree .selected a {
+    color: #DBE442 !important;
+    font-weight: bolder;
+    font-weight: 600;
+}
+#nav-tree .selected::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    left: 0;
+    width: 4px;
+    border-radius: 0 var(--border-radius-small) var(--border-radius-small) 0;
+    background: #DBE442;
 }
 
 html.dark-mode {
