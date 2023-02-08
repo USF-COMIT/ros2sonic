@@ -1,0 +1,11 @@
+r2sonic:
+    ros__parameters:
+        topics:
+            detections:     "~/detections"
+            bth0:           "~/raw/bth0"
+        ports:
+            bathy:          65500
+        sonar_ip:           "10.226.212.146"
+        tx_frame_id:        "r2sonic_tx"
+        rx_frame_id:        "r2sonic_rx"
+

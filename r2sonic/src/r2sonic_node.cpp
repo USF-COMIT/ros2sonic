@@ -21,6 +21,8 @@ void R2SonicNode::Parameters::init(rclcpp::Node *node){
   setupParam(&sonar_ip,node,"sonar_ip","10.226.208.220");
   setupParam(&tx_frame_id,node,"tx_frame_id","r2sonic_tx");
   setupParam(&rx_frame_id,node,"rx_frame_id","r2sonic_rx");
+
+  RCLCPP_INFO(node->get_logger(), "Listening on IP: '%s'", sonar_ip.c_str());
 }
 
 R2SonicNode::R2SonicNode():
