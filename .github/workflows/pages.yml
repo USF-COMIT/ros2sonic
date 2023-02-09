@@ -20,9 +20,8 @@ jobs:
         with:
             working-directory: 'docs/'
             doxyfile-path: 'Doxyfile'
-      - name: Publish generated content to GitHub Pages
-        uses: tsunematsu21/actions-publish-gh-pages@v1.0.2
+      - uses: DenverCoder1/doxygen-github-pages-action@v1
         with:
-          dir: docs/_doxygen/html
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          token: ${{ secrets.ACCESS_TOKEN }}
+          folder: docs/html
