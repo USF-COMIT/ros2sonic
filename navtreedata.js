@@ -26,11 +26,14 @@ var NAVTREE =
 [
   [ "ROS2Sonic", "index.html", [
     [ "About", "index.html#autotoc_md7", null ],
-    [ "Installation", "index.html#autotoc_md8", null ],
-    [ "Getting Started", "index.html#autotoc_md9", null ],
-    [ "Additional Utilities", "index.html#autotoc_md10", null ],
-    [ "Parameters", "index.html#autotoc_md11", null ],
-    [ "Credits", "index.html#autotoc_md12", null ],
+    [ "Installation", "index.html#autotoc_md8", [
+      [ "Begin by getting the package the dependencies", "index.html#autotoc_md9", null ],
+      [ "Compile", "index.html#autotoc_md10", null ]
+    ] ],
+    [ "Getting Started", "index.html#autotoc_md11", null ],
+    [ "Additional Utilities", "index.html#autotoc_md12", null ],
+    [ "Parameters", "index.html#autotoc_md13", null ],
+    [ "Credits", "index.html#autotoc_md14", null ],
     [ "Contributing", "md_CONTRIBUTING.html", [
       [ "Branching Strategy", "md_CONTRIBUTING.html#autotoc_md1", null ],
       [ "Think Before you Fork", "md_CONTRIBUTING.html#autotoc_md2", null ],
@@ -73,7 +76,7 @@ var NAVTREEINDEX =
 [
 "M0_8hpp.html",
 "classr2sonic_1_1sections_1_1Section.html",
-"structBody.html#a48cdc94d6e825ee8213cd5d69b8af208"
+"structBody.html#a385e1483473e8eff98e46058298b353e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
