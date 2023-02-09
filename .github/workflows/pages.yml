@@ -20,8 +20,8 @@ jobs:
         with:
             working-directory: 'docs/'
             doxyfile-path: 'Doxyfile'
-      - uses: DenverCoder1/doxygen-github-pages-action@v1
+      - name: Push changes
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          folder: docs/html
