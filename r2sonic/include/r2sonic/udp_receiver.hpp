@@ -24,11 +24,12 @@ public:
   char * startBit();
 
 protected:
-  boost::asio::io_service io_service_;
+  boost::asio::io_context io_service_;
   boost::asio::ip::udp::socket socket_;
   boost::array<char, 1024> recv_buffer_;
   //char recv_buffer_[1024];
   boost::asio::ip::udp::endpoint remote_endpoint_;
+  boost::asio::ip::udp::endpoint local_endpoint_;
 };
 
 NS_FOOT

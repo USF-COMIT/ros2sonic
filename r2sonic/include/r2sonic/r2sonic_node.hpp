@@ -6,6 +6,8 @@
 #include <conversions.hpp>
 #include <mutex>
 #include <r2sonic_interfaces/msg/raw_packet.hpp>
+#include <boost/asio.hpp>
+#include <r2sonic/packets/cmd_packet.hpp>
 
 NS_HEAD
 
@@ -37,6 +39,7 @@ public:
       int bathy;
     } ports;
     std::string sonar_ip;
+    std::string interface_ip;
     std::string tx_frame_id;
     std::string rx_frame_id;
     /*!

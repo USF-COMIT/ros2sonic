@@ -51,6 +51,9 @@ struct BigEndianPrimative{
   PrimT get() const{
     return revPrimative(raw);
   }
+  void set(PrimT val){
+    raw = revPrimative(val);
+  }
 
   operator int8_t() const { return get(); }
   operator int16_t() const { return get(); }

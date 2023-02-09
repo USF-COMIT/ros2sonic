@@ -17,16 +17,38 @@ void setupParam(std::string * variable,rclcpp::Node *node , std::string topic, s
 void R2SonicNode::Parameters::init(rclcpp::Node *node){
   setupParam(&topics.detections,node,"topics/detections","~/detections");
   setupParam(&topics.bth0,node,"topics/bth0","~/raw/bth0");
-  setupParam(&ports.bathy,node,"ports/bathy",65500);
-  setupParam(&sonar_ip,node,"sonar_ip","10.226.208.220");
+  setupParam(&ports.bathy,node,"ports/bathy",4000);
+  setupParam(&sonar_ip,node,"sonar_ip","10.0.0.86");
+  setupParam(&interface_ip,node,"interface_ip","0.0.0.0");
   setupParam(&tx_frame_id,node,"tx_frame_id","r2sonic_tx");
   setupParam(&rx_frame_id,node,"rx_frame_id","r2sonic_rx");
 
-  RCLCPP_INFO(node->get_logger(), "Listening on IP: '%s'", sonar_ip.c_str());
+  RCLCPP_INFO(node->get_logger(), "Listening on interface  : %s", interface_ip.c_str());
+  RCLCPP_INFO(node->get_logger(), "Sending sonar comands on: %s", sonar_ip.c_str());
+}
+
+template <typename T>
+bool send_udp_message(packets::CmdPacket<T> message, const std::string& destination_ip,
+            const unsigned short port) {
+
+  using namespace boost::asio;
+  io_service io_service;
+  ip::udp::socket socket(io_service);
+  auto remote = ip::udp::endpoint(ip::address::from_string(destination_ip), port);
+  try {
+    socket.open(boost::asio::ip::udp::v4());
+    socket.send_to(buffer(reinterpret_cast<char*>(&message),
+                          sizeof(packets::CmdPacket<T>)),
+                          remote);
+
+  } catch (const boost::system::system_error& ex) {
+    return false;
+  }
+  return true;
 }
 
 R2SonicNode::R2SonicNode():
-  Node("r2sonic_node")
+  Node("r2sonic")
 {
   parameters_.init(this);
 
@@ -39,6 +61,7 @@ R2SonicNode::R2SonicNode():
     msg_buffer_.bth0.pub =
         this->create_publisher<r2sonic_interfaces::msg::RawPacket>(parameters_.topics.bth0,100);
   }
+
 }
 
 void R2SonicNode::publish(packets::BTH0 r2_packet){
