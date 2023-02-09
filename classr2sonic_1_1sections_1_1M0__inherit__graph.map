@@ -1,0 +1,4 @@
+<map id="r2sonic::sections::M0" name="r2sonic::sections::M0">
+<area shape="rect" id="node1" title="An interpreter for Section M0: 8&#45;bit magnitude data (many per ping, you assemble them into complete p..." alt="" coords="5,93,148,119"/>
+<area shape="rect" id="node2" href="$classr2sonic_1_1sections_1_1Section.html" title="a common base class for all r2 sonic message section definitions" alt="" coords="14,5,139,45"/>
+</map>

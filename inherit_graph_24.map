@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classr2sonic_1_1sections_1_1Section.html" title="a common base class for all r2 sonic message section definitions" alt="" coords="5,221,131,261"/>
+<area shape="rect" id="node2" href="$classr2sonic_1_1sections_1_1A0.html" title="An interpreter for Section A0: bathy point angles, equally&#45;spaced (present only during &quot;equi&#45;angle&quot; s..." alt="" coords="179,5,321,31"/>
+<area shape="rect" id="node3" href="$classr2sonic_1_1sections_1_1A1.html" title="An interpreter for Section A1: float beam angles, arbitrarily&#45;spaced." alt="" coords="179,55,321,80"/>
+<area shape="rect" id="node4" href="$classr2sonic_1_1sections_1_1A2.html" title="An interpreter for Section A2: 16&#45;bit bathy point angles, arbitrarily&#45;spaced (present only during &quot;eq..." alt="" coords="179,104,321,129"/>
+<area shape="rect" id="node5" href="$classr2sonic_1_1sections_1_1G0.html" title="simple straight&#45;line depth gates" alt="" coords="179,153,321,179"/>
+<area shape="rect" id="node6" href="$classr2sonic_1_1sections_1_1G1.html" title="simple straight&#45;line depth gates" alt="" coords="179,203,321,228"/>
+<area shape="rect" id="node7" href="$classr2sonic_1_1sections_1_1H0.html" title="An interpreter for the &quot;H0&quot; Section which describes general ping information." alt="" coords="179,252,321,277"/>
+<area shape="rect" id="node8" href="$classr2sonic_1_1sections_1_1I1.html" title="An interpreter for Section I1: 16&#45;bit bathy intensity (present only if enabled)" alt="" coords="182,301,318,327"/>
+<area shape="rect" id="node9" href="$classr2sonic_1_1sections_1_1M0.html" title="An interpreter for Section M0: 8&#45;bit magnitude data (many per ping, you assemble them into complete p..." alt="" coords="179,351,321,376"/>
+<area shape="rect" id="node10" href="$classr2sonic_1_1sections_1_1Q0.html" title="section Q0: 4&#45;bit quality flags" alt="" coords="179,400,321,425"/>
+<area shape="rect" id="node11" href="$classr2sonic_1_1sections_1_1R0.html" title="An interpreter for Section R0: 16&#45;bit bathy point ranges." alt="" coords="179,449,321,475"/>
+</map>

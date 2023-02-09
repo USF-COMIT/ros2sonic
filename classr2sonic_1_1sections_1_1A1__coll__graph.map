@@ -1,0 +1,4 @@
+<map id="r2sonic::sections::A1" name="r2sonic::sections::A1">
+<area shape="rect" id="node1" title="An interpreter for Section A1: float beam angles, arbitrarily&#45;spaced." alt="" coords="5,93,147,119"/>
+<area shape="rect" id="node2" href="$classr2sonic_1_1sections_1_1Section.html" title="a common base class for all r2 sonic message section definitions" alt="" coords="13,5,139,45"/>
+</map>

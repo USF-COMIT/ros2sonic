@@ -1,0 +1,10 @@
+<map id="r2sonic::R2SonicNode" name="r2sonic::R2SonicNode">
+<area shape="rect" id="node1" title="The rclcpp::Node representing the connection between ROS and the R2Sonic Unit." alt="" coords="597,77,748,102"/>
+<area shape="rect" id="node2" title=" " alt="" coords="351,19,445,45"/>
+<area shape="rect" id="node3" href="$structr2sonic_1_1R2SonicNode_1_1Parameters.html" title="a Structure that corresponds to the parameters advertised by the R2SonicNode class." alt="" coords="323,69,473,109"/>
+<area shape="rect" id="node4" href="$structr2sonic_1_1R2SonicNode_1_1Parameters_1_1Topics.html" title=" " alt="" coords="29,5,180,45"/>
+<area shape="rect" id="node5" href="$structr2sonic_1_1R2SonicNode_1_1Parameters_1_1Ports.html" title=" " alt="" coords="29,69,180,109"/>
+<area shape="rect" id="node6" href="$structr2sonic_1_1R2SonicNode_1_1MsgBuffer.html" title=" " alt="" coords="323,141,473,181"/>
+<area shape="rect" id="node7" href="$structr2sonic_1_1R2SonicNode_1_1msg__mtx.html" title=" " alt="" coords="15,134,195,189"/>
+<area shape="rect" id="node8" href="$structr2sonic_1_1R2SonicNode_1_1msg__mtx.html" title=" " alt="" coords="5,213,204,267"/>
+</map>

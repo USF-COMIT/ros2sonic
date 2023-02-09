@@ -1,0 +1,4 @@
+<map id="r2sonic::sections::I1" name="r2sonic::sections::I1">
+<area shape="rect" id="node1" title="An interpreter for Section I1: 16&#45;bit bathy intensity (present only if enabled)" alt="" coords="5,93,141,119"/>
+<area shape="rect" id="node2" href="$classr2sonic_1_1sections_1_1Section.html" title="a common base class for all r2 sonic message section definitions" alt="" coords="11,5,136,45"/>
+</map>
