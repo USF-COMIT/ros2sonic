@@ -57,7 +57,7 @@ public:
     if( !exists() ){
       return 0;
     }
-    return revPrimative<u16>(info()->size);
+    return revPrimitive<u16>(info()->size);
   }
   /*!
    * \brief info gets the reference to the common section info
