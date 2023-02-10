@@ -38,7 +38,7 @@ html {
     --separator-color: var(--fragment-background);
 }
 
-#nav-tree .selected a {
+/*#nav-tree .selected a {
     color: #DBE442 !important;
     font-weight: bolder;
     font-weight: 600;
@@ -52,7 +52,7 @@ html {
     width: 4px;
     border-radius: 0 var(--border-radius-small) var(--border-radius-small) 0;
     background: #DBE442;
-}
+}*/
 
 html.dark-mode {
     color-scheme: dark;
