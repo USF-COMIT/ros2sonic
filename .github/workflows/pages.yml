@@ -1,0 +1,27 @@
+name: Pages
+on:
+  push:
+    branches:
+      - master
+      - main
+      - release/0.1.0
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+#      - name: set version
+#        run: echo "PROJECT_NUMBER = `git describe --tags`" >> Doxyfile
+      - name: Generate Documentation
+        uses: mattnotmitt/doxygen-action@edge
+        with:
+            working-directory: 'docs/'
+            doxyfile-path: 'Doxyfile'
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/_doxygen/html
