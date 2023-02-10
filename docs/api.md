@@ -10,9 +10,7 @@ The ROS2Sonic metapackage contains the r2sonic package and the r2sonic_interface
 
 Let's assume you have a character array `char * buffer;` containing a data packet received from your R2Sonic unit.   You likely received this from a UDP receiver of some kind.  
 
-In the Uplink Data Formats Document you can see a description of the packets available.  The `r2sonic::packets` namespace contains decoders for each type packet.
-
-Each type is based on the `r2sonic::packets::Packet` class. 
+In the Uplink Data Formats Document you can see a description of the packets available.  The `r2sonic::packets` namespace contains decoders for each packet type.
 
 Let's say we want to decode BTH0 message.  We can use the corresponding packet decoder `r2sonic::packets::BTH0` which, like all uplink datatype decoders, is derived from the `r2sonic::packets::Packet` class. 
 
@@ -47,3 +45,10 @@ Let's update our code with some access examples.
   	}
   }
 ```
+
+### Packet Full Packet Documentation
+
+For a complete list of packets and their associated data members and functions reefer to the r2sonic::packets namespace documentation.
+
+A complete list of available r2sonic::sections is also available.
+
