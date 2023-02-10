@@ -25,15 +25,15 @@
 var NAVTREE =
 [
   [ "ROS2Sonic", "index.html", [
-    [ "About", "index.html#autotoc_md10", null ],
-    [ "Installation", "index.html#autotoc_md11", [
-      [ "Begin by getting the package the dependencies", "index.html#autotoc_md12", null ],
-      [ "Compile", "index.html#autotoc_md13", null ]
+    [ "About", "index.html#autotoc_md11", null ],
+    [ "Installation", "index.html#autotoc_md12", [
+      [ "Begin by getting the package the dependencies", "index.html#autotoc_md13", null ],
+      [ "Compile", "index.html#autotoc_md14", null ]
     ] ],
-    [ "Getting Started", "index.html#autotoc_md14", null ],
-    [ "Additional Utilities", "index.html#autotoc_md15", null ],
-    [ "Parameters", "index.html#autotoc_md16", null ],
-    [ "Credits", "index.html#autotoc_md17", null ],
+    [ "Getting Started", "index.html#autotoc_md15", null ],
+    [ "Additional Utilities", "index.html#autotoc_md16", null ],
+    [ "Parameters", "index.html#autotoc_md17", null ],
+    [ "Credits", "index.html#autotoc_md18", null ],
     [ "Contributing", "md_CONTRIBUTING.html", [
       [ "Branching Strategy", "md_CONTRIBUTING.html#autotoc_md1", null ],
       [ "Think Before you Fork", "md_CONTRIBUTING.html#autotoc_md2", null ],
@@ -43,7 +43,8 @@ var NAVTREE =
     ] ],
     [ "API Usage", "md_docs_api.html", [
       [ "Getting Started", "md_docs_api.html#autotoc_md7", [
-        [ "Parsing Packets", "md_docs_api.html#autotoc_md8", null ]
+        [ "Parsing Packets", "md_docs_api.html#autotoc_md8", null ],
+        [ "Packet Full Packet Documentation", "md_docs_api.html#autotoc_md9", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -79,7 +80,7 @@ var NAVTREEINDEX =
 [
 "M0_8hpp.html",
 "functions_vars.html",
-"structr2sonic_1_1sections_1_1H0_1_1Body.html#a96ae85d91b532b92ff96c9a8c324ae39"
+"structr2sonic_1_1sections_1_1H0_1_1Body.html#a8b214ddca00963b898ac1773d0555927"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('md_docs_api.html',''); initResizable()
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#autotoc_md7">Getting Started</a><ul><li class="level2"><a href="#autotoc_md8">Parsing Packets</a></li>
+<li class="level2"><a href="#autotoc_md9">Packet Full Packet Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -117,8 +118,7 @@ Getting Started</h1>
 Parsing Packets</h2>
 <p>Let's assume you have a character array <code>char * buffer;</code> containing a data packet received from your R2Sonic unit. You likely received this from a UDP receiver of some kind. <br  />
 </p>
-<p>In the Uplink Data Formats Document you can see a description of the packets available. The <code><a class="el" href="namespacer2sonic_1_1packets.html">r2sonic::packets</a></code> namespace contains decoders for each type packet.</p>
-<p>Each type is based on the <code><a class="el" href="classr2sonic_1_1packets_1_1Packet.html" title="The DataFormat class is a common base class for the R2Sonic up/downlink data formats as definned in t...">r2sonic::packets::Packet</a></code> class.</p>
+<p>In the Uplink Data Formats Document you can see a description of the packets available. The <code><a class="el" href="namespacer2sonic_1_1packets.html">r2sonic::packets</a></code> namespace contains decoders for each packet type.</p>
 <p>Let's say we want to decode BTH0 message. We can use the corresponding packet decoder <code><a class="el" href="classr2sonic_1_1packets_1_1BTH0.html" title="An interpreter class that represents the Bathmetry Data (BHT0) packet.">r2sonic::packets::BTH0</a></code> which, like all uplink datatype decoders, is derived from the <code><a class="el" href="classr2sonic_1_1packets_1_1Packet.html" title="The DataFormat class is a common base class for the R2Sonic up/downlink data formats as definned in t...">r2sonic::packets::Packet</a></code> class.</p>
 <p>here's an example of how to use it. <br  />
 </p>
@@ -141,7 +141,11 @@ Parsing Packets</h2>
 <div class="line">    packet.i1.Intensity(0)-&gt;get();</div>
 <div class="line">  }</div>
 <div class="line">}</div>
-</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md9"></a>
+Packet Full Packet Documentation</h2>
+<p>For a complete list of packets and their associated data members and functions reefer to the <a class="el" href="namespacer2sonic_1_1packets.html">r2sonic::packets</a> namespace documentation.</p>
+<p>A complete list of available <a class="el" href="namespacer2sonic_1_1sections.html">r2sonic::sections</a> is also available. </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
