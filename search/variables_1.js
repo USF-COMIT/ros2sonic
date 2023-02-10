@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['anglefirst_0',['AngleFirst',['../structr2sonic_1_1sections_1_1A0_1_1Body.html#a48636f72072bd766736353bbb41c400d',1,'r2sonic::sections::A0::Body::AngleFirst()'],['../structBody.html#abd054b8cdd7d7c73e56125afbdc817f6',1,'Body::AngleFirst()'],['../structr2sonic_1_1sections_1_1A2_1_1Body.html#ac53cd6f62e2f49892c43880b975f246c',1,'r2sonic::sections::A2::Body::AngleFirst()'],['../a0_8hpp.html#a21bde6600b639c25a1513a91c9bff4c2',1,'AngleFirst():&#160;a0.hpp'],['../a2_8hpp.html#a21bde6600b639c25a1513a91c9bff4c2',1,'AngleFirst():&#160;a2.hpp']]],
-  ['anglelast_1',['AngleLast',['../structr2sonic_1_1sections_1_1A0_1_1Body.html#a489eb11ae5881e6219a4ca0a6b072519',1,'r2sonic::sections::A0::Body::AngleLast()'],['../structBody.html#accb5ef5fcf92322440dbd7991b2117a7',1,'Body::AngleLast()'],['../a0_8hpp.html#ad676103e8b47b4aa1d695afddf3de6f3',1,'AngleLast():&#160;a0.hpp']]]
+  ['bathy_0',['bathy',['../structr2sonic_1_1R2SonicNode_1_1Parameters_1_1Ports.html#a757b59c91bd3ede2e8d78ca285d7a916',1,'r2sonic::R2SonicNode::Parameters::Ports']]],
+  ['beams_1',['Beams',['../structr2sonic_1_1sections_1_1M0_1_1Body.html#aa182418adb203975249d641e6b4c51c7',1,'r2sonic::sections::M0::Body']]],
+  ['bins_2',['Bins',['../structr2sonic_1_1sections_1_1M0_1_1Body.html#a3dce18b936eb8968a9e67af1da604cb7',1,'r2sonic::sections::M0::Body']]],
+  ['bth0_3',['bth0',['../structr2sonic_1_1R2SonicNode_1_1Parameters_1_1Topics.html#a928b49f209eccf33fdf8036c85045561',1,'r2sonic::R2SonicNode::Parameters::Topics::bth0()'],['../structr2sonic_1_1R2SonicNode_1_1MsgBuffer.html#a2e75113b39e29f4c3b13265983606565',1,'r2sonic::R2SonicNode::MsgBuffer::bth0()']]]
 ];

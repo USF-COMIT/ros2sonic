@@ -103,8 +103,7 @@ $(document).ready(function(){initNavTree('i1_8hpp.html',''); initResizable(); })
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">i1.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -155,111 +154,7 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacer2sonic_1_1sections"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacer2sonic_1_1sections.html">r2sonic::sections</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a74a2c0e3dd3f723075c5fead847ee230"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr2sonic_1_1sections_1_1A0.html">r2sonic::sections::A0</a> Section&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacer2sonic_1_1sections.html#a74a2c0e3dd3f723075c5fead847ee230">r2sonic::sections::__attribute__</a> ((packed))</td></tr>
-<tr class="separator:a74a2c0e3dd3f723075c5fead847ee230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2586548ff256bef62a45f24a2267468f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i1_8hpp.html#a2586548ff256bef62a45f24a2267468f">nominalType</a> () const</td></tr>
-<tr class="separator:a2586548ff256bef62a45f24a2267468f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c6f6629ef568e59b99d49ec4ed34f05"><td class="memItemLeft" align="right" valign="top">BE_f32 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i1_8hpp.html#a0c6f6629ef568e59b99d49ec4ed34f05">ScalingFactor</a> () const</td></tr>
-<tr class="separator:a0c6f6629ef568e59b99d49ec4ed34f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b68e9b54cde2700a5f3c884586ba330"><td class="memItemLeft" align="right" valign="top">BE_u16 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i1_8hpp.html#a4b68e9b54cde2700a5f3c884586ba330">Intensity</a> (u16 beam_no) const</td></tr>
-<tr class="memdesc:a4b68e9b54cde2700a5f3c884586ba330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the raw intensity [micropascals] intensity[n] = I1_Intensity[n]) * I1_ScalingFacto.  <br /></td></tr>
-<tr class="separator:a4b68e9b54cde2700a5f3c884586ba330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13eb5997c0df1174571220cddbdd6419"><td class="memItemLeft" align="right" valign="top">f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i1_8hpp.html#a13eb5997c0df1174571220cddbdd6419">getScaledIntensity</a> (u16 beam_no) const</td></tr>
-<tr class="memdesc:a13eb5997c0df1174571220cddbdd6419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coputes the scaled intesity for the specified beam.  <br /></td></tr>
-<tr class="separator:a13eb5997c0df1174571220cddbdd6419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a13eb5997c0df1174571220cddbdd6419" name="a13eb5997c0df1174571220cddbdd6419"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13eb5997c0df1174571220cddbdd6419">&#9670;&#160;</a></span>getScaledIntensity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">f32 __attribute__::getScaledIntensity </td>
-          <td>(</td>
-          <td class="paramtype">u16&#160;</td>
-          <td class="paramname"><em>beam_no</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Coputes the scaled intesity for the specified beam. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">beam_no</td><td>the beam you want the scaled intesity for </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the scaled intensity at beam: beam_no </dd></dl>
-
-</div>
-</div>
-<a id="a4b68e9b54cde2700a5f3c884586ba330" name="a4b68e9b54cde2700a5f3c884586ba330"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b68e9b54cde2700a5f3c884586ba330">&#9670;&#160;</a></span>Intensity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BE_u16 * __attribute__::Intensity </td>
-          <td>(</td>
-          <td class="paramtype">u16&#160;</td>
-          <td class="paramname"><em>beam_no</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the raw intensity [micropascals] intensity[n] = I1_Intensity[n]) * I1_ScalingFacto. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">beam_no</td><td>the beam you want the raw intensity for </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the raw intensity at beam_no </dd></dl>
-
-</div>
-</div>
-<a id="a2586548ff256bef62a45f24a2267468f" name="a2586548ff256bef62a45f24a2267468f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2586548ff256bef62a45f24a2267468f">&#9670;&#160;</a></span>nominalType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char * __attribute__::nominalType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0c6f6629ef568e59b99d49ec4ed34f05" name="a0c6f6629ef568e59b99d49ec4ed34f05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c6f6629ef568e59b99d49ec4ed34f05">&#9670;&#160;</a></span>ScalingFactor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BE_f32 * __attribute__::ScalingFactor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

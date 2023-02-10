@@ -7,6 +7,9 @@ var annotated_dup =
         [ "CmdPacket", "structr2sonic_1_1packets_1_1CmdPacket.html", "structr2sonic_1_1packets_1_1CmdPacket" ],
         [ "Packet", "classr2sonic_1_1packets_1_1Packet.html", "classr2sonic_1_1packets_1_1Packet" ]
       ] ],
+      [ "primitives", "namespacer2sonic_1_1primitives.html", [
+        [ "BigEndianPrimative", "structr2sonic_1_1primitives_1_1BigEndianPrimative.html", "structr2sonic_1_1primitives_1_1BigEndianPrimative" ]
+      ] ],
       [ "sections", "namespacer2sonic_1_1sections.html", [
         [ "A0", "classr2sonic_1_1sections_1_1A0.html", "classr2sonic_1_1sections_1_1A0" ],
         [ "A1", "classr2sonic_1_1sections_1_1A1.html", "classr2sonic_1_1sections_1_1A1" ],
@@ -22,11 +25,8 @@ var annotated_dup =
         [ "Section", "classr2sonic_1_1sections_1_1Section.html", "classr2sonic_1_1sections_1_1Section" ],
         [ "SectionInfo", "structr2sonic_1_1sections_1_1SectionInfo.html", "structr2sonic_1_1sections_1_1SectionInfo" ]
       ] ],
-      [ "BigEndianPrimative", "structr2sonic_1_1BigEndianPrimative.html", "structr2sonic_1_1BigEndianPrimative" ],
       [ "DatatypeReceiver", "classr2sonic_1_1DatatypeReceiver.html", "classr2sonic_1_1DatatypeReceiver" ],
       [ "R2SonicNode", "classr2sonic_1_1R2SonicNode.html", "classr2sonic_1_1R2SonicNode" ],
       [ "UdpReceiver", "classr2sonic_1_1UdpReceiver.html", "classr2sonic_1_1UdpReceiver" ]
-    ] ],
-    [ "Body", "structBody.html", "structBody" ],
-    [ "Gate", "structGate.html", "structGate" ]
+    ] ]
 ];

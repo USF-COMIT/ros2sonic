@@ -140,15 +140,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae3b3aafc91944b5410386d99f3025238"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structr2sonic_1_1sections_1_1A2_1_1Body.html">r2sonic::sections::A2::Body</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr2sonic_1_1sections_1_1A2.html#ae3b3aafc91944b5410386d99f3025238">__attribute__</a> ((packed))</td></tr>
-<tr class="separator:ae3b3aafc91944b5410386d99f3025238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fe52caf47eb5033e2049a1cc78ec247"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr2sonic_1_1sections_1_1A2.html#a1fe52caf47eb5033e2049a1cc78ec247">nominalType</a> () const</td></tr>
 <tr class="memdesc:a1fe52caf47eb5033e2049a1cc78ec247"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a chararacter array of length 2 saying the nominal type of the section class  <br /></td></tr>
 <tr class="separator:a1fe52caf47eb5033e2049a1cc78ec247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90c0028e8078bfc391f8b07d8947d729"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structr2sonic_1_1sections_1_1A2_1_1Body.html">Body</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr2sonic_1_1sections_1_1A2.html#a90c0028e8078bfc391f8b07d8947d729">body</a> () const</td></tr>
 <tr class="memdesc:a90c0028e8078bfc391f8b07d8947d729"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a pointer to the fixed size portion of the message (the <a class="el" href="structr2sonic_1_1sections_1_1A2_1_1Body.html" title="A datatype represnting the fixed length portion of the A2 message.">Body</a>).  <br /></td></tr>
 <tr class="separator:a90c0028e8078bfc391f8b07d8947d729"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a319ba58a19e2c5d6d8b351753008adc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer2sonic.html#a800dce584d2b1c75af2a29a2ca3e70eb">BE_u16</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr2sonic_1_1sections_1_1A2.html#a319ba58a19e2c5d6d8b351753008adc5">AngleStep</a> (<a class="el" href="namespacer2sonic.html#ada17539ac200d2b574276a3a72999505">u16</a> beam_no) const</td></tr>
+<tr class="memitem:a319ba58a19e2c5d6d8b351753008adc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer2sonic_1_1primitives.html#a175a9571b56e2e34ec78725e940ecbae">BE_u16</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr2sonic_1_1sections_1_1A2.html#a319ba58a19e2c5d6d8b351753008adc5">AngleStep</a> (<a class="el" href="namespacer2sonic_1_1primitives.html#a46c9af1310dc5790aca3c08269fe9f84">u16</a> beam_no) const</td></tr>
 <tr class="memdesc:a319ba58a19e2c5d6d8b351753008adc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">[radians] angle[n] = A2_AngleFirst + (32-bit sum of A2_AngleStep[0] through A2_AngleStep[n]) * A2_ScalingFacto  <br /></td></tr>
 <tr class="separator:a319ba58a19e2c5d6d8b351753008adc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a8f7a6e2ee20f535168af263380e1a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr2sonic_1_1sections_1_1A2.html#a9a8f7a6e2ee20f535168af263380e1a0">Section</a> (char *start_bit)</td></tr>
@@ -167,7 +165,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ec6e093d716fff8b411213b7e2c145f inherit pub_methods_classr2sonic_1_1sections_1_1Section"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr2sonic_1_1sections_1_1Section.html#a5ec6e093d716fff8b411213b7e2c145f">exists</a> () const</td></tr>
 <tr class="memdesc:a5ec6e093d716fff8b411213b7e2c145f inherit pub_methods_classr2sonic_1_1sections_1_1Section"><td class="mdescLeft">&#160;</td><td class="mdescRight">states weather that section exists where expected  <br /></td></tr>
 <tr class="separator:a5ec6e093d716fff8b411213b7e2c145f inherit pub_methods_classr2sonic_1_1sections_1_1Section"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2798e58b5770549ba61a6e96f122430 inherit pub_methods_classr2sonic_1_1sections_1_1Section"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer2sonic.html#ada17539ac200d2b574276a3a72999505">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr2sonic_1_1sections_1_1Section.html#af2798e58b5770549ba61a6e96f122430">getSize</a> () const</td></tr>
+<tr class="memitem:af2798e58b5770549ba61a6e96f122430 inherit pub_methods_classr2sonic_1_1sections_1_1Section"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer2sonic_1_1primitives.html#a46c9af1310dc5790aca3c08269fe9f84">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr2sonic_1_1sections_1_1Section.html#af2798e58b5770549ba61a6e96f122430">getSize</a> () const</td></tr>
 <tr class="memdesc:af2798e58b5770549ba61a6e96f122430 inherit pub_methods_classr2sonic_1_1sections_1_1Section"><td class="mdescLeft">&#160;</td><td class="mdescRight">getSize returns the size of the message in system-endian order  <br /></td></tr>
 <tr class="separator:af2798e58b5770549ba61a6e96f122430 inherit pub_methods_classr2sonic_1_1sections_1_1Section"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52ce607b5c69b52c1bfc8d45ee57f7f7 inherit pub_methods_classr2sonic_1_1sections_1_1Section"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structr2sonic_1_1sections_1_1SectionInfo.html">SectionInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr2sonic_1_1sections_1_1Section.html#a52ce607b5c69b52c1bfc8d45ee57f7f7">info</a> () const</td></tr>
@@ -190,24 +188,6 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An interpreter for <a class="el" href="classr2sonic_1_1sections_1_1Section.html" title="a common base class for all r2 sonic message section definitions">Section</a> <a class="el" href="classr2sonic_1_1sections_1_1A2.html" title="An interpreter for Section A2: 16-bit bathy point angles, arbitrarily-spaced (present only during &quot;eq...">A2</a>: 16-bit bathy point angles, arbitrarily-spaced (present only during "equi-distant" spacing mode) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae3b3aafc91944b5410386d99f3025238" name="ae3b3aafc91944b5410386d99f3025238"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3b3aafc91944b5410386d99f3025238">&#9670;&#160;</a></span>__attribute__()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structr2sonic_1_1sections_1_1A2_1_1Body.html">r2sonic::sections::A2::Body</a> r2sonic::sections::A2::__attribute__ </td>
-          <td>(</td>
-          <td class="paramtype">(packed)&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a319ba58a19e2c5d6d8b351753008adc5" name="a319ba58a19e2c5d6d8b351753008adc5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a319ba58a19e2c5d6d8b351753008adc5">&#9670;&#160;</a></span>AngleStep()</h2>
 
@@ -218,9 +198,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacer2sonic.html#a800dce584d2b1c75af2a29a2ca3e70eb">BE_u16</a> * r2sonic::sections::A2::AngleStep </td>
+          <td class="memname"><a class="el" href="namespacer2sonic_1_1primitives.html#a175a9571b56e2e34ec78725e940ecbae">BE_u16</a> * r2sonic::sections::A2::AngleStep </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacer2sonic.html#ada17539ac200d2b574276a3a72999505">u16</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacer2sonic_1_1primitives.html#a46c9af1310dc5790aca3c08269fe9f84">u16</a>&#160;</td>
           <td class="paramname"><em>beam_no</em></td><td>)</td>
           <td> const</td>
         </tr>

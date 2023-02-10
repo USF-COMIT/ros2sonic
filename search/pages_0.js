@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['contributing_0',['Contributing',['../md_CONTRIBUTING.html',1,'']]]
+  ['api_20usage_0',['API Usage',['../md_docs_api.html',1,'']]]
 ];

@@ -1,11 +1,23 @@
 var searchData=
 [
-  ['operator_20double_0',['operator double',['../structr2sonic_1_1BigEndianPrimative.html#a741f41513ecfd99bef52f5ab33136a37',1,'r2sonic::BigEndianPrimative']]],
-  ['operator_20float_1',['operator float',['../structr2sonic_1_1BigEndianPrimative.html#a8fac82056fc630eaa4aa9c3548ca530f',1,'r2sonic::BigEndianPrimative']]],
-  ['operator_20int16_5ft_2',['operator int16_t',['../structr2sonic_1_1BigEndianPrimative.html#a47276991798b7cd7402c61edda884513',1,'r2sonic::BigEndianPrimative']]],
-  ['operator_20int32_5ft_3',['operator int32_t',['../structr2sonic_1_1BigEndianPrimative.html#aae3370f63a07ddedd0d05648fc4a9c7c',1,'r2sonic::BigEndianPrimative']]],
-  ['operator_20int8_5ft_4',['operator int8_t',['../structr2sonic_1_1BigEndianPrimative.html#a04f55222825beca69778cd8a163c9ee2',1,'r2sonic::BigEndianPrimative']]],
-  ['operator_20uint16_5ft_5',['operator uint16_t',['../structr2sonic_1_1BigEndianPrimative.html#ac339639ec57cc70237862e1295313aee',1,'r2sonic::BigEndianPrimative']]],
-  ['operator_20uint32_5ft_6',['operator uint32_t',['../structr2sonic_1_1BigEndianPrimative.html#adec3f56ff9bb0d75b806b7edd59e9d62',1,'r2sonic::BigEndianPrimative']]],
-  ['operator_20uint8_5ft_7',['operator uint8_t',['../structr2sonic_1_1BigEndianPrimative.html#aeb19e677335e2e11a69c32b1e650085a',1,'r2sonic::BigEndianPrimative']]]
+  ['package_5fdefs_2ehpp_0',['package_defs.hpp',['../package__defs_8hpp.html',1,'']]],
+  ['packet_1',['Packet',['../classr2sonic_1_1packets_1_1Packet.html#ac4192bef2801bfe54a28dd9c5402b561',1,'r2sonic::packets::Packet::Packet()'],['../classr2sonic_1_1packets_1_1AID0.html#ac4192bef2801bfe54a28dd9c5402b561',1,'r2sonic::packets::AID0::Packet()'],['../classr2sonic_1_1packets_1_1BTH0.html#ac4192bef2801bfe54a28dd9c5402b561',1,'r2sonic::packets::BTH0::Packet()'],['../classr2sonic_1_1packets_1_1Packet.html',1,'r2sonic::packets::Packet']]],
+  ['packet_2ehpp_2',['packet.hpp',['../packet_8hpp.html',1,'']]],
+  ['packet2rawpacket_3',['packet2RawPacket',['../namespaceconversions.html#a233a8a311555c12acdb428102da74ac1',1,'conversions::packet2RawPacket()'],['../namespacer2sonic_1_1conversions.html#ab5b16f52f93d6f5e9c6f4a26256b0a24',1,'r2sonic::conversions::packet2RawPacket()']]],
+  ['packet_5fname_4',['packet_name',['../structr2sonic_1_1packets_1_1CmdPacket.html#afab36d0dee74efe265ca8cb81cc338a6',1,'r2sonic::packets::CmdPacket']]],
+  ['packetname_5',['PacketName',['../structr2sonic_1_1sections_1_1MiniHeader.html#ad02f657fc39cd37294acf02e2ab4a67c',1,'r2sonic::sections::MiniHeader']]],
+  ['packets_5fdefs_2ehpp_6',['packets_defs.hpp',['../packets__defs_8hpp.html',1,'']]],
+  ['packets_5fns_5ffoot_7',['PACKETS_NS_FOOT',['../packets__defs_8hpp.html#adaf71a3cbcf2f17588ebc80c1d0b3f12',1,'packets_defs.hpp']]],
+  ['packets_5fns_5fhead_8',['PACKETS_NS_HEAD',['../packets__defs_8hpp.html#a32a0fc19a7d6ba454c7f02996c6a05ba',1,'packets_defs.hpp']]],
+  ['packetsize_9',['PacketSize',['../structr2sonic_1_1sections_1_1MiniHeader.html#a15c66dbc3a78920fe4541bb202e76c04',1,'r2sonic::sections::MiniHeader']]],
+  ['parameters_10',['Parameters',['../structr2sonic_1_1R2SonicNode_1_1Parameters.html',1,'r2sonic::R2SonicNode']]],
+  ['parameters_5f_11',['parameters_',['../classr2sonic_1_1R2SonicNode.html#a540166fdc8f752cc8b0b26b1e54dcc2c',1,'r2sonic::R2SonicNode']]],
+  ['pingnumber_12',['PingNumber',['../structr2sonic_1_1sections_1_1H0_1_1Body.html#af96ea8e1a23bf91722034d56f2f0d041',1,'r2sonic::sections::H0::Body::PingNumber()'],['../structr2sonic_1_1sections_1_1M0_1_1Body.html#a760a8190e595680a2d67f22b25732115',1,'r2sonic::sections::M0::Body::PingNumber()']]],
+  ['pingperiod_13',['PingPeriod',['../structr2sonic_1_1sections_1_1H0_1_1Body.html#aaef79217965cb3b33e928206e7f358ab',1,'r2sonic::sections::H0::Body']]],
+  ['points_14',['Points',['../structr2sonic_1_1sections_1_1H0_1_1Body.html#a70e4f450605bee585e872c4153e6023b',1,'r2sonic::sections::H0::Body']]],
+  ['ports_15',['ports',['../structr2sonic_1_1R2SonicNode_1_1Parameters.html#a8e0f14e289da7f25e3960cb838c0879e',1,'r2sonic::R2SonicNode::Parameters']]],
+  ['ports_16',['Ports',['../structr2sonic_1_1R2SonicNode_1_1Parameters_1_1Ports.html',1,'r2sonic::R2SonicNode::Parameters']]],
+  ['primatives_2ehpp_17',['primatives.hpp',['../primatives_8hpp.html',1,'']]],
+  ['pub_18',['pub',['../structr2sonic_1_1R2SonicNode_1_1msg__mtx.html#ae889b56a5d8b9cdf234726f4b71ee735',1,'r2sonic::R2SonicNode::msg_mtx']]],
+  ['publish_19',['publish',['../classr2sonic_1_1R2SonicNode.html#a5f7a8287e0af4f473639e7a50b335cb3',1,'r2sonic::R2SonicNode']]]
 ];

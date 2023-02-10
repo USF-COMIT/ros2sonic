@@ -103,9 +103,7 @@ $(document).ready(function(){initNavTree('a2_8hpp.html',''); initResizable(); })
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">a2.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -152,9 +150,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structr2sonic_1_1sections_1_1A2_1_1Body.html">r2sonic::sections::A2::Body</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A datatype represnting the fixed length portion of the <a class="el" href="classr2sonic_1_1sections_1_1A2.html" title="An interpreter for Section A2: 16-bit bathy point angles, arbitrarily-spaced (present only during &quot;eq...">A2</a> message.  <a href="structr2sonic_1_1sections_1_1A2_1_1Body.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBody.html">Body</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A datatype represnting the fixed length portion of the A0 message.  <a href="structBody.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -162,166 +157,7 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacer2sonic_1_1sections"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacer2sonic_1_1sections.html">r2sonic::sections</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a74a2c0e3dd3f723075c5fead847ee230"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr2sonic_1_1sections_1_1A0.html">r2sonic::sections::A0</a> Section&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacer2sonic_1_1sections.html#a74a2c0e3dd3f723075c5fead847ee230">r2sonic::sections::__attribute__</a> ((packed))</td></tr>
-<tr class="separator:a74a2c0e3dd3f723075c5fead847ee230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a51836ef849bbed5ff458b71c04cdeb"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structBody.html">Body</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a2_8hpp.html#a3a51836ef849bbed5ff458b71c04cdeb">__attribute__</a> ((packed))</td></tr>
-<tr class="separator:a3a51836ef849bbed5ff458b71c04cdeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2586548ff256bef62a45f24a2267468f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a2_8hpp.html#a2586548ff256bef62a45f24a2267468f">nominalType</a> () const</td></tr>
-<tr class="separator:a2586548ff256bef62a45f24a2267468f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a352aa11ab2e0f90e582a087c89b1f403"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBody.html">Body</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a2_8hpp.html#a352aa11ab2e0f90e582a087c89b1f403">body</a> () const</td></tr>
-<tr class="memdesc:a352aa11ab2e0f90e582a087c89b1f403"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a pointer to the fixed size portion of the message (the <a class="el" href="structBody.html" title="A datatype represnting the fixed length portion of the A0 message.">Body</a>).  <br /></td></tr>
-<tr class="separator:a352aa11ab2e0f90e582a087c89b1f403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac53971e049be5aeeaf5029c8f2710496"><td class="memItemLeft" align="right" valign="top">BE_u16 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a2_8hpp.html#ac53971e049be5aeeaf5029c8f2710496">AngleStep</a> (u16 beam_no) const</td></tr>
-<tr class="memdesc:ac53971e049be5aeeaf5029c8f2710496"><td class="mdescLeft">&#160;</td><td class="mdescRight">[radians] angle[n] = A2_AngleFirst + (32-bit sum of A2_AngleStep[0] through A2_AngleStep[n]) * A2_ScalingFacto  <br /></td></tr>
-<tr class="separator:ac53971e049be5aeeaf5029c8f2710496"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a21bde6600b639c25a1513a91c9bff4c2"><td class="memItemLeft" align="right" valign="top">BE_f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a2_8hpp.html#a21bde6600b639c25a1513a91c9bff4c2">AngleFirst</a></td></tr>
-<tr class="memdesc:a21bde6600b639c25a1513a91c9bff4c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">[radians] angle of first (port side) bathy point, relative to array centerline, AngleFirst &lt; AngleLast  <br /></td></tr>
-<tr class="separator:a21bde6600b639c25a1513a91c9bff4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21e7c0c2f46521da99d50db2e97c039f"><td class="memItemLeft" align="right" valign="top">BE_f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a2_8hpp.html#a21e7c0c2f46521da99d50db2e97c039f">ScalingFactor</a></td></tr>
-<tr class="memdesc:a21e7c0c2f46521da99d50db2e97c039f"><td class="mdescLeft">&#160;</td><td class="mdescRight">reserved for future use  <br /></td></tr>
-<tr class="separator:a21e7c0c2f46521da99d50db2e97c039f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e4a4ba5af26e3e2fb733661c2c5704d"><td class="memItemLeft" align="right" valign="top">BE_f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a2_8hpp.html#a6e4a4ba5af26e3e2fb733661c2c5704d">MoreInfo</a> [6]</td></tr>
-<tr class="memdesc:a6e4a4ba5af26e3e2fb733661c2c5704d"><td class="mdescLeft">&#160;</td><td class="mdescRight">reserved for future use  <br /></td></tr>
-<tr class="separator:a6e4a4ba5af26e3e2fb733661c2c5704d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a3a51836ef849bbed5ff458b71c04cdeb" name="a3a51836ef849bbed5ff458b71c04cdeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a51836ef849bbed5ff458b71c04cdeb">&#9670;&#160;</a></span>__attribute__()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structBody.html">Body</a> __attribute__::__attribute__ </td>
-          <td>(</td>
-          <td class="paramtype">(packed)&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac53971e049be5aeeaf5029c8f2710496" name="ac53971e049be5aeeaf5029c8f2710496"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac53971e049be5aeeaf5029c8f2710496">&#9670;&#160;</a></span>AngleStep()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BE_u16 * __attribute__::AngleStep </td>
-          <td>(</td>
-          <td class="paramtype">u16&#160;</td>
-          <td class="paramname"><em>beam_no</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>[radians] angle[n] = A2_AngleFirst + (32-bit sum of A2_AngleStep[0] through A2_AngleStep[n]) * A2_ScalingFacto </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">beam_no</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>[radians] angle[n] = A2_AngleFirst + (32-bit sum of A2_AngleStep[0] through A2_AngleStep[n]) * A2_ScalingFacto </dd></dl>
-
-</div>
-</div>
-<a id="a352aa11ab2e0f90e582a087c89b1f403" name="a352aa11ab2e0f90e582a087c89b1f403"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a352aa11ab2e0f90e582a087c89b1f403">&#9670;&#160;</a></span>body()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structBody.html">Body</a> * __attribute__::body </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>returns a pointer to the fixed size portion of the message (the <a class="el" href="structBody.html" title="A datatype represnting the fixed length portion of the A0 message.">Body</a>). </p>
-<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="structBody.html" title="A datatype represnting the fixed length portion of the A0 message.">Body</a> of the Section </dd></dl>
-
-</div>
-</div>
-<a id="a2586548ff256bef62a45f24a2267468f" name="a2586548ff256bef62a45f24a2267468f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2586548ff256bef62a45f24a2267468f">&#9670;&#160;</a></span>nominalType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char * __attribute__::nominalType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a21bde6600b639c25a1513a91c9bff4c2" name="a21bde6600b639c25a1513a91c9bff4c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21bde6600b639c25a1513a91c9bff4c2">&#9670;&#160;</a></span>AngleFirst</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BE_f32 AngleFirst</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>[radians] angle of first (port side) bathy point, relative to array centerline, AngleFirst &lt; AngleLast </p>
-
-</div>
-</div>
-<a id="a6e4a4ba5af26e3e2fb733661c2c5704d" name="a6e4a4ba5af26e3e2fb733661c2c5704d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e4a4ba5af26e3e2fb733661c2c5704d">&#9670;&#160;</a></span>MoreInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BE_f32 MoreInfo[6]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>reserved for future use </p>
-
-</div>
-</div>
-<a id="a21e7c0c2f46521da99d50db2e97c039f" name="a21e7c0c2f46521da99d50db2e97c039f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21e7c0c2f46521da99d50db2e97c039f">&#9670;&#160;</a></span>ScalingFactor</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">f32 ScalingFactor</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>reserved for future use </p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

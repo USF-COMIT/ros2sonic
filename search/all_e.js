@@ -1,23 +1,6 @@
 var searchData=
 [
-  ['package_5fdefs_2ehpp_0',['package_defs.hpp',['../package__defs_8hpp.html',1,'']]],
-  ['packet_1',['Packet',['../classr2sonic_1_1packets_1_1BTH0.html#ac4192bef2801bfe54a28dd9c5402b561',1,'r2sonic::packets::BTH0::Packet()'],['../classr2sonic_1_1packets_1_1AID0.html#ac4192bef2801bfe54a28dd9c5402b561',1,'r2sonic::packets::AID0::Packet()'],['../classr2sonic_1_1packets_1_1Packet.html#ac4192bef2801bfe54a28dd9c5402b561',1,'r2sonic::packets::Packet::Packet()'],['../classr2sonic_1_1packets_1_1Packet.html',1,'r2sonic::packets::Packet']]],
-  ['packet_2ehpp_2',['packet.hpp',['../packet_8hpp.html',1,'']]],
-  ['packet2rawpacket_3',['packet2RawPacket',['../namespacer2sonic_1_1conversions.html#ab5b16f52f93d6f5e9c6f4a26256b0a24',1,'r2sonic::conversions::packet2RawPacket()'],['../namespaceconversions.html#a233a8a311555c12acdb428102da74ac1',1,'conversions::packet2RawPacket()']]],
-  ['packet_5fname_4',['packet_name',['../cmd__packet_8hpp.html#addc80ffd7bdc31e8ce5ea3a17d38500c',1,'packet_name():&#160;cmd_packet.hpp'],['../structr2sonic_1_1packets_1_1CmdPacket.html#afab36d0dee74efe265ca8cb81cc338a6',1,'r2sonic::packets::CmdPacket::packet_name()']]],
-  ['packetname_5',['PacketName',['../structr2sonic_1_1sections_1_1MiniHeader.html#ad02f657fc39cd37294acf02e2ab4a67c',1,'r2sonic::sections::MiniHeader::PacketName()'],['../miniheader_8hpp.html#afdb2e3245b04b0cbe177b1f91bb9513b',1,'PacketName():&#160;miniheader.hpp']]],
-  ['packets_5fdefs_2ehpp_6',['packets_defs.hpp',['../packets__defs_8hpp.html',1,'']]],
-  ['packets_5fns_5ffoot_7',['PACKETS_NS_FOOT',['../packets__defs_8hpp.html#adaf71a3cbcf2f17588ebc80c1d0b3f12',1,'packets_defs.hpp']]],
-  ['packets_5fns_5fhead_8',['PACKETS_NS_HEAD',['../packets__defs_8hpp.html#a32a0fc19a7d6ba454c7f02996c6a05ba',1,'packets_defs.hpp']]],
-  ['packetsize_9',['PacketSize',['../structr2sonic_1_1sections_1_1MiniHeader.html#a15c66dbc3a78920fe4541bb202e76c04',1,'r2sonic::sections::MiniHeader::PacketSize()'],['../miniheader_8hpp.html#a001b35d64139cb5e436c10342fc34241',1,'PacketSize():&#160;miniheader.hpp']]],
-  ['parameters_10',['Parameters',['../structr2sonic_1_1R2SonicNode_1_1Parameters.html',1,'r2sonic::R2SonicNode']]],
-  ['parameters_5f_11',['parameters_',['../classr2sonic_1_1R2SonicNode.html#a540166fdc8f752cc8b0b26b1e54dcc2c',1,'r2sonic::R2SonicNode']]],
-  ['pingnumber_12',['PingNumber',['../structBody.html#a5d0937d9480746b3b754339849e7a279',1,'Body::PingNumber()'],['../h0_8hpp.html#a8492fb9fc5389aa61a48501d0f46e6ed',1,'PingNumber():&#160;h0.hpp'],['../structr2sonic_1_1sections_1_1M0_1_1Body.html#a760a8190e595680a2d67f22b25732115',1,'r2sonic::sections::M0::Body::PingNumber()'],['../structBody.html#ae70564838b9c21e34008e792d02c2ea5',1,'Body::PingNumber()'],['../structr2sonic_1_1sections_1_1H0_1_1Body.html#af96ea8e1a23bf91722034d56f2f0d041',1,'r2sonic::sections::H0::Body::PingNumber()'],['../M0_8hpp.html#a8492fb9fc5389aa61a48501d0f46e6ed',1,'PingNumber():&#160;M0.hpp']]],
-  ['pingperiod_13',['PingPeriod',['../h0_8hpp.html#a5e94fa5a81d914c930e3ba539cbd2aee',1,'PingPeriod():&#160;h0.hpp'],['../structr2sonic_1_1sections_1_1H0_1_1Body.html#aaef79217965cb3b33e928206e7f358ab',1,'r2sonic::sections::H0::Body::PingPeriod()'],['../structBody.html#a385e1483473e8eff98e46058298b353e',1,'Body::PingPeriod()']]],
-  ['points_14',['Points',['../structBody.html#aae5a0cc583751dea094a26244b683cdb',1,'Body::Points()'],['../structr2sonic_1_1sections_1_1H0_1_1Body.html#a70e4f450605bee585e872c4153e6023b',1,'r2sonic::sections::H0::Body::Points()'],['../h0_8hpp.html#a01bc08051c06dfcbaceb3dc82ba801f9',1,'Points():&#160;h0.hpp']]],
-  ['ports_15',['ports',['../structr2sonic_1_1R2SonicNode_1_1Parameters.html#a8e0f14e289da7f25e3960cb838c0879e',1,'r2sonic::R2SonicNode::Parameters']]],
-  ['ports_16',['Ports',['../structr2sonic_1_1R2SonicNode_1_1Parameters_1_1Ports.html',1,'r2sonic::R2SonicNode::Parameters']]],
-  ['primatives_2ehpp_17',['primatives.hpp',['../primatives_8hpp.html',1,'']]],
-  ['pub_18',['pub',['../structr2sonic_1_1R2SonicNode_1_1msg__mtx.html#ae889b56a5d8b9cdf234726f4b71ee735',1,'r2sonic::R2SonicNode::msg_mtx']]],
-  ['publish_19',['publish',['../classr2sonic_1_1R2SonicNode.html#a5f7a8287e0af4f473639e7a50b335cb3',1,'r2sonic::R2SonicNode']]]
+  ['q0_0',['q0',['../classr2sonic_1_1packets_1_1BTH0.html#a282c6b23f891fbf312204644681f66d2',1,'r2sonic::packets::BTH0']]],
+  ['q0_1',['Q0',['../classr2sonic_1_1sections_1_1Q0.html',1,'r2sonic::sections']]],
+  ['q0_2ehpp_2',['q0.hpp',['../q0_8hpp.html',1,'']]]
 ];

@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['end_0',['end',['../classr2sonic_1_1packets_1_1Packet.html#a7cbc719e7907139405ed3c9183d60175',1,'r2sonic::packets::Packet::end()'],['../classr2sonic_1_1sections_1_1Section.html#a962e2e190b7254ff1f5f85443e529595',1,'r2sonic::sections::Section::end() const']]],
-  ['existanceerrorcheck_1',['existanceErrorCheck',['../classr2sonic_1_1sections_1_1Section.html#abfc0f5af63022dd71796148b3f507861',1,'r2sonic::sections::Section']]],
-  ['exists_2',['exists',['../classr2sonic_1_1sections_1_1Section.html#a5ec6e093d716fff8b411213b7e2c145f',1,'r2sonic::sections::Section']]]
+  ['f32_0',['f32',['../namespacer2sonic_1_1primitives.html#a67078410b1bbfdc0fabc7aa02eecaf79',1,'r2sonic::primitives']]],
+  ['f64_1',['f64',['../namespacer2sonic_1_1primitives.html#adc32f056b39a3fd28154b4a04fb5ad89',1,'r2sonic::primitives']]],
+  ['firstbeam_2',['FirstBeam',['../structr2sonic_1_1sections_1_1M0_1_1Body.html#adc5c5ea4816dafa56f5612b56eb23484',1,'r2sonic::sections::M0::Body']]],
+  ['firstbin_3',['FirstBin',['../structr2sonic_1_1sections_1_1M0_1_1Body.html#a3ea4cf216e40317f8af05ec50f6623b2',1,'r2sonic::sections::M0::Body']]],
+  ['frequency_4',['Frequency',['../structr2sonic_1_1sections_1_1H0_1_1Body.html#aa1638a524d21c11446e96ef0485b54de',1,'r2sonic::sections::H0::Body']]]
 ];

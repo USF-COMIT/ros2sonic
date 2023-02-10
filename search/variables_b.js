@@ -1,12 +1,18 @@
 var searchData=
 [
-  ['packet_5fname_0',['packet_name',['../cmd__packet_8hpp.html#addc80ffd7bdc31e8ce5ea3a17d38500c',1,'packet_name():&#160;cmd_packet.hpp'],['../structr2sonic_1_1packets_1_1CmdPacket.html#afab36d0dee74efe265ca8cb81cc338a6',1,'r2sonic::packets::CmdPacket::packet_name()']]],
-  ['packetname_1',['PacketName',['../structr2sonic_1_1sections_1_1MiniHeader.html#ad02f657fc39cd37294acf02e2ab4a67c',1,'r2sonic::sections::MiniHeader::PacketName()'],['../miniheader_8hpp.html#afdb2e3245b04b0cbe177b1f91bb9513b',1,'PacketName():&#160;miniheader.hpp']]],
-  ['packetsize_2',['PacketSize',['../miniheader_8hpp.html#a001b35d64139cb5e436c10342fc34241',1,'PacketSize():&#160;miniheader.hpp'],['../structr2sonic_1_1sections_1_1MiniHeader.html#a15c66dbc3a78920fe4541bb202e76c04',1,'r2sonic::sections::MiniHeader::PacketSize()']]],
-  ['parameters_5f_3',['parameters_',['../classr2sonic_1_1R2SonicNode.html#a540166fdc8f752cc8b0b26b1e54dcc2c',1,'r2sonic::R2SonicNode']]],
-  ['pingnumber_4',['PingNumber',['../structBody.html#ae70564838b9c21e34008e792d02c2ea5',1,'Body::PingNumber()'],['../structr2sonic_1_1sections_1_1M0_1_1Body.html#a760a8190e595680a2d67f22b25732115',1,'r2sonic::sections::M0::Body::PingNumber()'],['../structBody.html#a5d0937d9480746b3b754339849e7a279',1,'Body::PingNumber()'],['../structr2sonic_1_1sections_1_1H0_1_1Body.html#af96ea8e1a23bf91722034d56f2f0d041',1,'r2sonic::sections::H0::Body::PingNumber()'],['../M0_8hpp.html#a8492fb9fc5389aa61a48501d0f46e6ed',1,'PingNumber():&#160;M0.hpp'],['../h0_8hpp.html#a8492fb9fc5389aa61a48501d0f46e6ed',1,'PingNumber():&#160;h0.hpp']]],
-  ['pingperiod_5',['PingPeriod',['../structr2sonic_1_1sections_1_1H0_1_1Body.html#aaef79217965cb3b33e928206e7f358ab',1,'r2sonic::sections::H0::Body::PingPeriod()'],['../structBody.html#a385e1483473e8eff98e46058298b353e',1,'Body::PingPeriod()'],['../h0_8hpp.html#a5e94fa5a81d914c930e3ba539cbd2aee',1,'PingPeriod():&#160;h0.hpp']]],
-  ['points_6',['Points',['../h0_8hpp.html#a01bc08051c06dfcbaceb3dc82ba801f9',1,'Points():&#160;h0.hpp'],['../structBody.html#aae5a0cc583751dea094a26244b683cdb',1,'Body::Points()'],['../structr2sonic_1_1sections_1_1H0_1_1Body.html#a70e4f450605bee585e872c4153e6023b',1,'r2sonic::sections::H0::Body::Points()']]],
-  ['ports_7',['ports',['../structr2sonic_1_1R2SonicNode_1_1Parameters.html#a8e0f14e289da7f25e3960cb838c0879e',1,'r2sonic::R2SonicNode::Parameters']]],
-  ['pub_8',['pub',['../structr2sonic_1_1R2SonicNode_1_1msg__mtx.html#ae889b56a5d8b9cdf234726f4b71ee735',1,'r2sonic::R2SonicNode::msg_mtx']]]
+  ['rangemax_0',['RangeMax',['../structr2sonic_1_1sections_1_1G1_1_1Gate.html#a1777ea445f6e68949a8a7d81420e8f22',1,'r2sonic::sections::G1::Gate']]],
+  ['rangemin_1',['RangeMin',['../structr2sonic_1_1sections_1_1G1_1_1Gate.html#af44bab3fe675f23795ad533c8c2811d8',1,'r2sonic::sections::G1::Gate']]],
+  ['raw_2',['raw',['../structr2sonic_1_1primitives_1_1BigEndianPrimative.html#aa53e1be9ec69b4c74622e96c70127f0b',1,'r2sonic::primitives::BigEndianPrimative']]],
+  ['recv_5fbuffer_5f_3',['recv_buffer_',['../classr2sonic_1_1UdpReceiver.html#af3b81912028d7bf25a6a30fd969bc5a9',1,'r2sonic::UdpReceiver']]],
+  ['remote_5fendpoint_5f_4',['remote_endpoint_',['../classr2sonic_1_1UdpReceiver.html#a82fb2475b62ac152d7124ad1929e4b6f',1,'r2sonic::UdpReceiver']]],
+  ['reserved_5',['reserved',['../structr2sonic_1_1sections_1_1H0_1_1Body.html#a39ac44796590c1f7270060609d9deb89',1,'r2sonic::sections::H0::Body::reserved()'],['../structr2sonic_1_1sections_1_1M0_1_1Body.html#a8ec5d7e3d663027d6c3b64f8b89326aa',1,'r2sonic::sections::M0::Body::reserved()']]],
+  ['rx_5fframe_5fid_6',['rx_frame_id',['../structr2sonic_1_1R2SonicNode_1_1Parameters.html#a1b33ed25e58617d34d6ebae32bfe1ab5',1,'r2sonic::R2SonicNode::Parameters']]],
+  ['rxabsorption_7',['RxAbsorption',['../structr2sonic_1_1sections_1_1H0_1_1Body.html#aafe39ce8af6d3bf11364513f1d059bac',1,'r2sonic::sections::H0::Body']]],
+  ['rxbandwidth_8',['RxBandwidth',['../structr2sonic_1_1sections_1_1H0_1_1Body.html#ac79df58a28436357a09adcbdfb8af410',1,'r2sonic::sections::H0::Body']]],
+  ['rxgain_9',['RxGain',['../structr2sonic_1_1sections_1_1H0_1_1Body.html#a3e64da100dd58f70434b305b773330b3',1,'r2sonic::sections::H0::Body']]],
+  ['rxmiscinfo_10',['RxMiscInfo',['../structr2sonic_1_1sections_1_1H0_1_1Body.html#a8b214ddca00963b898ac1773d0555927',1,'r2sonic::sections::H0::Body']]],
+  ['rxmounttilt_11',['RxMountTilt',['../structr2sonic_1_1sections_1_1H0_1_1Body.html#a96ae85d91b532b92ff96c9a8c324ae39',1,'r2sonic::sections::H0::Body']]],
+  ['rxrange_12',['RxRange',['../structr2sonic_1_1sections_1_1H0_1_1Body.html#a13adf58b0b99480abee6ea26ead36f70',1,'r2sonic::sections::H0::Body']]],
+  ['rxsamplerate_13',['RxSampleRate',['../structr2sonic_1_1sections_1_1H0_1_1Body.html#a09a330d1375eac67dac316c21a7b02e2',1,'r2sonic::sections::H0::Body']]],
+  ['rxspreading_14',['RxSpreading',['../structr2sonic_1_1sections_1_1H0_1_1Body.html#a020fa510351bcd6c44397596e4b8fa0e',1,'r2sonic::sections::H0::Body']]]
 ];

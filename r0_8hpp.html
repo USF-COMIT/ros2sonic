@@ -103,8 +103,7 @@ $(document).ready(function(){initNavTree('r0_8hpp.html',''); initResizable(); })
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">r0.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -155,145 +154,7 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacer2sonic_1_1sections"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacer2sonic_1_1sections.html">r2sonic::sections</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a74a2c0e3dd3f723075c5fead847ee230"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr2sonic_1_1sections_1_1A0.html">r2sonic::sections::A0</a> Section&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacer2sonic_1_1sections.html#a74a2c0e3dd3f723075c5fead847ee230">r2sonic::sections::__attribute__</a> ((packed))</td></tr>
-<tr class="separator:a74a2c0e3dd3f723075c5fead847ee230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2586548ff256bef62a45f24a2267468f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="r0_8hpp.html#a2586548ff256bef62a45f24a2267468f">nominalType</a> () const</td></tr>
-<tr class="separator:a2586548ff256bef62a45f24a2267468f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09896ad437b63729de6ce87a83b1d04c"><td class="memItemLeft" align="right" valign="top">BE_f32 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="r0_8hpp.html#a09896ad437b63729de6ce87a83b1d04c">scaliningFactor</a> () const</td></tr>
-<tr class="memdesc:a09896ad437b63729de6ce87a83b1d04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">the scaling factor for the intensities reported in  <br /></td></tr>
-<tr class="separator:a09896ad437b63729de6ce87a83b1d04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d957a60b0468b0d28b785a4ef115eb7"><td class="memItemLeft" align="right" valign="top">BE_u16 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="r0_8hpp.html#a5d957a60b0468b0d28b785a4ef115eb7">range</a> (u16 beam_no) const</td></tr>
-<tr class="memdesc:a5d957a60b0468b0d28b785a4ef115eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the range at beam_no.  <br /></td></tr>
-<tr class="separator:a5d957a60b0468b0d28b785a4ef115eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34095f1587e9dc1af21e0da7da0f075c"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="r0_8hpp.html#a34095f1587e9dc1af21e0da7da0f075c">getRange</a> (u16 beam_no) const</td></tr>
-<tr class="memdesc:a34095f1587e9dc1af21e0da7da0f075c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the raw range value.  <br /></td></tr>
-<tr class="separator:a34095f1587e9dc1af21e0da7da0f075c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a096b66a5566cf4842a09b5f953ef689a"><td class="memItemLeft" align="right" valign="top">f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="r0_8hpp.html#a096b66a5566cf4842a09b5f953ef689a">getScaledRange</a> (u16 beam_no) const</td></tr>
-<tr class="memdesc:a096b66a5566cf4842a09b5f953ef689a"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the scaled range/2-way travel time for a given beam  <br /></td></tr>
-<tr class="separator:a096b66a5566cf4842a09b5f953ef689a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a34095f1587e9dc1af21e0da7da0f075c" name="a34095f1587e9dc1af21e0da7da0f075c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34095f1587e9dc1af21e0da7da0f075c">&#9670;&#160;</a></span>getRange()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">u16 __attribute__::getRange </td>
-          <td>(</td>
-          <td class="paramtype">u16&#160;</td>
-          <td class="paramname"><em>beam_no</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the raw range value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">beam_no</td><td>the beam you want the range for </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the raw (unscaled) range value </dd></dl>
-
-</div>
-</div>
-<a id="a096b66a5566cf4842a09b5f953ef689a" name="a096b66a5566cf4842a09b5f953ef689a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a096b66a5566cf4842a09b5f953ef689a">&#9670;&#160;</a></span>getScaledRange()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">f32 __attribute__::getScaledRange </td>
-          <td>(</td>
-          <td class="paramtype">u16&#160;</td>
-          <td class="paramname"><em>beam_no</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>computes the scaled range/2-way travel time for a given beam </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">beam_no</td><td>the beam you want the range for </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the scaled range (seconds two-way) as a machine endian float32 </dd></dl>
-
-</div>
-</div>
-<a id="a2586548ff256bef62a45f24a2267468f" name="a2586548ff256bef62a45f24a2267468f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2586548ff256bef62a45f24a2267468f">&#9670;&#160;</a></span>nominalType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char * __attribute__::nominalType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5d957a60b0468b0d28b785a4ef115eb7" name="a5d957a60b0468b0d28b785a4ef115eb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d957a60b0468b0d28b785a4ef115eb7">&#9670;&#160;</a></span>range()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BE_u16 * __attribute__::range </td>
-          <td>(</td>
-          <td class="paramtype">u16&#160;</td>
-          <td class="paramname"><em>beam_no</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns a pointer to the range at beam_no. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">beam_no</td><td>the beam you want the range for </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the range at beam_no </dd></dl>
-
-</div>
-</div>
-<a id="a09896ad437b63729de6ce87a83b1d04c" name="a09896ad437b63729de6ce87a83b1d04c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09896ad437b63729de6ce87a83b1d04c">&#9670;&#160;</a></span>scaliningFactor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BE_f32 * __attribute__::scaliningFactor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>the scaling factor for the intensities reported in </p>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the scaling factor </dd></dl>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

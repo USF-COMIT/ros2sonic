@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['datastreamid_0',['DataStreamID',['../structr2sonic_1_1sections_1_1MiniHeader.html#ab7a6c57a197835ae282a3b397221db96',1,'r2sonic::sections::MiniHeader::DataStreamID()'],['../miniheader_8hpp.html#a30f492aee8a792fb5b74606fb4a4300d',1,'DataStreamID():&#160;miniheader.hpp']]],
-  ['dectections_1',['dectections',['../structr2sonic_1_1R2SonicNode_1_1MsgBuffer.html#a840a27aedb7c0f17c742b182798bbe5d',1,'r2sonic::R2SonicNode::MsgBuffer']]],
-  ['detections_2',['detections',['../structr2sonic_1_1R2SonicNode_1_1Parameters_1_1Topics.html#a8cc473033c2f3c308c2df5004664f1d5',1,'r2sonic::R2SonicNode::Parameters::Topics']]]
+  ['firstbeam_0',['FirstBeam',['../structr2sonic_1_1sections_1_1M0_1_1Body.html#adc5c5ea4816dafa56f5612b56eb23484',1,'r2sonic::sections::M0::Body']]],
+  ['firstbin_1',['FirstBin',['../structr2sonic_1_1sections_1_1M0_1_1Body.html#a3ea4cf216e40317f8af05ec50f6623b2',1,'r2sonic::sections::M0::Body']]],
+  ['frequency_2',['Frequency',['../structr2sonic_1_1sections_1_1H0_1_1Body.html#aa1638a524d21c11446e96ef0485b54de',1,'r2sonic::sections::H0::Body']]]
 ];

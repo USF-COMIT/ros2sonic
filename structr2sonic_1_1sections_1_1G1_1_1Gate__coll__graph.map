@@ -1,4 +1,4 @@
 <map id="r2sonic::sections::G1::Gate" name="r2sonic::sections::G1::Gate">
-<area shape="rect" id="node1" title="A structure representing the 2 byte gate information." alt="" coords="34,123,159,163"/>
-<area shape="rect" id="node2" href="$structr2sonic_1_1BigEndianPrimative.html" title=" " alt="" coords="5,5,188,45"/>
+<area shape="rect" id="node1" title="A structure representing the 2 byte gate information." alt="" coords="31,123,157,163"/>
+<area shape="rect" id="node2" href="$structr2sonic_1_1primitives_1_1BigEndianPrimative.html" title=" " alt="" coords="5,5,183,45"/>
 </map>

@@ -25,15 +25,15 @@
 var NAVTREE =
 [
   [ "ROS2Sonic", "index.html", [
-    [ "About", "index.html#autotoc_md7", null ],
-    [ "Installation", "index.html#autotoc_md8", [
-      [ "Begin by getting the package the dependencies", "index.html#autotoc_md9", null ],
-      [ "Compile", "index.html#autotoc_md10", null ]
+    [ "About", "index.html#autotoc_md10", null ],
+    [ "Installation", "index.html#autotoc_md11", [
+      [ "Begin by getting the package the dependencies", "index.html#autotoc_md12", null ],
+      [ "Compile", "index.html#autotoc_md13", null ]
     ] ],
-    [ "Getting Started", "index.html#autotoc_md11", null ],
-    [ "Additional Utilities", "index.html#autotoc_md12", null ],
-    [ "Parameters", "index.html#autotoc_md13", null ],
-    [ "Credits", "index.html#autotoc_md14", null ],
+    [ "Getting Started", "index.html#autotoc_md14", null ],
+    [ "Additional Utilities", "index.html#autotoc_md15", null ],
+    [ "Parameters", "index.html#autotoc_md16", null ],
+    [ "Credits", "index.html#autotoc_md17", null ],
     [ "Contributing", "md_CONTRIBUTING.html", [
       [ "Branching Strategy", "md_CONTRIBUTING.html#autotoc_md1", null ],
       [ "Think Before you Fork", "md_CONTRIBUTING.html#autotoc_md2", null ],
@@ -41,12 +41,16 @@ var NAVTREE =
       [ "Adding a Feature", "md_CONTRIBUTING.html#autotoc_md4", null ],
       [ "Additional Guidelines", "md_CONTRIBUTING.html#autotoc_md5", null ]
     ] ],
+    [ "API Usage", "md_docs_api.html", [
+      [ "Getting Started", "md_docs_api.html#autotoc_md7", [
+        [ "Parsing Packets", "md_docs_api.html#autotoc_md8", null ]
+      ] ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ]
       ] ]
     ] ],
@@ -55,7 +59,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
+        [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
@@ -65,7 +69,6 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -75,8 +78,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "M0_8hpp.html",
-"classr2sonic_1_1sections_1_1Section.html",
-"structBody.html#a385e1483473e8eff98e46058298b353e"
+"functions_vars.html",
+"structr2sonic_1_1sections_1_1H0_1_1Body.html#a96ae85d91b532b92ff96c9a8c324ae39"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

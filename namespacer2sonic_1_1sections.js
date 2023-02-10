@@ -12,7 +12,5 @@ var namespacer2sonic_1_1sections =
     [ "Q0", "classr2sonic_1_1sections_1_1Q0.html", "classr2sonic_1_1sections_1_1Q0" ],
     [ "R0", "classr2sonic_1_1sections_1_1R0.html", "classr2sonic_1_1sections_1_1R0" ],
     [ "Section", "classr2sonic_1_1sections_1_1Section.html", "classr2sonic_1_1sections_1_1Section" ],
-    [ "SectionInfo", "structr2sonic_1_1sections_1_1SectionInfo.html", "structr2sonic_1_1sections_1_1SectionInfo" ],
-    [ "__attribute__", "namespacer2sonic_1_1sections.html#a74a2c0e3dd3f723075c5fead847ee230", null ],
-    [ "__attribute__", "namespacer2sonic_1_1sections.html#abb1e80d4b1628476d430ac274d7cdddb", null ]
+    [ "SectionInfo", "structr2sonic_1_1sections_1_1SectionInfo.html", "structr2sonic_1_1sections_1_1SectionInfo" ]
 ];

@@ -1,4 +1,4 @@
 <map id="r2sonic::sections::MiniHeader" name="r2sonic::sections::MiniHeader">
-<area shape="rect" id="node1" title="A datatype representing the MiniHeader common to all Packets." alt="" coords="34,123,159,163"/>
-<area shape="rect" id="node2" href="$structr2sonic_1_1BigEndianPrimative.html" title=" " alt="" coords="5,5,188,45"/>
+<area shape="rect" id="node1" title="A datatype representing the MiniHeader common to all Packets." alt="" coords="13,137,139,177"/>
+<area shape="rect" id="node2" href="$structr2sonic_1_1primitives_1_1BigEndianPrimative.html" title=" " alt="" coords="5,5,147,60"/>
 </map>

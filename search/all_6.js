@@ -1,8 +1,21 @@
 var searchData=
 [
-  ['f32_0',['f32',['../namespacer2sonic.html#ac8c5176837321bb8cca7fe5c6c0280ac',1,'r2sonic']]],
-  ['f64_1',['f64',['../namespacer2sonic.html#aa4407022815147b5ec25e573a21b8ade',1,'r2sonic']]],
-  ['firstbeam_2',['FirstBeam',['../structr2sonic_1_1sections_1_1M0_1_1Body.html#adc5c5ea4816dafa56f5612b56eb23484',1,'r2sonic::sections::M0::Body::FirstBeam()'],['../structBody.html#acb971cf8188237090e17e7efb518a498',1,'Body::FirstBeam()'],['../M0_8hpp.html#a8bfc22126853869485b9116be1f4e7ea',1,'FirstBeam():&#160;M0.hpp']]],
-  ['firstbin_3',['FirstBin',['../structr2sonic_1_1sections_1_1M0_1_1Body.html#a3ea4cf216e40317f8af05ec50f6623b2',1,'r2sonic::sections::M0::Body::FirstBin()'],['../structBody.html#ad63fbfc977ed5eb7bcadf230ea5e529f',1,'Body::FirstBin()'],['../M0_8hpp.html#afe47f6e9422bbb1912ef5adcf9164169',1,'FirstBin():&#160;M0.hpp']]],
-  ['frequency_4',['Frequency',['../structr2sonic_1_1sections_1_1H0_1_1Body.html#aa1638a524d21c11446e96ef0485b54de',1,'r2sonic::sections::H0::Body::Frequency()'],['../structBody.html#a3242dd5d165e95ee7c3f03339ade7022',1,'Body::Frequency()'],['../h0_8hpp.html#ad099f14707e22c035a0cdfd848cc59d3',1,'Frequency():&#160;h0.hpp']]]
+  ['g0_0',['g0',['../classr2sonic_1_1packets_1_1BTH0.html#a91102f0bbbef53c276746e84c2810516',1,'r2sonic::packets::BTH0']]],
+  ['g0_1',['G0',['../classr2sonic_1_1sections_1_1G0.html',1,'r2sonic::sections']]],
+  ['g0_2ehpp_2',['g0.hpp',['../g0_8hpp.html',1,'']]],
+  ['g0_5fdepthgatemax_3',['G0_DepthGateMax',['../structr2sonic_1_1sections_1_1G0_1_1Body.html#a545e69c8ec791cf3b8a3d83e1db370ac',1,'r2sonic::sections::G0::Body']]],
+  ['g0_5fdepthgatemin_4',['G0_DepthGateMin',['../structr2sonic_1_1sections_1_1G0_1_1Body.html#adc082222a96a31130563a336333630a3',1,'r2sonic::sections::G0::Body']]],
+  ['g0_5fdepthgateslope_5',['G0_DepthGateSlope',['../structr2sonic_1_1sections_1_1G0_1_1Body.html#a1f1e539f62eae193815fa0d01e881f5a',1,'r2sonic::sections::G0::Body']]],
+  ['g1_6',['g1',['../classr2sonic_1_1packets_1_1BTH0.html#a85f3c8e74a2c894c95c56d479099c216',1,'r2sonic::packets::BTH0']]],
+  ['g1_7',['G1',['../classr2sonic_1_1sections_1_1G1.html',1,'r2sonic::sections']]],
+  ['g1_2ehpp_8',['g1.hpp',['../g1_8hpp.html',1,'']]],
+  ['gate_9',['gate',['../classr2sonic_1_1sections_1_1G1.html#ad9c7b54706b6e914b0c8ed42f6aca280',1,'r2sonic::sections::G1']]],
+  ['gate_10',['Gate',['../structr2sonic_1_1sections_1_1G1_1_1Gate.html',1,'r2sonic::sections::G1']]],
+  ['generate_5flaunch_5fdescription_11',['generate_launch_description',['../namespacebench__test.html#afef8d12d33cbd8e0fc85bff2c94402c2',1,'bench_test']]],
+  ['get_12',['get',['../structr2sonic_1_1primitives_1_1BigEndianPrimative.html#aaf792bc442b8d6dc8c372a508d9e6c66',1,'r2sonic::primitives::BigEndianPrimative']]],
+  ['getparams_13',['getParams',['../classr2sonic_1_1R2SonicNode.html#a33d64a2bbddea18c6136fa66dcf62a5c',1,'r2sonic::R2SonicNode']]],
+  ['getrange_14',['getRange',['../classr2sonic_1_1sections_1_1R0.html#a065bbd919d74e6ca429cdf946f784f91',1,'r2sonic::sections::R0']]],
+  ['getscaledintensity_15',['getScaledIntensity',['../classr2sonic_1_1sections_1_1I1.html#a316cadfbd03d116e4af9f6354d4030e9',1,'r2sonic::sections::I1']]],
+  ['getscaledrange_16',['getScaledRange',['../classr2sonic_1_1sections_1_1R0.html#a19e4e17ea4196595f65ae76775738343',1,'r2sonic::sections::R0']]],
+  ['getsize_17',['getSize',['../classr2sonic_1_1packets_1_1Packet.html#ac1fc787a8449d16e9d5bc9e67d0c6c3e',1,'r2sonic::packets::Packet::getSize()'],['../classr2sonic_1_1sections_1_1Section.html#af2798e58b5770549ba61a6e96f122430',1,'r2sonic::sections::Section::getSize()']]]
 ];
