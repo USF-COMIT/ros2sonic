@@ -2,10 +2,10 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>r2sonic_interfaces</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="kkrasnosky@gmail.com">k2</maintainer>
-  <license>TODO: License declaration</license>
+  <version>0.1.0</version>
+  <description>R0S2Sonic interface definitions</description>
+  <maintainer email="kkrasnosky@usf.edu">Kristopher kkrasnosky</maintainer>
+  <license>Apache 2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 

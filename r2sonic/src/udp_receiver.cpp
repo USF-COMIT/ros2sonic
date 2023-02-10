@@ -41,8 +41,6 @@ void UdpReceiver::receiveHandler(const boost::system::error_code &error, size_t 
     std::cout << "Receive failed: " << error.message() << "\n";
     return;
   }
-//  std::cout << "Received: '" << std::string(recv_buffer_.begin(), recv_buffer_.begin()+bytes_transferred) << "' (" << error.message() << ")\n";
-
   receiveImpl(error, bytes_transferred);
 
   wait();

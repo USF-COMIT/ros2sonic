@@ -7,6 +7,8 @@
 
 NS_HEAD
 
+namespace primitives {
+
 typedef unsigned char  u8;
 typedef unsigned short u16;
 typedef unsigned int   u32;
@@ -17,7 +19,7 @@ typedef float          f32;
 typedef double         f64;
 
 template <typename T>
-T revPrimative(const T u)
+T revPrimitive(const T u)
 {
     //static_assert (CHAR_BIT == 8, "CHAR_BIT != 8");
 
@@ -49,10 +51,10 @@ struct BigEndianPrimative{
    * \return a machine endian version fo the variable
    */
   PrimT get() const{
-    return revPrimative(raw);
+    return revPrimitive(raw);
   }
   void set(PrimT val){
-    raw = revPrimative(val);
+    raw = revPrimitive(val);
   }
 
   operator int8_t() const { return get(); }
@@ -76,7 +78,9 @@ typedef BigEndianPrimative<s32>     BE_s32;
 typedef BigEndianPrimative<f32>     BE_f32;
 typedef BigEndianPrimative<f64>     BE_f64;
 
-
+}
+using namespace primitives;
 NS_FOOT
+
 
 #endif // PRIMATIVES_HPP
