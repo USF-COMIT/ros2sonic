@@ -18,13 +18,16 @@ class R2SonicNode : public rclcpp::Node
 {
 public:
   R2SonicNode();
+//  void publish(packets::Packet & r2_packet);
   /*!
    * \brief Publishes all ros2 messages corresponding to a received
    * BTH0 Packet.
    * \param r2_packet a r2sonic::packets::BTH0 packet to be converted
    * to corresponding ros2 packets and published
    */
-  void publish(packets::BTH0 r2_packet);
+  void publish(packets::BTH0 & r2_packet);
+
+  void publish(packets::AID0 & aid0_packet);
 
   /*!
    * \brief a Structure that corresponds to the parameters advertised
@@ -34,9 +37,11 @@ public:
     struct Topics{
       std::string detections;
       std::string bth0;
+      std::string aid0;
     } topics;
     struct Ports{
       int bathy;
+      int acoustic_image;
     } ports;
     std::string sonar_ip;
     std::string interface_ip;

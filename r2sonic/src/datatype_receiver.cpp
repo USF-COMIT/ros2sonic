@@ -19,5 +19,6 @@ void DatatypeReceiver<PKT_T>::receiveImpl(const boost::system::error_code &error
 }
 
 template class DatatypeReceiver<packets::BTH0>;
+template class DatatypeReceiver<packets::AID0>;
 
 NS_FOOT

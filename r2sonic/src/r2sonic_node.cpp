@@ -17,9 +17,10 @@ void setupParam(std::string * variable,rclcpp::Node *node , std::string topic, s
 void R2SonicNode::Parameters::init(rclcpp::Node *node){
   setupParam(&topics.detections,node,"topics/detections","~/detections");
   setupParam(&topics.bth0,node,"topics/bth0","~/raw/bth0");
-  setupParam(&ports.bathy,node,"ports/bathy",4000);
+  setupParam(&ports.bathy,node,"ports/bathy",65500);
+  setupParam(&ports.acoustic_image,node,"ports/acoustic_image" ,65503);
   setupParam(&sonar_ip,node,"sonar_ip","10.0.0.86");
-  setupParam(&interface_ip,node,"interface_ip","0.0.0.0");
+  setupParam(&interface_ip,node,"interface_ip","10.226.212.146");
   setupParam(&tx_frame_id,node,"tx_frame_id","r2sonic_tx");
   setupParam(&rx_frame_id,node,"rx_frame_id","r2sonic_rx");
 
@@ -64,7 +65,16 @@ R2SonicNode::R2SonicNode():
 
 }
 
-void R2SonicNode::publish(packets::BTH0 r2_packet){
+//void R2SonicNode::publish(packets::Packet &r2_packet){
+//  publish(reinterpret_cast<packets::BTH0>(&r2_packet));
+//  publish(reinterpret_cast<packets::AID0>(&r2_packet));
+//}
+
+void R2SonicNode::publish(packets::BTH0 &r2_packet){
+  if(!r2_packet.isType()){
+    return;
+  }
+
   msg_buffer_.dectections.lock();
   msg_buffer_.bth0.lock();
 
@@ -83,6 +93,14 @@ void R2SonicNode::publish(packets::BTH0 r2_packet){
 
   msg_buffer_.dectections.unlock();
   msg_buffer_.bth0.unlock();
+}
+
+void R2SonicNode::publish(packets::AID0 &aid0_packet){
+  if(!aid0_packet.isType()){
+    return;
+  }
+
+
 }
 
 bool R2SonicNode::shouldAdvertise(std::string topic){
