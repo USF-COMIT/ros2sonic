@@ -54,7 +54,7 @@ class AID0 : public Packet{
 public:
   using Packet::Packet; // default to parent constructor
   /*!
-   * \brief Gets the OPTIONAL sections::H0 Section associated with the BTH0 packet
+   * \brief Gets the OPTIONAL (once per ping) sections::H0 Section associated with the AID0 packet
    * \note This section is OPTIONAL and is only present for the first packet
    * for any given ping
    * \return The Packet's sections::H0 Section;
@@ -63,6 +63,12 @@ public:
     typeErrorCheck();
     return sections::H0( SectionsStartBit() );
   }
+  /*!
+   * \brief Gets the OPTIONAL (once per ping) sections::A1 Section associated with the AID0 packet
+   * \note This section is OPTIONAL and is only present for the first packet
+   * for any given ping
+   * \return The Packet's sections::A1 Section;
+   */
   sections::A1 a1() const{
     typeErrorCheck();
     return sections::A1( h0().end() );
