@@ -3,17 +3,17 @@
 ASSEMBLY_NS_HEAD
 
 template <typename T>
-Assembly::Assembly(){
-  return;
+Assembly<T>::Assembly(){
+
 }
 
 template <typename T>
-bool Assembly::addPacket(T packet){
-  if(packet.h0.exists()){
+bool Assembly<T>::addPacket(T packet){
+//  if(packet.h0->exists()){
 
-  }else{
+//  }else{
 
-  }
+//  }
 }
 
 

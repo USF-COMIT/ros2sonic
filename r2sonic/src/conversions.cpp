@@ -63,5 +63,19 @@ namespace conversions{
     raw_packet_msg->data.resize(pkt->getSize());
     raw_packet_msg->data.assign(pkt->startBit(),pkt->end());
   }
+
+  void aid02RawAcousticImage(acoustic_msgs::msg::RawSonarImage *sonar_image, const packets::AID0 &aid0_pkt){
+    if(aid0_pkt.isFirstInSeries()){
+      h02Header(&sonar_image->header,aid0_pkt.h0());
+      sonar_image->ping_info.ping_no = aid0_pkt.h0().body()->PingNumber.get();
+      size_t data_size = aid0_pkt.m0().body()->TotalBins * sizeof(u8);
+      sonar_image->image.data.resize(data_size);
+      sonar_image->image.dtype = acoustic_msgs::msg::SonarImageData::DTYPE_UINT8;
+    }
+    if(sonar_image->ping_info.ping_no == aid0_pkt.m0().body()->PingNumber){
+      auto m0 = &aid0_pkt.m0();
+      //m0->magnitude()
+    }
+  }
 }
 NS_FOOT

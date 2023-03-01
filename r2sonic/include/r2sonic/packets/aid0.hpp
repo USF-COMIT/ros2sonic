@@ -5,6 +5,7 @@
 
 #include <sections/h0.hpp>
 #include <sections/a1.hpp>
+#include <sections/m0.hpp>
 
 PACKETS_NS_HEAD
 
@@ -72,6 +73,15 @@ public:
   sections::A1 a1() const{
     typeErrorCheck();
     return sections::A1( h0().end() );
+  }
+
+  sections::M0 m0() const{
+    typeErrorCheck();
+    return sections::M0( a1().end() );
+  }
+
+  bool isFirstInSeries() const{
+    return h0().exists();
   }
 
 

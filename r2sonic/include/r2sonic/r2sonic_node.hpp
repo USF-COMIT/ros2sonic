@@ -37,6 +37,7 @@ public:
     struct Topics{
       std::string detections;
       std::string bth0;
+      std::string acoustic_image;
       std::string aid0;
     } topics;
     struct Ports{
@@ -73,6 +74,8 @@ protected:
   struct MsgBuffer{
     msg_mtx<acoustic_msgs::msg::SonarDetections> dectections;
     msg_mtx<r2sonic_interfaces::msg::RawPacket> bth0;
+    msg_mtx<acoustic_msgs::msg::RawSonarImage> acoustic_image;
+    msg_mtx<r2sonic_interfaces::msg::RawPacket> aid0;
   } msg_buffer_;
 
   bool shouldAdvertise(std::string topic);

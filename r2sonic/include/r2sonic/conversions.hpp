@@ -1,8 +1,9 @@
 #ifndef CONVERSIONS_HPP
 #define CONVERSIONS_HPP
 #include "package_defs.hpp"
-#include "packets/bth0.hpp"
+#include "packets/all.hpp"
 #include "acoustic_msgs/msg/sonar_detections.hpp"
+#include "acoustic_msgs/msg/raw_sonar_image.hpp"
 #include "r2sonic_interfaces/msg/raw_packet.hpp"
 #include <bits/stdc++.h>
 
@@ -33,6 +34,9 @@ namespace conversions{
    */
   void packet2RawPacket(r2sonic_interfaces::msg::RawPacket * raw_packet_msg,
                         const packets::Packet *pkt);
+
+  void aid02RawAcousticImage(acoustic_msgs::msg::RawSonarImage * sonar_image,
+                             const packets::AID0 & aid0_pkt);
 }
 
 NS_FOOT

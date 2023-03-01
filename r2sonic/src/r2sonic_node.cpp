@@ -17,6 +17,7 @@ void setupParam(std::string * variable,rclcpp::Node *node , std::string topic, s
 void R2SonicNode::Parameters::init(rclcpp::Node *node){
   setupParam(&topics.detections,node,"topics/detections","~/detections");
   setupParam(&topics.bth0,node,"topics/bth0","~/raw/bth0");
+  setupParam(&topics.aid0,node,"topics/aid0","~/raw/aid0");
   setupParam(&ports.bathy,node,"ports/bathy",65500);
   setupParam(&ports.acoustic_image,node,"ports/acoustic_image" ,65503);
   setupParam(&sonar_ip,node,"sonar_ip","10.0.0.86");
@@ -63,6 +64,11 @@ R2SonicNode::R2SonicNode():
         this->create_publisher<r2sonic_interfaces::msg::RawPacket>(parameters_.topics.bth0,100);
   }
 
+  if(shouldAdvertise(getParams().topics.aid0)){
+    msg_buffer_.aid0.pub =
+        this->create_publisher<r2sonic_interfaces::msg::RawPacket>(parameters_.topics.aid0,100);
+  }
+
 }
 
 //void R2SonicNode::publish(packets::Packet &r2_packet){
@@ -88,7 +94,6 @@ void R2SonicNode::publish(packets::BTH0 &r2_packet){
     conversions::packet2RawPacket(&msg_buffer_.bth0.msg,&r2_packet);
     msg_buffer_.bth0.msg.frame_id = getParams().tx_frame_id;
     msg_buffer_.bth0.pub->publish(msg_buffer_.bth0.msg);
-    msg_buffer_.bth0.pub->get_subscription_count();
   }
 
   msg_buffer_.dectections.unlock();
@@ -99,8 +104,21 @@ void R2SonicNode::publish(packets::AID0 &aid0_packet){
   if(!aid0_packet.isType()){
     return;
   }
+  msg_buffer_.aid0.lock();
+  msg_buffer_.acoustic_image.lock();
 
+  if(shouldPublish(msg_buffer_.aid0.pub)){
+    conversions::packet2RawPacket(&msg_buffer_.aid0.msg,&aid0_packet);
+    msg_buffer_.aid0.msg.frame_id = getParams().tx_frame_id;
+    msg_buffer_.aid0.pub->publish(msg_buffer_.aid0.msg);
+  }
 
+  if(shouldPublish(msg_buffer_.acoustic_image.pub)){
+
+  }
+
+  msg_buffer_.aid0.unlock();
+  msg_buffer_.acoustic_image.unlock();
 }
 
 bool R2SonicNode::shouldAdvertise(std::string topic){

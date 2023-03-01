@@ -4,6 +4,8 @@
 
 #include <packets/all.hpp>
 
+#include <vector>
+
 ASSEMBLY_NS_HEAD
 
 template <typename T>
