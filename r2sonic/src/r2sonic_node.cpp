@@ -18,10 +18,11 @@ void R2SonicNode::Parameters::init(rclcpp::Node *node){
   setupParam(&topics.detections,node,"topics/detections","~/detections");
   setupParam(&topics.bth0,node,"topics/bth0","~/raw/bth0");
   setupParam(&topics.aid0,node,"topics/aid0","~/raw/aid0");
+  setupParam(&topics.acoustic_image,node,"topics/acoustic_image","~/acoustic_image");
   setupParam(&ports.bathy,node,"ports/bathy",65500);
   setupParam(&ports.acoustic_image,node,"ports/acoustic_image" ,65503);
   setupParam(&sonar_ip,node,"sonar_ip","10.0.0.86");
-  setupParam(&interface_ip,node,"interface_ip","10.226.212.146");
+  setupParam(&interface_ip,node,"interface_ip","131.247.137.101");
   setupParam(&tx_frame_id,node,"tx_frame_id","r2sonic_tx");
   setupParam(&rx_frame_id,node,"rx_frame_id","r2sonic_rx");
 
@@ -69,6 +70,11 @@ R2SonicNode::R2SonicNode():
         this->create_publisher<r2sonic_interfaces::msg::RawPacket>(parameters_.topics.aid0,100);
   }
 
+  if(shouldAdvertise(getParams().topics.acoustic_image)){
+    msg_buffer_.acoustic_image.pub =
+        this->create_publisher<acoustic_msgs::msg::RawSonarImage>(parameters_.topics.acoustic_image,100);
+  }
+
 }
 
 //void R2SonicNode::publish(packets::Packet &r2_packet){
@@ -114,7 +120,9 @@ void R2SonicNode::publish(packets::AID0 &aid0_packet){
   }
 
   if(shouldPublish(msg_buffer_.acoustic_image.pub)){
-
+    if(conversions::aid02RawAcousticImage(&msg_buffer_.acoustic_image.msg,aid0_packet)){
+      msg_buffer_.acoustic_image.pub->publish(msg_buffer_.acoustic_image.msg);
+    }
   }
 
   msg_buffer_.aid0.unlock();
@@ -129,7 +137,8 @@ bool R2SonicNode::shouldPublish(rclcpp::PublisherBase::SharedPtr pub){
   if(!pub){
     return false;
   }
-  return pub->get_subscription_count() > 0;
+  return true;
+  //return pub->get_subscription_count() > 0;
 }
 
 NS_FOOT

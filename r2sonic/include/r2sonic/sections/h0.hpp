@@ -39,7 +39,7 @@ public:
   BE_f32  RxMountTilt;      //!< [radians]
   BE_u32  RxMiscInfo;       //!< reserved for future use
   BE_u16  reserved;         //!< reserved for future use
-  BE_u16  Points;           //!< number of bathy points
+  BE_u16  Beams;           //!< number of bathy points
   }__attribute__((packed));
 
 

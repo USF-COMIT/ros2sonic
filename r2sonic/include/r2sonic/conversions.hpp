@@ -35,7 +35,7 @@ namespace conversions{
   void packet2RawPacket(r2sonic_interfaces::msg::RawPacket * raw_packet_msg,
                         const packets::Packet *pkt);
 
-  void aid02RawAcousticImage(acoustic_msgs::msg::RawSonarImage * sonar_image,
+  bool aid02RawAcousticImage(acoustic_msgs::msg::RawSonarImage * sonar_image,
                              const packets::AID0 & aid0_pkt);
 }
 

@@ -74,7 +74,12 @@ public:
     typeErrorCheck();
     return sections::A1( h0().end() );
   }
-
+  /*!
+   * \brief Gets the OPTIONAL sections::M0 Section associated with the AID0 packet
+   * \note This section is OPTIONAL and is NOT present for the first packet
+   * for any given ping
+   * \return The Packet's sections::M0 Section;
+   */
   sections::M0 m0() const{
     typeErrorCheck();
     return sections::M0( a1().end() );
@@ -83,6 +88,8 @@ public:
   bool isFirstInSeries() const{
     return h0().exists();
   }
+
+
 
 
 protected:

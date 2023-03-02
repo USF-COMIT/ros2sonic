@@ -9,8 +9,8 @@ namespace conversions{
                    const sections::H0 & h0_pkt){
     ping_info_msg->frequency=h0_pkt.body()->Frequency.get();
     ping_info_msg->sound_speed = h0_pkt.body()->SoundSpeed.get();
-
-    auto num_beams = h0_pkt.body()->Points.get();
+    ping_info_msg->sample_rate = h0_pkt.body()->RxSampleRate.get();
+    auto num_beams = h0_pkt.body()->Beams.get();
     ping_info_msg->tx_beamwidths.resize(num_beams);
     ping_info_msg->rx_beamwidths.resize(num_beams);
     for(size_t i = 0; i<num_beams ; i++){
@@ -20,7 +20,7 @@ namespace conversions{
   }
   void bth02SonarDetections(acoustic_msgs::msg::SonarDetections * detections_msg,
                             const packets::BTH0 & bth0_pkt){
-    auto num_beams = bth0_pkt.h0().body()->Points.get();
+    auto num_beams = bth0_pkt.h0().body()->Beams.get();
 
     h02PingInfo(&detections_msg->ping_info, bth0_pkt.h0());
     h02Header(&detections_msg->header, bth0_pkt.h0());
@@ -30,6 +30,7 @@ namespace conversions{
     detections_msg->intensities.resize(num_beams);
     detections_msg->tx_angles.resize(num_beams);
     detections_msg->rx_angles.resize(num_beams);
+
 
     u32 angle_sum = 0;
     if(bth0_pkt.a2().exists()){
@@ -56,6 +57,7 @@ namespace conversions{
       }
 
     }
+    return;
 
   }
 
@@ -64,18 +66,80 @@ namespace conversions{
     raw_packet_msg->data.assign(pkt->startBit(),pkt->end());
   }
 
-  void aid02RawAcousticImage(acoustic_msgs::msg::RawSonarImage *sonar_image, const packets::AID0 &aid0_pkt){
+  bool aid02RawAcousticImage(acoustic_msgs::msg::RawSonarImage *sonar_image, const packets::AID0 &aid0_pkt){
     if(aid0_pkt.isFirstInSeries()){
       h02Header(&sonar_image->header,aid0_pkt.h0());
+      h02PingInfo(&sonar_image->ping_info,aid0_pkt.h0());
       sonar_image->ping_info.ping_no = aid0_pkt.h0().body()->PingNumber.get();
-      size_t data_size = aid0_pkt.m0().body()->TotalBins * sizeof(u8);
-      sonar_image->image.data.resize(data_size);
       sonar_image->image.dtype = acoustic_msgs::msg::SonarImageData::DTYPE_UINT8;
+      sonar_image->sample0 = 0;
+      sonar_image->image.beam_count = aid0_pkt.h0().body()->Beams.get();
+
+      auto total_beams = aid0_pkt.h0().body()->Beams.get();
+
+      sonar_image->tx_delays.resize(total_beams);
+      sonar_image->tx_angles.resize(total_beams);
+      sonar_image->rx_angles.resize(total_beams);
+      for(size_t i = 0 ; i < total_beams ; i++){
+        sonar_image->tx_delays[i] = 0;
+        sonar_image->tx_angles[i] = aid0_pkt.h0().body()->TxSteeringVert.get();
+        sonar_image->rx_angles[i] = aid0_pkt.a1().BeamAngle(i)->get();
+      }
+
+      return false;
+
     }
-    if(sonar_image->ping_info.ping_no == aid0_pkt.m0().body()->PingNumber){
-      auto m0 = &aid0_pkt.m0();
-      //m0->magnitude()
+
+
+    if(aid0_pkt.m0().exists()){
+      // exit if we are on the wrong ping
+      if(sonar_image->ping_info.ping_no != aid0_pkt.m0().body()->PingNumber.get()){
+        return false;
+      }
+
+      auto m0 = aid0_pkt.m0();
+
+
+      // initialize on first message.
+      auto total_bins = m0.body()->TotalBins.get();
+      auto first_bin = m0.body()->FirstBin.get();
+      auto bins = m0.body()->Bins.get();
+      auto beams = m0.body()->Beams.get();
+      auto total_beams = m0.body()->TotalBeams.get();
+      auto first_beam = m0.body()->FirstBeam.get();
+      auto total_samples = m0.body()->TotalSamples.get();
+
+      size_t data_size = total_bins*total_beams*sizeof(uint8_t);
+
+      if(sonar_image->image.data.size()!=data_size){
+
+        sonar_image->samples_per_beam = total_bins;
+        sonar_image->image.data.resize(data_size);
+        std::fill(sonar_image->image.data.begin(), sonar_image->image.data.end(), 0.0);
+      }
+
+      for(auto beam_idx = first_beam; beam_idx<(first_beam+beams); beam_idx++){
+        for(auto bin_idx = first_bin; bin_idx < (first_bin+bins); bin_idx ++){
+          //auto data_idx = int(beam_idx)*int(cols)+int(beam_idx);
+          auto data_idx = int(bin_idx)+int(total_beams)*beam_idx;
+          auto data_ptr = &reinterpret_cast<uint8_t*>(sonar_image->image.data.data())[data_idx];
+          uint8_t mag = m0.magnitude(beam_idx,bin_idx)->get();
+          *data_ptr = mag;
+        }
+      }
+//      for(size_t i = 0; i<sonar_image->image.data.size() ; i++){
+//        auto data_ptr = &reinterpret_cast<uint8_t*>(sonar_image->image.data.data())[i];
+//        *data_ptr = 255;//m0.magnitude(beam_idx,bin_idx)->get();
+//      }
+
+      if(first_bin+bins >= total_bins){
+        auto sampling_rate_scale = double(total_bins) / double(total_samples);
+        sonar_image->ping_info.sample_rate *= 1;
+        return true;
+      }
+
     }
+    return false;
   }
 }
 NS_FOOT
