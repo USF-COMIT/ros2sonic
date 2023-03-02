@@ -9,7 +9,7 @@ namespace conversions{
                    const sections::H0 & h0_pkt){
     ping_info_msg->frequency=h0_pkt.body()->Frequency.get();
     ping_info_msg->sound_speed = h0_pkt.body()->SoundSpeed.get();
-    ping_info_msg->sample_rate = h0_pkt.body()->RxSampleRate.get();
+    ping_info_msg->sample_rate = h0_pkt.body()->RxSampleRate.get() / 2;  // devide by 2 for 2 way travel time
     auto num_beams = h0_pkt.body()->Beams.get();
     ping_info_msg->tx_beamwidths.resize(num_beams);
     ping_info_msg->rx_beamwidths.resize(num_beams);
@@ -120,8 +120,8 @@ namespace conversions{
 
       for(auto beam_idx = first_beam; beam_idx<(first_beam+beams); beam_idx++){
         for(auto bin_idx = first_bin; bin_idx < (first_bin+bins); bin_idx ++){
-          //auto data_idx = int(beam_idx)*int(cols)+int(beam_idx);
-          auto data_idx = int(bin_idx)+int(total_beams)*beam_idx;
+          //auto data_idx = int(bin_idx)+int(total_beams)*beam_idx;
+          auto data_idx = int(bin_idx)*int(total_beams)+int(beam_idx);
           auto data_ptr = &reinterpret_cast<uint8_t*>(sonar_image->image.data.data())[data_idx];
           uint8_t mag = m0.magnitude(beam_idx,bin_idx)->get();
           *data_ptr = mag;
@@ -134,7 +134,7 @@ namespace conversions{
 
       if(first_bin+bins >= total_bins){
         auto sampling_rate_scale = double(total_bins) / double(total_samples);
-        sonar_image->ping_info.sample_rate *= 1;
+        sonar_image->ping_info.sample_rate *= sampling_rate_scale;
         return true;
       }
 

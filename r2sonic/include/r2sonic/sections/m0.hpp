@@ -39,9 +39,12 @@ public:
   }
   BE_u8 * magnitude(u16 beam_no, u16 bin_no) const{
     existanceErrorCheck();
-    //return & reinterpret_cast<BE_u8*>(start_bit_+sizeof(SectionInfo)+sizeof(Body))[bin_no + beam_no*body()->TotalBeams.get()];
-    return & reinterpret_cast<BE_u8*>(start_bit_+sizeof(SectionInfo)+sizeof(Body))[beam_no + bin_no*body()->TotalBeams.get()];
-    //return & reinterpret_cast<BE_u8*>(start_bit_+sizeof(SectionInfo)+sizeof(Body))[bin_no + beam_no*body()->TotalBeams.get()];
+
+    auto beam_idx = beam_no - body()->FirstBeam.get();
+    auto bin_idx  = bin_no - body()->FirstBin.get();
+    //return & reinterpret_cast<BE_u8*>(start_bit_+sizeof(SectionInfo)+sizeof(Body))[bin_no + beam_no*body()->Beams.get()];
+    //return & reinterpret_cast<BE_u8*>(start_bit_+sizeof(SectionInfo)+sizeof(Body))[beam_idx + bin_idx*body()->TotalBeams.get()];
+    return & reinterpret_cast<BE_u8*>(start_bit_+sizeof(SectionInfo)+sizeof(Body))[bin_idx + beam_idx*body()->Bins.get()];
   }
 
 
