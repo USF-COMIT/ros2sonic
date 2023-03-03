@@ -34,7 +34,13 @@ namespace conversions{
    */
   void packet2RawPacket(r2sonic_interfaces::msg::RawPacket * raw_packet_msg,
                         const packets::Packet *pkt);
-
+  /*!
+   * \brief Populates a acoustic_msgs::msg::RawSonarImage message with relavent data from
+   * an r2sonic::packets::AID0 packet.
+   * \param sonar_image [output] the message to fill with aid0_packet data
+   * \param aid0_pkt [input]
+   * \return True if the acoustic_msgs::msg::RawSonarImage is fully assembled.
+   */
   bool aid02RawAcousticImage(acoustic_msgs::msg::RawSonarImage * sonar_image,
                              const packets::AID0 & aid0_pkt);
 }
