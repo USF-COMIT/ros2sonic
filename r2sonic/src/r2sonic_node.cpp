@@ -22,7 +22,7 @@ void R2SonicNode::Parameters::init(rclcpp::Node *node){
   setupParam(&ports.bathy,node,"ports/bathy",65500);
   setupParam(&ports.acoustic_image,node,"ports/acoustic_image" ,65503);
   setupParam(&sonar_ip,node,"sonar_ip","10.0.0.86");
-  setupParam(&interface_ip,node,"interface_ip","131.247.137.101");
+  setupParam(&interface_ip,node,"interface_ip","0.0.0.0");
   setupParam(&tx_frame_id,node,"tx_frame_id","r2sonic_tx");
   setupParam(&rx_frame_id,node,"rx_frame_id","r2sonic_rx");
 
@@ -93,6 +93,7 @@ void R2SonicNode::publish(packets::BTH0 &r2_packet){
   if(shouldPublish(msg_buffer_.dectections.pub)){
     conversions::bth02SonarDetections(&msg_buffer_.dectections.msg,r2_packet);
     msg_buffer_.dectections.msg.header.frame_id = getParams().tx_frame_id;
+    msg_buffer_.dectections.msg.ping_info.rx_frame_id = getParams().rx_frame_id;
     msg_buffer_.dectections.pub->publish(msg_buffer_.dectections.msg);
   }
 
@@ -113,6 +114,8 @@ void R2SonicNode::publish(packets::AID0 &aid0_packet){
   msg_buffer_.aid0.lock();
   msg_buffer_.acoustic_image.lock();
 
+  auto ping_no = aid0_packet.getPingNo();
+
   if(shouldPublish(msg_buffer_.aid0.pub)){
     conversions::packet2RawPacket(&msg_buffer_.aid0.msg,&aid0_packet);
     msg_buffer_.aid0.msg.frame_id = getParams().tx_frame_id;
@@ -120,13 +123,33 @@ void R2SonicNode::publish(packets::AID0 &aid0_packet){
   }
 
   if(shouldPublish(msg_buffer_.acoustic_image.pub)){
-    if(conversions::aid02RawAcousticImage(&msg_buffer_.acoustic_image.msg,aid0_packet)){
-      msg_buffer_.acoustic_image.pub->publish(msg_buffer_.acoustic_image.msg);
+
+    auto msg = &msg_buffer_.acoustic_image.msg[ping_no];
+    if(conversions::aid02RawAcousticImage(msg,aid0_packet)){
+      msg->header.frame_id = getParams().tx_frame_id;
+      msg->ping_info.rx_frame_id = getParams().rx_frame_id;
+      msg_buffer_.acoustic_image.pub->publish(*msg);
+      msg_buffer_.acoustic_image.msg.erase(ping_no);
+      cleanMsgMap(&msg_buffer_.acoustic_image.msg, ping_no);
     }
   }
 
   msg_buffer_.aid0.unlock();
   msg_buffer_.acoustic_image.unlock();
+}
+
+template <typename T>
+void R2SonicNode::cleanMsgMap(msgMap<T> *msg_map, u32 ping_no){
+  auto iter = msg_map->begin();
+  auto end_itr = msg_map->end();
+  for(; iter != end_itr; ) {
+    auto item_ping_no = iter->first;
+    if (ping_no - 10 > item_ping_no) {
+        iter = msg_map->erase(iter);
+    } else {
+        ++iter;
+    }
+  }
 }
 
 bool R2SonicNode::shouldAdvertise(std::string topic){
@@ -138,7 +161,7 @@ bool R2SonicNode::shouldPublish(rclcpp::PublisherBase::SharedPtr pub){
     return false;
   }
   return true;
-  //return pub->get_subscription_count() > 0;
+  return pub->get_subscription_count() > 0;
 }
 
 NS_FOOT

@@ -63,21 +63,39 @@ protected:
 
   Parameters parameters_;
 
-  template <typename T>
-  struct msg_mtx{
-    T msg;
-    std::shared_ptr< rclcpp::Publisher<T> > pub;
+  template <typename MSG_T, typename STORAGE_T>
+  struct msgMtx_{
+    STORAGE_T msg;
+    std::shared_ptr< rclcpp::Publisher<MSG_T> > pub;
     std::mutex mtx;
     void lock(){mtx.lock();}
     void unlock(){mtx.unlock();}
   };
+
+  template <typename T>
+  using msgMtx = msgMtx_<T, T>;
+
+  template <typename T>
+  using msgMap = std::map<u32, T>;  //!< This typedef is useful for messages that need to be assmebled from multiple packets
+
+  template <typename T>
+  using msgMtxMap = msgMtx_< T, msgMap<T> >;
+
   struct MsgBuffer{
-    msg_mtx<acoustic_msgs::msg::SonarDetections> dectections;
-    msg_mtx<r2sonic_interfaces::msg::RawPacket> bth0;
-    msg_mtx<acoustic_msgs::msg::RawSonarImage> acoustic_image;
-    msg_mtx<r2sonic_interfaces::msg::RawPacket> aid0;
+    msgMtx<acoustic_msgs::msg::SonarDetections> dectections;
+    msgMtx<r2sonic_interfaces::msg::RawPacket> bth0;
+    msgMtxMap<acoustic_msgs::msg::RawSonarImage> acoustic_image;
+    msgMtx<r2sonic_interfaces::msg::RawPacket> aid0;
   } msg_buffer_;
 
+  /*!
+   * \brief removes incomplete messages from the map if they are too old based on
+   * the ping_number
+   * \param msg_map
+   * \param ping_no
+   */
+  template <typename T>
+  void cleanMsgMap(msgMap<T> *msg_map, u32 ping_no);
   bool shouldAdvertise(std::string topic);
   bool shouldPublish(rclcpp::PublisherBase::SharedPtr pub);
 

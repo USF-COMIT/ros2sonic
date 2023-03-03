@@ -85,8 +85,30 @@ public:
     return sections::M0( a1().end() );
   }
 
+  /*!
+   * \brief Determines if this is the first packet in a the series for a given ping
+   * \return true if this is the first packet in the series
+   */
   bool isFirstInSeries() const{
     return h0().exists();
+  }
+
+  /*!
+   * \brief Finds the ping number associated with the packet
+   * \note This gets the ping number from either the H0 section
+   * or the m0 section depending on which is included in the
+   * packet.
+   * \return the ping number of the packet
+   */
+  u32 getPingNo() const{
+    u32 ping_no = 0;
+    if(h0().exists()){
+      ping_no = h0().body()->PingNumber;
+    }
+    if(m0().exists()){
+      ping_no = m0().body()->PingNumber;
+    }
+    return ping_no;
   }
 
 
