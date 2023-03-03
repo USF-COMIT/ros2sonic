@@ -5,6 +5,7 @@
 
 #include <sections/h0.hpp>
 #include <sections/a1.hpp>
+#include <sections/m0.hpp>
 
 PACKETS_NS_HEAD
 
@@ -54,7 +55,7 @@ class AID0 : public Packet{
 public:
   using Packet::Packet; // default to parent constructor
   /*!
-   * \brief Gets the OPTIONAL sections::H0 Section associated with the BTH0 packet
+   * \brief Gets the OPTIONAL (once per ping) sections::H0 Section associated with the AID0 packet
    * \note This section is OPTIONAL and is only present for the first packet
    * for any given ping
    * \return The Packet's sections::H0 Section;
@@ -63,10 +64,54 @@ public:
     typeErrorCheck();
     return sections::H0( SectionsStartBit() );
   }
+  /*!
+   * \brief Gets the OPTIONAL (once per ping) sections::A1 Section associated with the AID0 packet
+   * \note This section is OPTIONAL and is only present for the first packet
+   * for any given ping
+   * \return The Packet's sections::A1 Section;
+   */
   sections::A1 a1() const{
     typeErrorCheck();
     return sections::A1( h0().end() );
   }
+  /*!
+   * \brief Gets the OPTIONAL sections::M0 Section associated with the AID0 packet
+   * \note This section is OPTIONAL and is NOT present for the first packet
+   * for any given ping
+   * \return The Packet's sections::M0 Section;
+   */
+  sections::M0 m0() const{
+    typeErrorCheck();
+    return sections::M0( a1().end() );
+  }
+
+  /*!
+   * \brief Determines if this is the first packet in a the series for a given ping
+   * \return true if this is the first packet in the series
+   */
+  bool isFirstInSeries() const{
+    return h0().exists();
+  }
+
+  /*!
+   * \brief Finds the ping number associated with the packet
+   * \note This gets the ping number from either the H0 section
+   * or the m0 section depending on which is included in the
+   * packet.
+   * \return the ping number of the packet
+   */
+  u32 getPingNo() const{
+    u32 ping_no = 0;
+    if(h0().exists()){
+      ping_no = h0().body()->PingNumber;
+    }
+    if(m0().exists()){
+      ping_no = m0().body()->PingNumber;
+    }
+    return ping_no;
+  }
+
+
 
 
 protected:
