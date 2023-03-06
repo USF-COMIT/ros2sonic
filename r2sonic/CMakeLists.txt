@@ -5,6 +5,7 @@ cmake_minimum_required(VERSION 3.8)
 ################################
 
 set(ROS_DEPENDS
+    ament_cmake
     rclcpp
     std_msgs
     acoustic_msgs

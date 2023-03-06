@@ -1,10 +1,25 @@
+#!/bin/bash
+
+PCAP_FILE=$1
+
+INTERFACE=$2
+
+IP_ADDR=$(ip -f inet addr show $INTERFACE | sed -En -e 's/.*inet ([0-9.]+).*/\1/p')
+MAC_ADDR=$(cat /sys/class/net/$INTERFACE/address)
+
+echo "modifying pcap file with your network settings"
+
 tcprewrite  --infile='/home/k2/Documents/r2sonic/SampleEthernetData/R2_AI+bathy.pcap' \
-            --outfile=r2sample_bathy_ai.pcap\
-            --dstipmap=10.0.1.102:192.168.1.192\
-            --enet-dmac=bc:6e:e2:36:93:36\
-            --srcipmap=10.0.0.86:192.168.1.192\
-            --enet-smac=bc:6e:e2:36:93:36\
+            --outfile=r2_temp.pcap\
+            --dstipmap=10.0.1.102:$IP_ADDR\
+            --enet-dmac=$MAC_ADDR\
+            --srcipmap=10.0.0.86:$IP_ADDR\
+            --enet-smac=$MAC_ADDR\
             --fixcsum
 
-sudo udpreplay -i wlp0s20f3 r2sample_bathy_ai.pcap
+echo "replaying the file on IP: $IP_ADDR with mac: $MAC_ADDR  (<ctrl>+c) to stop"
+
+sudo udpreplay -i $INTERFACE r2_temp.pcap -r -1
+
+rm r2_temp.pcap
 
