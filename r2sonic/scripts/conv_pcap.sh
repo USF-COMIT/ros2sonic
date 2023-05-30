@@ -9,7 +9,7 @@ MAC_ADDR=$(cat /sys/class/net/$INTERFACE/address)
 
 echo "modifying pcap file with your network settings"
 
-tcprewrite  --infile='/home/k2/Documents/r2sonic/SampleEthernetData/R2_AI+bathy.pcap' \
+tcprewrite  --infile=$PCAP_FILE \
             --outfile=r2_temp.pcap\
             --dstipmap=10.0.1.102:$IP_ADDR\
             --enet-dmac=$MAC_ADDR\

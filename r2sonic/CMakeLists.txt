@@ -93,7 +93,7 @@ install(DIRECTORY
   DESTINATION share/${PROJECT_NAME}
 )
 install(DIRECTORY
-  params
+  config
   DESTINATION share/${PROJECT_NAME}
 )
 
