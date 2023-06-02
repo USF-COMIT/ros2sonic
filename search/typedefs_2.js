@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['s16_0',['s16',['../namespacer2sonic_1_1primitives.html#ac8e38944d74dee13bf079e3c0e3e5b86',1,'r2sonic::primitives']]],
-  ['s32_1',['s32',['../namespacer2sonic_1_1primitives.html#a9fbe7bc207db360edb92c4cfc04bd009',1,'r2sonic::primitives']]],
-  ['s8_2',['s8',['../namespacer2sonic_1_1primitives.html#a3512bb988ba99f4becf473c1e255a8de',1,'r2sonic::primitives']]]
+  ['msgmap_0',['msgMap',['../classr2sonic_1_1R2SonicNode.html#afe8539a9a0961dc8ccc8dd2c2b764ef4',1,'r2sonic::R2SonicNode']]],
+  ['msgmtx_1',['msgMtx',['../classr2sonic_1_1R2SonicNode.html#a9d94dce47752e57fdbae9a27fa213923',1,'r2sonic::R2SonicNode']]],
+  ['msgmtxmap_2',['msgMtxMap',['../classr2sonic_1_1R2SonicNode.html#a34af85b7e248845b213a1c7fb38d02d8',1,'r2sonic::R2SonicNode']]]
 ];

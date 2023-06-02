@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['u16_0',['u16',['../namespacer2sonic_1_1primitives.html#a46c9af1310dc5790aca3c08269fe9f84',1,'r2sonic::primitives']]],
-  ['u32_1',['u32',['../namespacer2sonic_1_1primitives.html#a40560c3e22b5fcc77c3e144c075d4ef0',1,'r2sonic::primitives']]],
-  ['u8_2',['u8',['../namespacer2sonic_1_1primitives.html#a8d927111eb7f7dc43ca8ee045c461ca7',1,'r2sonic::primitives']]]
+  ['s16_0',['s16',['../namespacer2sonic_1_1primitives.html#ac8e38944d74dee13bf079e3c0e3e5b86',1,'r2sonic::primitives']]],
+  ['s32_1',['s32',['../namespacer2sonic_1_1primitives.html#a9fbe7bc207db360edb92c4cfc04bd009',1,'r2sonic::primitives']]],
+  ['s8_2',['s8',['../namespacer2sonic_1_1primitives.html#a3512bb988ba99f4becf473c1e255a8de',1,'r2sonic::primitives']]]
 ];

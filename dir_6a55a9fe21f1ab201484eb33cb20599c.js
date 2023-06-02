@@ -7,7 +7,7 @@ var dir_6a55a9fe21f1ab201484eb33cb20599c =
     [ "g1.hpp", "g1_8hpp.html", "g1_8hpp" ],
     [ "h0.hpp", "h0_8hpp.html", "h0_8hpp" ],
     [ "i1.hpp", "i1_8hpp.html", "i1_8hpp" ],
-    [ "M0.hpp", "M0_8hpp.html", "M0_8hpp" ],
+    [ "m0.hpp", "m0_8hpp.html", "m0_8hpp" ],
     [ "miniheader.hpp", "miniheader_8hpp.html", "miniheader_8hpp" ],
     [ "primatives.hpp", "primatives_8hpp.html", "primatives_8hpp" ],
     [ "q0.hpp", "q0_8hpp.html", "q0_8hpp" ],

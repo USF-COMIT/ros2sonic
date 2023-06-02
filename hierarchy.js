@@ -14,10 +14,11 @@ var hierarchy =
     [ "r2sonic::packets::CmdPacket< T >", "structr2sonic_1_1packets_1_1CmdPacket.html", null ],
     [ "r2sonic::sections::G1::Gate", "structr2sonic_1_1sections_1_1G1_1_1Gate.html", null ],
     [ "r2sonic::sections::MiniHeader", "structr2sonic_1_1sections_1_1MiniHeader.html", null ],
-    [ "r2sonic::R2SonicNode::msg_mtx< T >", "structr2sonic_1_1R2SonicNode_1_1msg__mtx.html", null ],
-    [ "r2sonic::R2SonicNode::msg_mtx< acoustic_msgs::msg::SonarDetections >", "structr2sonic_1_1R2SonicNode_1_1msg__mtx.html", null ],
-    [ "r2sonic::R2SonicNode::msg_mtx< r2sonic_interfaces::msg::RawPacket >", "structr2sonic_1_1R2SonicNode_1_1msg__mtx.html", null ],
     [ "r2sonic::R2SonicNode::MsgBuffer", "structr2sonic_1_1R2SonicNode_1_1MsgBuffer.html", null ],
+    [ "r2sonic::R2SonicNode::msgMtx_< MSG_T, STORAGE_T >", "structr2sonic_1_1R2SonicNode_1_1msgMtx__.html", null ],
+    [ "r2sonic::R2SonicNode::msgMtx_< acoustic_msgs::msg::RawSonarImage >", "structr2sonic_1_1R2SonicNode_1_1msgMtx__.html", null ],
+    [ "r2sonic::R2SonicNode::msgMtx_< acoustic_msgs::msg::SonarDetections >", "structr2sonic_1_1R2SonicNode_1_1msgMtx__.html", null ],
+    [ "r2sonic::R2SonicNode::msgMtx_< r2sonic_interfaces::msg::RawPacket >", "structr2sonic_1_1R2SonicNode_1_1msgMtx__.html", null ],
     [ "rclcpp::Node", null, [
       [ "r2sonic::R2SonicNode", "classr2sonic_1_1R2SonicNode.html", null ]
     ] ],

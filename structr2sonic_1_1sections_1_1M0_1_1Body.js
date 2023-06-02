@@ -1,13 +1,13 @@
 var structr2sonic_1_1sections_1_1M0_1_1Body =
 [
-    [ "Beams", "structr2sonic_1_1sections_1_1M0_1_1Body.html#aa182418adb203975249d641e6b4c51c7", null ],
-    [ "Bins", "structr2sonic_1_1sections_1_1M0_1_1Body.html#a3dce18b936eb8968a9e67af1da604cb7", null ],
-    [ "FirstBeam", "structr2sonic_1_1sections_1_1M0_1_1Body.html#adc5c5ea4816dafa56f5612b56eb23484", null ],
-    [ "FirstBin", "structr2sonic_1_1sections_1_1M0_1_1Body.html#a3ea4cf216e40317f8af05ec50f6623b2", null ],
-    [ "PingNumber", "structr2sonic_1_1sections_1_1M0_1_1Body.html#a760a8190e595680a2d67f22b25732115", null ],
-    [ "reserved", "structr2sonic_1_1sections_1_1M0_1_1Body.html#a8ec5d7e3d663027d6c3b64f8b89326aa", null ],
-    [ "ScalingFactor", "structr2sonic_1_1sections_1_1M0_1_1Body.html#a77ae3189a0a2e722c6b2ab1bf980b394", null ],
-    [ "TotalBeams", "structr2sonic_1_1sections_1_1M0_1_1Body.html#af0b50aff1cf5317fe5857e473a19281a", null ],
-    [ "TotalBins", "structr2sonic_1_1sections_1_1M0_1_1Body.html#a7a136b710c934b17cc81cfbff9d84c9e", null ],
-    [ "TotalSamples", "structr2sonic_1_1sections_1_1M0_1_1Body.html#aa8082e2119ae7aa96e63781a85f20889", null ]
+    [ "Beams", "structr2sonic_1_1sections_1_1M0_1_1Body.html#aef3f5847974943f74d81849bba71b5e6", null ],
+    [ "Bins", "structr2sonic_1_1sections_1_1M0_1_1Body.html#a142983eeedb96b0029cf37ca0467ad39", null ],
+    [ "FirstBeam", "structr2sonic_1_1sections_1_1M0_1_1Body.html#a8fc1024fe3eccb13a313eafecb37116e", null ],
+    [ "FirstBin", "structr2sonic_1_1sections_1_1M0_1_1Body.html#aea0ee9026addd32cc53204536ae7ad6f", null ],
+    [ "PingNumber", "structr2sonic_1_1sections_1_1M0_1_1Body.html#a84ed48aa3e391052f121fcb605292bcd", null ],
+    [ "reserved", "structr2sonic_1_1sections_1_1M0_1_1Body.html#a5d0e6af7d38fc1f3a281530984147092", null ],
+    [ "ScalingFactor", "structr2sonic_1_1sections_1_1M0_1_1Body.html#a85c093f1b1ee3a668011019ca5bb029a", null ],
+    [ "TotalBeams", "structr2sonic_1_1sections_1_1M0_1_1Body.html#a3b5c112453d80e6d7ea3ab47688cce40", null ],
+    [ "TotalBins", "structr2sonic_1_1sections_1_1M0_1_1Body.html#ab38afdce23ecab8ff617eaef68e4d059", null ],
+    [ "TotalSamples", "structr2sonic_1_1sections_1_1M0_1_1Body.html#a8cbf0fc4f243dbfec4079163572c839f", null ]
 ];

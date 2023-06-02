@@ -1,7 +1,11 @@
 <map id="r2sonic::sections::H0::Body" name="r2sonic::sections::H0::Body">
-<area shape="rect" id="node1" title="A datatype represnting the fixed length portion of the H0 message." alt="" coords="304,275,429,315"/>
-<area shape="rect" id="node2" href="$structr2sonic_1_1primitives_1_1BigEndianPrimative.html" title=" " alt="" coords="5,37,147,91"/>
-<area shape="rect" id="node3" href="$structr2sonic_1_1primitives_1_1BigEndianPrimative.html" title=" " alt="" coords="5,226,147,281"/>
-<area shape="rect" id="node4" href="$structr2sonic_1_1primitives_1_1BigEndianPrimative.html" title=" " alt="" coords="5,305,147,359"/>
-<area shape="rect" id="node5" href="$structr2sonic_1_1primitives_1_1BigEndianPrimative.html" title=" " alt="" coords="5,383,147,438"/>
+<area shape="rect" id="Node000001" title="A datatype represnting the fixed length portion of the H0 message." alt="" coords="303,281,427,322"/>
+<area shape="rect" id="Node000002" href="$structr2sonic_1_1primitives_1_1BigEndianPrimative.html" title=" " alt="" coords="5,38,146,93"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,61,223,73,253,85,280,102,300,121,317,144,341,193,356,242,364,280,358,281,351,243,336,195,312,147,296,125,277,106,251,89,221,78,160,67"/>
+<area shape="rect" id="Node000003" href="$structr2sonic_1_1primitives_1_1BigEndianPrimative.html" title=" " alt="" coords="5,231,146,287"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,268,302,290,302,295,160,274"/>
+<area shape="rect" id="Node000004" href="$structr2sonic_1_1primitives_1_1BigEndianPrimative.html" title=" " alt="" coords="5,311,146,367"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="160,342,219,340,278,333,320,320,322,325,279,338,219,346,160,347"/>
+<area shape="rect" id="Node000005" href="$structr2sonic_1_1primitives_1_1BigEndianPrimative.html" title=" " alt="" coords="5,391,146,447"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="159,402,219,386,277,363,311,343,339,320,343,324,314,347,280,368,220,391,161,407"/>
 </map>

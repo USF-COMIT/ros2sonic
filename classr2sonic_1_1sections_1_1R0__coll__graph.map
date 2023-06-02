@@ -1,4 +1,5 @@
 <map id="r2sonic::sections::R0" name="r2sonic::sections::R0">
-<area shape="rect" id="node1" title="An interpreter for Section R0: 16&#45;bit bathy point ranges." alt="" coords="5,93,147,119"/>
-<area shape="rect" id="node2" href="$classr2sonic_1_1sections_1_1Section.html" title="a common base class for all r2 sonic message section definitions" alt="" coords="13,5,139,45"/>
+<area shape="rect" id="Node000001" title="An interpreter for Section R0: 16&#45;bit bathy point ranges." alt="" coords="5,94,146,120"/>
+<area shape="rect" id="Node000002" href="$classr2sonic_1_1sections_1_1Section.html" title="a common base class for all r2 sonic message section definitions" alt="" coords="13,5,138,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,61,78,93,73,93,73,61"/>
 </map>

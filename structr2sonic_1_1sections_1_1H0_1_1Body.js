@@ -1,10 +1,10 @@
 var structr2sonic_1_1sections_1_1H0_1_1Body =
 [
+    [ "Beams", "structr2sonic_1_1sections_1_1H0_1_1Body.html#af36b1b5b1e45ee641d4629895f50c085", null ],
     [ "Frequency", "structr2sonic_1_1sections_1_1H0_1_1Body.html#aa1638a524d21c11446e96ef0485b54de", null ],
     [ "ModelNumber", "structr2sonic_1_1sections_1_1H0_1_1Body.html#a81e1e86db629a9ad931a24e73c65183a", null ],
     [ "PingNumber", "structr2sonic_1_1sections_1_1H0_1_1Body.html#af96ea8e1a23bf91722034d56f2f0d041", null ],
     [ "PingPeriod", "structr2sonic_1_1sections_1_1H0_1_1Body.html#aaef79217965cb3b33e928206e7f358ab", null ],
-    [ "Points", "structr2sonic_1_1sections_1_1H0_1_1Body.html#a70e4f450605bee585e872c4153e6023b", null ],
     [ "reserved", "structr2sonic_1_1sections_1_1H0_1_1Body.html#a39ac44796590c1f7270060609d9deb89", null ],
     [ "RxAbsorption", "structr2sonic_1_1sections_1_1H0_1_1Body.html#aafe39ce8af6d3bf11364513f1d059bac", null ],
     [ "RxBandwidth", "structr2sonic_1_1sections_1_1H0_1_1Body.html#ac79df58a28436357a09adcbdfb8af410", null ],

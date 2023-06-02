@@ -1,6 +1,7 @@
 var namespacer2sonic =
 [
     [ "conversions", "namespacer2sonic_1_1conversions.html", [
+      [ "aid02RawAcousticImage", "namespacer2sonic_1_1conversions.html#a2e44478cfae60483e02f2ce573f39fb4", null ],
       [ "bth02SonarDetections", "namespacer2sonic_1_1conversions.html#a8cea20c9abe37b584f2021da69dd1d77", null ],
       [ "h02Header", "namespacer2sonic_1_1conversions.html#a0f3c2c0b54a1e40e0f09ae1069063823", null ],
       [ "h02PingInfo", "namespacer2sonic_1_1conversions.html#a551dd76aa1474b42d279dbfb4663bc8b", null ],

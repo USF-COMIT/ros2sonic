@@ -1,5 +1,9 @@
 <map id="r2sonic::R2SonicNode::MsgBuffer" name="r2sonic::R2SonicNode::MsgBuffer">
-<area shape="rect" id="node1" title=" " alt="" coords="323,53,473,93"/>
-<area shape="rect" id="node2" href="$structr2sonic_1_1R2SonicNode_1_1msg__mtx.html" title=" " alt="" coords="15,5,195,60"/>
-<area shape="rect" id="node3" href="$structr2sonic_1_1R2SonicNode_1_1msg__mtx.html" title=" " alt="" coords="5,84,204,139"/>
+<area shape="rect" id="Node000001" title="a container for the messages we want to buffer" alt="" coords="345,93,494,134"/>
+<area shape="rect" id="Node000002" href="$structr2sonic_1_1R2SonicNode_1_1msgMtx__.html" title=" " alt="" coords="14,5,194,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,48,321,75,367,90,365,95,320,80,208,53"/>
+<area shape="rect" id="Node000003" href="$structr2sonic_1_1R2SonicNode_1_1msgMtx__.html" title=" " alt="" coords="5,85,203,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,111,344,111,344,116,217,116"/>
+<area shape="rect" id="Node000004" href="$structr2sonic_1_1R2SonicNode_1_1msgMtx__.html" title=" " alt="" coords="14,165,194,221"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="208,164,344,129,345,135,209,169"/>
 </map>

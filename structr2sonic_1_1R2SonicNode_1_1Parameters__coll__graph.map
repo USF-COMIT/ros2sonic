@@ -1,5 +1,7 @@
 <map id="r2sonic::R2SonicNode::Parameters" name="r2sonic::R2SonicNode::Parameters">
-<area shape="rect" id="node1" title="a Structure that corresponds to the parameters advertised by the R2SonicNode class." alt="" coords="92,108,243,148"/>
-<area shape="rect" id="node2" href="$structr2sonic_1_1R2SonicNode_1_1Parameters_1_1Topics.html" title=" " alt="" coords="5,5,156,45"/>
-<area shape="rect" id="node3" href="$structr2sonic_1_1R2SonicNode_1_1Parameters_1_1Ports.html" title=" " alt="" coords="180,5,331,45"/>
+<area shape="rect" id="Node000001" title="a Structure that corresponds to the parameters advertised by the R2SonicNode class...." alt="" coords="92,109,241,150"/>
+<area shape="rect" id="Node000002" href="$structr2sonic_1_1R2SonicNode_1_1Parameters_1_1Topics.html" title=" " alt="" coords="5,5,155,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,56,152,107,148,110,104,59"/>
+<area shape="rect" id="Node000003" href="$structr2sonic_1_1R2SonicNode_1_1Parameters_1_1Ports.html" title=" " alt="" coords="179,5,328,46"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="229,59,185,110,181,107,225,56"/>
 </map>
