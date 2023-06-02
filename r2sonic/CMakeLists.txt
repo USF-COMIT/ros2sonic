@@ -86,15 +86,19 @@ endforeach(NODE_FILE)
 message("  Installing: " ${EXECUTABLES})
 install(TARGETS
   ${EXECUTABLES}
+  DESTINATION lib/${PROJECT_NAME}/
+)
+install(PROGRAMS
+  scripts/replay_pcap.sh
   DESTINATION lib/${PROJECT_NAME}
 )
 install(DIRECTORY
   launch
-  DESTINATION share/${PROJECT_NAME}
+  DESTINATION share/${PROJECT_NAME}/
 )
 install(DIRECTORY
   config
-  DESTINATION share/${PROJECT_NAME}
+  DESTINATION share/${PROJECT_NAME}/
 )
 
 #############
