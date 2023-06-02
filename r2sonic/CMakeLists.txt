@@ -5,6 +5,7 @@ cmake_minimum_required(VERSION 3.8)
 ################################
 
 set(ROS_DEPENDS
+    ament_cmake
     rclcpp
     std_msgs
     acoustic_msgs
@@ -85,15 +86,19 @@ endforeach(NODE_FILE)
 message("  Installing: " ${EXECUTABLES})
 install(TARGETS
   ${EXECUTABLES}
+  DESTINATION lib/${PROJECT_NAME}/
+)
+install(PROGRAMS
+  scripts/replay_pcap.sh
   DESTINATION lib/${PROJECT_NAME}
 )
 install(DIRECTORY
   launch
-  DESTINATION share/${PROJECT_NAME}
+  DESTINATION share/${PROJECT_NAME}/
 )
 install(DIRECTORY
-  params
-  DESTINATION share/${PROJECT_NAME}
+  config
+  DESTINATION share/${PROJECT_NAME}/
 )
 
 #############
