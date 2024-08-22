@@ -57,7 +57,7 @@ R2SonicNode::R2SonicNode():
 
   if(shouldAdvertise(getParams().topics.detections)){
     msg_buffer_.dectections.pub =
-        this->create_publisher<acoustic_msgs::msg::SonarDetections>(parameters_.topics.detections,100);
+        this->create_publisher<marine_acoustic_msgs::msg::SonarDetections>(parameters_.topics.detections,100);
   }
 
   if(shouldAdvertise(getParams().topics.bth0)){
@@ -72,7 +72,7 @@ R2SonicNode::R2SonicNode():
 
   if(shouldAdvertise(getParams().topics.acoustic_image)){
     msg_buffer_.acoustic_image.pub =
-        this->create_publisher<acoustic_msgs::msg::RawSonarImage>(parameters_.topics.acoustic_image,100);
+        this->create_publisher<marine_acoustic_msgs::msg::RawSonarImage>(parameters_.topics.acoustic_image,100);
   }
 
 }
@@ -93,7 +93,7 @@ void R2SonicNode::publish(packets::BTH0 &r2_packet){
   if(shouldPublish(msg_buffer_.dectections.pub)){
     conversions::bth02SonarDetections(&msg_buffer_.dectections.msg,r2_packet);
     msg_buffer_.dectections.msg.header.frame_id = getParams().tx_frame_id;
-    msg_buffer_.dectections.msg.ping_info.rx_frame_id = getParams().rx_frame_id;
+    //msg_buffer_.dectections.msg.ping_info.rx_frame_id = getParams().rx_frame_id;
     msg_buffer_.dectections.pub->publish(msg_buffer_.dectections.msg);
   }
 
@@ -124,13 +124,13 @@ void R2SonicNode::publish(packets::AID0 &aid0_packet){
 
   if(shouldPublish(msg_buffer_.acoustic_image.pub)){
 
-    auto msg = &msg_buffer_.acoustic_image.msg[ping_no];
-    if(conversions::aid02RawAcousticImage(msg,aid0_packet)){
-      msg->header.frame_id = getParams().tx_frame_id;
-      msg->ping_info.rx_frame_id = getParams().rx_frame_id;
-      msg_buffer_.acoustic_image.pub->publish(*msg);
-      msg_buffer_.acoustic_image.msg.erase(ping_no);
-      cleanMsgMap(&msg_buffer_.acoustic_image.msg, ping_no);
+    auto assembler = &msg_buffer_.acoustic_image_assemblers[ping_no];
+    if(assembler->addPacket(aid0_packet)){
+      assembler->sonar_image.header.frame_id = getParams().tx_frame_id;
+      //msg->ping_info.rx_frame_id = getParams().rx_frame_id;
+      msg_buffer_.acoustic_image.pub->publish(assembler->sonar_image);
+      msg_buffer_.acoustic_image_assemblers.erase(ping_no);
+      cleanMsgMap(&msg_buffer_.acoustic_image_assemblers, ping_no);
     }
   }
 
