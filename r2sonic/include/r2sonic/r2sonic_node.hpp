@@ -43,9 +43,9 @@ public:
    */
   struct Parameters{
     struct Topics{
-      std::string detections;       //!< detections topic with type acoustic_msgs::RawSonarDetections
+      std::string detections;       //!< detections topic with type marine_acoustic_msgs::RawSonarDetections
       std::string bth0;             //!< raw bth0 topic r2sonic_interfaces::RawPacket
-      std::string acoustic_image;   //!< acoustic image topic with type acoustic_msgs::RawSonarImage
+      std::string acoustic_image;   //!< acoustic image topic with type marine_acoustic_msgs::RawSonarImage
       std::string aid0;             //!< raw aid0 topic with type r2sonic_interfaces::RawPacket
     } topics; //!< a container for the topics.
     struct Ports{
@@ -100,9 +100,11 @@ protected:
    * \brief a container for the messages we want to buffer
    */
   struct MsgBuffer{
-    msgMtx<acoustic_msgs::msg::SonarDetections> dectections;
+    msgMtx<marine_acoustic_msgs::msg::SonarDetections> dectections;
     msgMtx<r2sonic_interfaces::msg::RawPacket> bth0;
-    msgMtxMap<acoustic_msgs::msg::RawSonarImage> acoustic_image;
+
+    msgMtx<marine_acoustic_msgs::msg::RawSonarImage> acoustic_image;
+    std::map<u32,conversions::Aid02RawAiAssembler> acoustic_image_assemblers;
     msgMtx<r2sonic_interfaces::msg::RawPacket> aid0;
   } msg_buffer_;
 

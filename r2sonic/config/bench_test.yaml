@@ -1,19 +1,19 @@
-r2sonic:
-    ros__parameters:
-        topics:                                 # Any topic specified with an empty string , "", will not be computed or published.
-            detections:     "~/detections"      # The topic to publish your acoustic_msgs::msg::Detections
-            bth0:           "~/raw/bth0"        # The topic to publish raw bathy data
+/**:
+  ros__parameters:
+      topics:                                 # Any topic specified with an empty string , "", will not be computed or published.
+          detections:     "~/detections"      # The topic to publish your acoustic_msgs::msg::Detections
+          bth0:           "~/raw/bth0"        # The topic to publish raw bathy data
 
-        ports:
-            bathy:          4000 #65500         # The port you are receiving bathy data on
+      ports:
+          bathy:          4000 #65500         # The port you are receiving bathy data on
 
-        sonar_ip:           "10.0.0.86"         # The IP address of the sonar.  This is where you will send sonar commands.
-                                                # does not need to be specified if you are listen only
+      sonar_ip:           "10.0.0.86"         # The IP address of the sonar.  This is where you will send sonar commands.
+                                              # does not need to be specified if you are listen only
 
-        interface_ip:       "0.0.0.0"           # The IP of the interface you want to listen on.  Default ["0.0.0.0"]
-                                                # If you want to listen on all interfaces specify "0.0.0.0"
+      interface_ip:       "0.0.0.0"           # The IP of the interface you want to listen on.  Default ["0.0.0.0"]
+                                              # If you want to listen on all interfaces specify "0.0.0.0"
 
-        tx_frame_id:        "r2sonic_tx"        # The frame id of the acoustic transmitter
+      tx_frame_id:        "r2sonic_tx"        # The frame id of the acoustic transmitter
 
-        rx_frame_id:        "r2sonic_rx"        # The frame id of the acoustic receiver
+      rx_frame_id:        "r2sonic_rx"        # The frame id of the acoustic receiver
 

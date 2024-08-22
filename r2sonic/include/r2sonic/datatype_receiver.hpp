@@ -3,7 +3,7 @@
 #include "package_defs.hpp"
 #include "udp_receiver.hpp"
 #include <packets/all.hpp>
-#include "acoustic_msgs/msg/sonar_detections.hpp"
+#include "marine_acoustic_msgs/msg/sonar_detections.hpp"
 #include <conversions.hpp>
 #include <r2sonic_node.hpp>
 
