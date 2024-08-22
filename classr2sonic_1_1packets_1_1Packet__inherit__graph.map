@@ -1,7 +1,7 @@
 <map id="r2sonic::packets::Packet" name="r2sonic::packets::Packet">
 <area shape="rect" id="Node000001" title="The DataFormat class is a common base class for the R2Sonic up/downlink data formats as definned in t..." alt="" coords="87,5,250,31"/>
 <area shape="rect" id="Node000002" href="$classr2sonic_1_1packets_1_1AID0.html" title="An interpreter class that represents the Acoustic Image (AID) packet." alt="" coords="5,79,156,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,43,97,81,94,77,140,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,43,97,81,94,77,140,39"/>
 <area shape="rect" id="Node000003" href="$classr2sonic_1_1packets_1_1BTH0.html" title="An interpreter class that represents the Bathmetry Data (BHT0) packet." alt="" coords="180,79,336,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,38,245,77,241,81,193,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,39,245,77,241,81,194,43"/>
 </map>

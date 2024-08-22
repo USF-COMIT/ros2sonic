@@ -5,5 +5,6 @@ var searchData=
   ['init_2',['init',['../structr2sonic_1_1R2SonicNode_1_1Parameters.html#a4e92b2d419aa325f3243f36d8a246714',1,'r2sonic::R2SonicNode::Parameters']]],
   ['intensity_3',['Intensity',['../classr2sonic_1_1sections_1_1I1.html#a703925217dc04eba236ad301d2f317ed',1,'r2sonic::sections::I1']]],
   ['isfirstinseries_4',['isFirstInSeries',['../classr2sonic_1_1packets_1_1AID0.html#abe47371ba842e3e305b42955599b5c52',1,'r2sonic::packets::AID0']]],
-  ['istype_5',['isType',['../classr2sonic_1_1packets_1_1Packet.html#ac1ad48ce987c12b6c0f0fc5d4e045a83',1,'r2sonic::packets::Packet::isType()'],['../classr2sonic_1_1sections_1_1Section.html#a4c5a9303632318cfb696824e988e5773',1,'r2sonic::sections::Section::isType()']]]
+  ['isready_5',['isReady',['../classr2sonic_1_1conversions_1_1Aid02RawAiAssembler.html#aff99f57a1547e4f6b30ab3d67b73203c',1,'r2sonic::conversions::Aid02RawAiAssembler']]],
+  ['istype_6',['isType',['../classr2sonic_1_1packets_1_1Packet.html#ac1ad48ce987c12b6c0f0fc5d4e045a83',1,'r2sonic::packets::Packet::isType()'],['../classr2sonic_1_1sections_1_1Section.html#a4c5a9303632318cfb696824e988e5773',1,'r2sonic::sections::Section::isType()']]]
 ];

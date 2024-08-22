@@ -1,6 +1,9 @@
 var annotated_dup =
 [
     [ "r2sonic", "namespacer2sonic.html", [
+      [ "conversions", "namespacer2sonic_1_1conversions.html", [
+        [ "Aid02RawAiAssembler", "classr2sonic_1_1conversions_1_1Aid02RawAiAssembler.html", "classr2sonic_1_1conversions_1_1Aid02RawAiAssembler" ]
+      ] ],
       [ "packets", "namespacer2sonic_1_1packets.html", [
         [ "AID0", "classr2sonic_1_1packets_1_1AID0.html", "classr2sonic_1_1packets_1_1AID0" ],
         [ "BTH0", "classr2sonic_1_1packets_1_1BTH0.html", "classr2sonic_1_1packets_1_1BTH0" ],

@@ -1,19 +1,19 @@
 <map id="r2sonic::R2SonicNode" name="r2sonic::R2SonicNode">
-<area shape="rect" id="Node000001" title="The rclcpp::Node representing the connection between ROS and the R2Sonic Unit." alt="" coords="617,78,766,104"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="373,21,466,47"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="481,44,628,75,627,80,480,49"/>
-<area shape="rect" id="Node000003" href="$structr2sonic_1_1R2SonicNode_1_1Parameters.html" title="a Structure that corresponds to the parameters advertised by the R2SonicNode class...." alt="" coords="345,71,494,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="509,88,617,88,617,94,509,94"/>
-<area shape="rect" id="Node000004" href="$structr2sonic_1_1R2SonicNode_1_1Parameters_1_1Topics.html" title=" " alt="" coords="29,5,179,46"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="193,41,345,73,344,78,192,47"/>
-<area shape="rect" id="Node000005" href="$structr2sonic_1_1R2SonicNode_1_1Parameters_1_1Ports.html" title=" " alt="" coords="29,71,179,111"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="193,88,344,88,344,94,193,94"/>
-<area shape="rect" id="Node000006" href="$structr2sonic_1_1R2SonicNode_1_1MsgBuffer.html" title="a container for the messages we want to buffer" alt="" coords="345,183,494,223"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="483,174,657,102,659,107,485,179"/>
-<area shape="rect" id="Node000007" href="$structr2sonic_1_1R2SonicNode_1_1msgMtx__.html" title=" " alt="" coords="14,135,194,191"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="209,174,345,191,344,196,208,179"/>
-<area shape="rect" id="Node000008" href="$structr2sonic_1_1R2SonicNode_1_1msgMtx__.html" title=" " alt="" coords="5,215,203,271"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="218,235,320,224,344,219,345,225,321,229,218,240"/>
-<area shape="rect" id="Node000009" href="$structr2sonic_1_1R2SonicNode_1_1msgMtx__.html" title=" " alt="" coords="14,295,194,351"/>
-<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="207,295,263,277,320,256,384,222,386,226,322,260,265,282,208,300"/>
+<area shape="rect" id="Node000001" title="The rclcpp::Node representing the connection between ROS and the R2Sonic Unit." alt="" coords="624,78,773,104"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="380,21,473,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="489,44,635,75,634,80,488,49"/>
+<area shape="rect" id="Node000003" href="$structr2sonic_1_1R2SonicNode_1_1Parameters.html" title="a Structure that corresponds to the parameters advertised by the R2SonicNode class...." alt="" coords="352,71,501,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="516,88,624,88,624,94,516,94"/>
+<area shape="rect" id="Node000004" href="$structr2sonic_1_1R2SonicNode_1_1Parameters_1_1Topics.html" title=" " alt="" coords="33,5,182,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="198,41,352,73,351,78,197,47"/>
+<area shape="rect" id="Node000005" href="$structr2sonic_1_1R2SonicNode_1_1Parameters_1_1Ports.html" title=" " alt="" coords="33,71,182,111"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="198,88,351,88,351,94,198,94"/>
+<area shape="rect" id="Node000006" href="$structr2sonic_1_1R2SonicNode_1_1MsgBuffer.html" title="a container for the messages we want to buffer" alt="" coords="352,183,501,223"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="491,174,664,102,666,107,493,179"/>
+<area shape="rect" id="Node000007" href="$structr2sonic_1_1R2SonicNode_1_1msgMtx__.html" title=" " alt="" coords="5,135,210,191"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="225,175,352,191,351,196,225,180"/>
+<area shape="rect" id="Node000008" href="$structr2sonic_1_1R2SonicNode_1_1msgMtx__.html" title=" " alt="" coords="9,215,206,271"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="221,235,327,224,351,219,352,225,328,229,222,241"/>
+<area shape="rect" id="Node000009" href="$structr2sonic_1_1R2SonicNode_1_1msgMtx__.html" title=" " alt="" coords="5,295,210,351"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="224,291,327,256,391,221,394,226,329,260,226,296"/>
 </map>

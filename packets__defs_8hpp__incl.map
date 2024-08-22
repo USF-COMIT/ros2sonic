@@ -1,8 +1,8 @@
 <map id="r2sonic/include/r2sonic/packets/packets_defs.hpp" name="r2sonic/include/r2sonic/packets/packets_defs.hpp">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,183,46"/>
 <area shape="rect" id="Node000002" href="$package__defs_8hpp.html" title=" " alt="" coords="26,168,162,193"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,48,62,81,58,100,59,119,77,154,73,157,54,120,52,100,57,79,76,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,48,62,81,58,100,59,119,77,154,72,157,54,120,52,100,57,79,76,45"/>
 <area shape="rect" id="Node000003" href="$sections__defs_8hpp.html" title=" " alt="" coords="68,94,248,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,45,141,80,137,84,108,48"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="149,122,116,158,112,155,145,118"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,45,141,80,137,83,108,48"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="149,122,117,158,113,154,145,118"/>
 </map>

@@ -34,7 +34,7 @@ var NAVTREE =
     [ "Additional Utilities", "index.html#autotoc_md19", null ],
     [ "Topics", "index.html#autotoc_md21", null ],
     [ "Parameters", "index.html#autotoc_md22", null ],
-    [ "Testing Logs and R2Sonic Data Format Documentation <a href=\"#logs\" id=\"logs\"></a>", "index.html#autotoc_md23", null ],
+    [ "Testing Logs and R2Sonic Data Format Documentation", "index.html#autotoc_md23", null ],
     [ "Credits", "index.html#autotoc_md24", null ],
     [ "Contributing", "md_CONTRIBUTING.html", [
       [ "Branching Strategy", "md_CONTRIBUTING.html#autotoc_md1", null ],
@@ -83,8 +83,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "a0_8hpp.html",
-"conversions_8hpp.html#a0f3c2c0b54a1e40e0f09ae1069063823",
-"structr2sonic_1_1sections_1_1H0_1_1Body.html#a020fa510351bcd6c44397596e4b8fa0e"
+"classr2sonic_1_1sections_1_1Section.html#abfc0f5af63022dd71796148b3f507861",
+"structr2sonic_1_1sections_1_1G0_1_1Body.html#a545e69c8ec791cf3b8a3d83e1db370ac"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

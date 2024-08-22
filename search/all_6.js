@@ -1,16 +1,16 @@
 var searchData=
 [
-  ['g0_0',['g0',['../classr2sonic_1_1packets_1_1BTH0.html#a91102f0bbbef53c276746e84c2810516',1,'r2sonic::packets::BTH0']]],
-  ['g0_1',['G0',['../classr2sonic_1_1sections_1_1G0.html',1,'r2sonic::sections']]],
+  ['g0_0',['G0',['../classr2sonic_1_1sections_1_1G0.html',1,'r2sonic::sections']]],
+  ['g0_1',['g0',['../classr2sonic_1_1packets_1_1BTH0.html#a91102f0bbbef53c276746e84c2810516',1,'r2sonic::packets::BTH0']]],
   ['g0_2ehpp_2',['g0.hpp',['../g0_8hpp.html',1,'']]],
   ['g0_5fdepthgatemax_3',['G0_DepthGateMax',['../structr2sonic_1_1sections_1_1G0_1_1Body.html#a545e69c8ec791cf3b8a3d83e1db370ac',1,'r2sonic::sections::G0::Body']]],
   ['g0_5fdepthgatemin_4',['G0_DepthGateMin',['../structr2sonic_1_1sections_1_1G0_1_1Body.html#adc082222a96a31130563a336333630a3',1,'r2sonic::sections::G0::Body']]],
   ['g0_5fdepthgateslope_5',['G0_DepthGateSlope',['../structr2sonic_1_1sections_1_1G0_1_1Body.html#a1f1e539f62eae193815fa0d01e881f5a',1,'r2sonic::sections::G0::Body']]],
-  ['g1_6',['g1',['../classr2sonic_1_1packets_1_1BTH0.html#a85f3c8e74a2c894c95c56d479099c216',1,'r2sonic::packets::BTH0']]],
-  ['g1_7',['G1',['../classr2sonic_1_1sections_1_1G1.html',1,'r2sonic::sections']]],
+  ['g1_6',['G1',['../classr2sonic_1_1sections_1_1G1.html',1,'r2sonic::sections']]],
+  ['g1_7',['g1',['../classr2sonic_1_1packets_1_1BTH0.html#a85f3c8e74a2c894c95c56d479099c216',1,'r2sonic::packets::BTH0']]],
   ['g1_2ehpp_8',['g1.hpp',['../g1_8hpp.html',1,'']]],
-  ['gate_9',['gate',['../classr2sonic_1_1sections_1_1G1.html#ad9c7b54706b6e914b0c8ed42f6aca280',1,'r2sonic::sections::G1']]],
-  ['gate_10',['Gate',['../structr2sonic_1_1sections_1_1G1_1_1Gate.html',1,'r2sonic::sections::G1']]],
+  ['gate_9',['Gate',['../structr2sonic_1_1sections_1_1G1_1_1Gate.html',1,'r2sonic::sections::G1']]],
+  ['gate_10',['gate',['../classr2sonic_1_1sections_1_1G1.html#ad9c7b54706b6e914b0c8ed42f6aca280',1,'r2sonic::sections::G1']]],
   ['generate_5flaunch_5fdescription_11',['generate_launch_description',['../namespacebench__test.html#a968d213bad2a70a28253ad7b4862ff97',1,'bench_test']]],
   ['get_12',['get',['../structr2sonic_1_1primitives_1_1BigEndianPrimative.html#aaf792bc442b8d6dc8c372a508d9e6c66',1,'r2sonic::primitives::BigEndianPrimative']]],
   ['getparams_13',['getParams',['../classr2sonic_1_1R2SonicNode.html#a33d64a2bbddea18c6136fa66dcf62a5c',1,'r2sonic::R2SonicNode']]],
@@ -18,5 +18,8 @@ var searchData=
   ['getrange_15',['getRange',['../classr2sonic_1_1sections_1_1R0.html#a065bbd919d74e6ca429cdf946f784f91',1,'r2sonic::sections::R0']]],
   ['getscaledintensity_16',['getScaledIntensity',['../classr2sonic_1_1sections_1_1I1.html#a316cadfbd03d116e4af9f6354d4030e9',1,'r2sonic::sections::I1']]],
   ['getscaledrange_17',['getScaledRange',['../classr2sonic_1_1sections_1_1R0.html#a19e4e17ea4196595f65ae76775738343',1,'r2sonic::sections::R0']]],
-  ['getsize_18',['getSize',['../classr2sonic_1_1packets_1_1Packet.html#ac1fc787a8449d16e9d5bc9e67d0c6c3e',1,'r2sonic::packets::Packet::getSize()'],['../classr2sonic_1_1sections_1_1Section.html#af2798e58b5770549ba61a6e96f122430',1,'r2sonic::sections::Section::getSize()']]]
+  ['getsize_18',['getSize',['../classr2sonic_1_1packets_1_1Packet.html#ac1fc787a8449d16e9d5bc9e67d0c6c3e',1,'r2sonic::packets::Packet::getSize()'],['../classr2sonic_1_1sections_1_1Section.html#af2798e58b5770549ba61a6e96f122430',1,'r2sonic::sections::Section::getSize()']]],
+  ['getting_20started_19',['Getting Started',['../md_docs_2api.html#autotoc_md7',1,'Getting Started'],['../index.html#autotoc_md16',1,'Getting Started']]],
+  ['getting_20the_20package_20the_20dependencies_20',['Begin by getting the package the dependencies',['../index.html#autotoc_md14',1,'']]],
+  ['guidelines_21',['Additional Guidelines',['../md_CONTRIBUTING.html#autotoc_md5',1,'']]]
 ];

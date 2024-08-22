@@ -1,5 +1,5 @@
 <map id="r2sonic::sections::M0" name="r2sonic::sections::M0">
 <area shape="rect" id="Node000001" title="An interpreter for Section M0: 8&#45;bit magnitude data (many per ping, you assemble them into complete p..." alt="" coords="5,94,148,120"/>
 <area shape="rect" id="Node000002" href="$classr2sonic_1_1sections_1_1Section.html" title="a common base class for all r2 sonic message section definitions" alt="" coords="14,5,139,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,61,79,93,74,93,74,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,62,79,93,74,93,74,62"/>
 </map>

@@ -1,23 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classr2sonic_1_1sections_1_1Section.html" title="a common base class for all r2 sonic message section definitions" alt="" coords="5,221,130,261"/>
-<area shape="rect" id="Node000001" href="$classr2sonic_1_1sections_1_1A0.html" title="An interpreter for Section A0: bathy point angles, equally&#45;spaced (present only during &quot;equi&#45;angle&quot; s..." alt="" coords="179,5,319,31"/>
-<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="77,206,91,167,112,123,140,79,176,40,193,29,196,34,179,44,144,82,117,126,96,170,81,207"/>
-<area shape="rect" id="Node000002" href="$classr2sonic_1_1sections_1_1A1.html" title="An interpreter for Section A1: float beam angles, arbitrarily&#45;spaced." alt="" coords="179,55,319,80"/>
-<area shape="poly" id="edge4_Node000000_Node000002" title=" " alt="" coords="83,206,121,147,146,116,176,89,195,79,198,83,179,94,150,120,125,150,88,208"/>
-<area shape="rect" id="Node000003" href="$classr2sonic_1_1sections_1_1A2.html" title="An interpreter for Section A2: 16&#45;bit bathy point angles, arbitrarily&#45;spaced (present only during &quot;eq..." alt="" coords="179,104,319,130"/>
-<area shape="poly" id="edge5_Node000000_Node000003" title=" " alt="" coords="95,207,131,172,176,139,199,128,201,133,179,143,135,176,98,211"/>
-<area shape="rect" id="Node000004" href="$classr2sonic_1_1sections_1_1G0.html" title="simple straight&#45;line depth gates" alt="" coords="178,153,320,179"/>
-<area shape="poly" id="edge6_Node000000_Node000004" title=" " alt="" coords="123,211,177,188,205,177,207,182,179,193,125,216"/>
-<area shape="rect" id="Node000005" href="$classr2sonic_1_1sections_1_1G1.html" title="simple straight&#45;line depth gates" alt="" coords="178,203,320,228"/>
-<area shape="poly" id="edge7_Node000000_Node000005" title=" " alt="" coords="144,227,178,223,178,228,145,233"/>
-<area shape="rect" id="Node000006" href="$classr2sonic_1_1sections_1_1H0.html" title="An interpreter for the &quot;H0&quot; Section which describes general ping information." alt="" coords="178,252,320,278"/>
-<area shape="poly" id="edge8_Node000000_Node000006" title=" " alt="" coords="145,248,178,253,178,258,144,254"/>
-<area shape="rect" id="Node000007" href="$classr2sonic_1_1sections_1_1I1.html" title="An interpreter for Section I1: 16&#45;bit bathy intensity (present only if enabled)" alt="" coords="181,301,317,327"/>
-<area shape="poly" id="edge9_Node000000_Node000007" title=" " alt="" coords="126,265,179,288,207,298,205,303,177,293,124,270"/>
-<area shape="rect" id="Node000008" href="$classr2sonic_1_1sections_1_1M0.html" title="An interpreter for Section M0: 8&#45;bit magnitude data (many per ping, you assemble them into complete p..." alt="" coords="178,351,320,376"/>
-<area shape="poly" id="edge10_Node000000_Node000008" title=" " alt="" coords="99,270,135,305,179,337,201,348,199,352,176,342,132,309,95,274"/>
-<area shape="rect" id="Node000009" href="$classr2sonic_1_1sections_1_1Q0.html" title="section Q0: 4&#45;bit quality flags" alt="" coords="178,400,320,426"/>
-<area shape="poly" id="edge11_Node000000_Node000009" title=" " alt="" coords="88,273,125,331,150,361,179,387,198,397,195,402,176,391,147,365,121,334,83,276"/>
-<area shape="rect" id="Node000010" href="$classr2sonic_1_1sections_1_1R0.html" title="An interpreter for Section R0: 16&#45;bit bathy point ranges." alt="" coords="179,449,319,475"/>
-<area shape="poly" id="edge12_Node000000_Node000010" title=" " alt="" coords="82,274,96,312,117,355,144,399,179,436,196,446,193,451,176,440,140,402,112,358,91,314,77,276"/>
+<area shape="rect" id="Node000000" href="$structr2sonic_1_1sections_1_1MiniHeader.html" title="A datatype representing the MiniHeader common to all Packets." alt="" coords="5,5,130,46"/>
 </map>

@@ -1,9 +1,11 @@
 <map id="r2sonic" name="r2sonic">
-<area shape="rect" id="node2" href="dir_55a0bf14a334c7d1a5ce8112d183ea53.html" title="include" alt="" coords="57,100,119,126"/>
-<area shape="rect" id="node3" href="dir_2b94c4a034d3dd14c68337a1286df896.html" title="launch" alt="" coords="170,27,230,52"/>
-<area shape="rect" id="node4" href="dir_24f6918b354cb70ee052b3c0128d4ebd.html" title="nodes" alt="" coords="91,27,147,52"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000003_000001.html" title="2" alt="" coords="105,79,112,94"/>
-<area shape="rect" id="node5" href="dir_feddcc155dc0bbc9edd4b13d5f30daee.html" title="src" alt="" coords="27,27,66,52"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000008_000001.html" title="4" alt="" coords="76,72,83,87"/>
+<area shape="rect" id="node2" href="dir_55a0bf14a334c7d1a5ce8112d183ea53.html" title="include" alt="" coords="225,100,287,126"/>
+<area shape="rect" id="node3" href="dir_2b94c4a034d3dd14c68337a1286df896.html" title="launch" alt="" coords="114,27,174,52"/>
+<area shape="rect" id="node4" href="dir_24f6918b354cb70ee052b3c0128d4ebd.html" title="nodes" alt="" coords="197,27,254,52"/>
+<area shape="poly" id="edge1" href="dir_000003_000001.html" alt="" coords="233,52,247,85,242,87,228,54"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000003_000001.html" title="2" alt="" coords="248,72,255,87"/>
+<area shape="rect" id="node5" href="dir_feddcc155dc0bbc9edd4b13d5f30daee.html" title="src" alt="" coords="278,27,317,52"/>
+<area shape="poly" id="edge2" href="dir_000008_000001.html" alt="" coords="293,54,273,88,268,85,288,51"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000008_000001.html" title="4" alt="" coords="276,81,283,96"/>
 <area shape="rect" id="clust1" href="dir_ef25921c602656c636aa9981e4a522bb.html" alt="" coords="16,16,328,137"/>
 </map>

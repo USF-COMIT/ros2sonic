@@ -6,5 +6,8 @@ var searchData=
   ['udp_5freceiver_2ecpp_3',['udp_receiver.cpp',['../udp__receiver_8cpp.html',1,'']]],
   ['udp_5freceiver_2ehpp_4',['udp_receiver.hpp',['../udp__receiver_8hpp.html',1,'']]],
   ['udpreceiver_5',['UdpReceiver',['../classr2sonic_1_1UdpReceiver.html',1,'r2sonic::UdpReceiver'],['../classr2sonic_1_1UdpReceiver.html#adb6ff23073892bab3a0b8a69c5f917ad',1,'r2sonic::UdpReceiver::UdpReceiver()']]],
-  ['unlock_6',['unlock',['../structr2sonic_1_1R2SonicNode_1_1msgMtx__.html#ae402ea00fda0c36b2b542b41eef40f1b',1,'r2sonic::R2SonicNode::msgMtx_']]]
+  ['unlock_6',['unlock',['../structr2sonic_1_1R2SonicNode_1_1msgMtx__.html#ae402ea00fda0c36b2b542b41eef40f1b',1,'r2sonic::R2SonicNode::msgMtx_']]],
+  ['usage_7',['API Usage',['../md_docs_2api.html',1,'']]],
+  ['using_20logged_20data_8',['Without R2Sonic Hardware Using Logged Data',['../index.html#autotoc_md18',1,'']]],
+  ['utilities_9',['Additional Utilities',['../index.html#autotoc_md19',1,'']]]
 ];

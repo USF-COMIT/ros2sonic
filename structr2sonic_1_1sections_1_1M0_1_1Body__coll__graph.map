@@ -1,9 +1,9 @@
 <map id="r2sonic::sections::M0::Body" name="r2sonic::sections::M0::Body">
 <area shape="rect" id="Node000001" title="A datatype represnting the fixed length portion of the M0 message." alt="" coords="277,109,401,150"/>
 <area shape="rect" id="Node000002" href="$structr2sonic_1_1primitives_1_1BigEndianPrimative.html" title=" " alt="" coords="5,22,146,78"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,73,277,108,275,113,159,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,73,277,108,275,113,160,78"/>
 <area shape="rect" id="Node000003" href="$structr2sonic_1_1primitives_1_1BigEndianPrimative.html" title=" " alt="" coords="5,102,146,158"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,127,276,127,276,132,161,132"/>
-<area shape="rect" id="Node000004" href="$structr2sonic_1_1primitives_1_1BigEndianPrimative.html" title=" " alt="" coords="5,193,146,248"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="160,214,206,207,252,193,286,172,315,149,319,153,289,177,254,197,208,212,161,220"/>
+<area shape="rect" id="Node000004" href="$structr2sonic_1_1primitives_1_1BigEndianPrimative.html" title=" " alt="" coords="5,192,146,248"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,214,207,207,252,193,286,172,315,149,319,153,289,177,254,197,208,212,162,220"/>
 </map>

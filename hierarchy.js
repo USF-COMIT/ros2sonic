@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "r2sonic::conversions::Aid02RawAiAssembler", "classr2sonic_1_1conversions_1_1Aid02RawAiAssembler.html", null ],
     [ "r2sonic::primitives::BigEndianPrimative< PrimT >", "structr2sonic_1_1primitives_1_1BigEndianPrimative.html", null ],
     [ "r2sonic::primitives::BigEndianPrimative< f32 >", "structr2sonic_1_1primitives_1_1BigEndianPrimative.html", null ],
     [ "r2sonic::primitives::BigEndianPrimative< s16 >", "structr2sonic_1_1primitives_1_1BigEndianPrimative.html", null ],
@@ -16,8 +17,8 @@ var hierarchy =
     [ "r2sonic::sections::MiniHeader", "structr2sonic_1_1sections_1_1MiniHeader.html", null ],
     [ "r2sonic::R2SonicNode::MsgBuffer", "structr2sonic_1_1R2SonicNode_1_1MsgBuffer.html", null ],
     [ "r2sonic::R2SonicNode::msgMtx_< MSG_T, STORAGE_T >", "structr2sonic_1_1R2SonicNode_1_1msgMtx__.html", null ],
-    [ "r2sonic::R2SonicNode::msgMtx_< acoustic_msgs::msg::RawSonarImage >", "structr2sonic_1_1R2SonicNode_1_1msgMtx__.html", null ],
-    [ "r2sonic::R2SonicNode::msgMtx_< acoustic_msgs::msg::SonarDetections >", "structr2sonic_1_1R2SonicNode_1_1msgMtx__.html", null ],
+    [ "r2sonic::R2SonicNode::msgMtx_< marine_acoustic_msgs::msg::RawSonarImage >", "structr2sonic_1_1R2SonicNode_1_1msgMtx__.html", null ],
+    [ "r2sonic::R2SonicNode::msgMtx_< marine_acoustic_msgs::msg::SonarDetections >", "structr2sonic_1_1R2SonicNode_1_1msgMtx__.html", null ],
     [ "r2sonic::R2SonicNode::msgMtx_< r2sonic_interfaces::msg::RawPacket >", "structr2sonic_1_1R2SonicNode_1_1msgMtx__.html", null ],
     [ "rclcpp::Node", null, [
       [ "r2sonic::R2SonicNode", "classr2sonic_1_1R2SonicNode.html", null ]
